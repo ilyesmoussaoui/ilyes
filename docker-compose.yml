@@ -1,0 +1,59 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: gym-saas-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: gymuser
+      POSTGRES_PASSWORD: gympass
+      POSTGRES_DB: gym_saas
+    ports:
+      - "5432:5432"
+    volumes:
+      - gym_saas_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U gymuser -d gym_saas"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: gym-saas-backend
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      NODE_ENV: production
+      PORT: 4000
+      HOST: 0.0.0.0
+      DATABASE_URL: postgresql://gymuser:gympass@postgres:5432/gym_saas
+      JWT_SECRET: change-me-in-production-at-least-32-chars-long
+      JWT_EXPIRES_IN: 8h
+      CORS_ORIGIN: http://localhost:5173
+    ports:
+      - "4000:4000"
+    volumes:
+      - gym_saas_photos:/data/photos
+
+  frontend:
+    image: node:20-alpine
+    container_name: gym-saas-frontend
+    working_dir: /app
+    depends_on:
+      - backend
+    environment:
+      VITE_API_URL: http://localhost:4000/api/v1
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+    command: sh -c "echo 'frontend placeholder — replace with actual start command once frontend is ready' && tail -f /dev/null"
+
+volumes:
+  gym_saas_pgdata:
+  gym_saas_photos:

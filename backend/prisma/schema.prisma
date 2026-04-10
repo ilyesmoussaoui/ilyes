@@ -1,0 +1,568 @@
+// Prisma schema for Gym Management SaaS
+// All money is stored as integers (centimes = DZD * 100).
+// All timestamps are UTC.
+// Soft delete via deleted_at.
+// Photos stored as file paths (not blobs) at /data/photos/[member_id]/.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ---------- ENUMS ----------
+
+enum UserRole {
+  admin
+  manager
+  receptionist
+  instructor
+  accountant
+}
+
+enum MemberType {
+  athlete
+  staff
+  external
+}
+
+enum Gender {
+  male
+  female
+}
+
+enum MemberStatus {
+  active
+  inactive
+  suspended
+  expired
+  pending
+}
+
+enum ContactType {
+  phone
+  email
+  address
+}
+
+enum EnrollmentStatus {
+  active
+  inactive
+  graduated
+  suspended
+}
+
+enum DocumentType {
+  id_card
+  medical_certificate
+  photo
+  birth_certificate
+  insurance
+  other
+}
+
+enum DocumentStatus {
+  valid
+  expired
+  pending
+  rejected
+}
+
+enum PlanType {
+  monthly
+  quarterly
+  biannual
+  annual
+  session_pack
+}
+
+enum SubscriptionStatus {
+  active
+  expired
+  cancelled
+  pending
+}
+
+enum PaymentType {
+  full
+  partial
+  refund
+  adjustment
+}
+
+enum PaymentItemType {
+  subscription
+  equipment
+  fee
+  registration
+  other
+}
+
+enum AttendanceMethod {
+  face
+  manual
+  barcode
+}
+
+enum NotificationType {
+  subscription_expiring
+  payment_due
+  document_expiring
+  birthday
+  general
+}
+
+// ---------- CORE TABLES ----------
+
+model User {
+  id             String    @id @default(uuid()) @db.Uuid
+  email          String    @unique
+  passwordHash   String    @map("password_hash")
+  role           UserRole
+  fullNameLatin  String    @map("full_name_latin")
+  fullNameArabic String?   @map("full_name_arabic")
+  isActive       Boolean   @default(true) @map("is_active")
+  lastLogin      DateTime? @map("last_login") @db.Timestamptz(6)
+  createdAt      DateTime  @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt      DateTime  @updatedAt @map("updated_at") @db.Timestamptz(6)
+  createdBy      String?   @map("created_by") @db.Uuid
+  updatedBy      String?   @map("updated_by") @db.Uuid
+  deletedAt      DateTime? @map("deleted_at") @db.Timestamptz(6)
+
+  membersCreated         Member[]           @relation("MemberCreatedBy")
+  paymentsCreated        Payment[]          @relation("PaymentCreatedBy")
+  attendanceOperated     AttendanceRecord[] @relation("AttendanceOperator")
+  instructingDisciplines MemberDiscipline[] @relation("InstructorDiscipline")
+  auditLogs              AuditLog[]
+  expenses               Expense[]
+  settingsUpdated        Setting[]
+
+  @@index([email])
+  @@index([role])
+  @@index([isActive])
+  @@index([createdAt])
+  @@map("users")
+}
+
+model Member {
+  id              String       @id @default(uuid()) @db.Uuid
+  type            MemberType
+  firstNameLatin  String       @map("first_name_latin")
+  lastNameLatin   String       @map("last_name_latin")
+  firstNameArabic String?      @map("first_name_arabic")
+  lastNameArabic  String?      @map("last_name_arabic")
+  gender          Gender
+  dateOfBirth     DateTime     @map("date_of_birth") @db.Date
+  placeOfBirth    String?      @map("place_of_birth")
+  photoPath       String?      @map("photo_path")
+  status          MemberStatus @default(pending)
+  createdAt       DateTime     @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt       DateTime     @updatedAt @map("updated_at") @db.Timestamptz(6)
+  deletedAt       DateTime?    @map("deleted_at") @db.Timestamptz(6)
+  createdBy       String?      @map("created_by") @db.Uuid
+  updatedBy       String?      @map("updated_by") @db.Uuid
+
+  creator User? @relation("MemberCreatedBy", fields: [createdBy], references: [id], onDelete: SetNull)
+
+  contacts           MemberContact[]
+  emergencyContacts  EmergencyContact[]
+  disciplines        MemberDiscipline[]
+  documents          Document[]
+  subscriptions      Subscription[]
+  payments           Payment[]
+  equipmentPurchases MemberEquipment[]
+  attendanceRecords  AttendanceRecord[]
+  faceEmbeddings     FaceEmbedding[]
+  familyLinks        FamilyLink[]       @relation("MemberFamilyLinks")
+  relatedFamilyLinks FamilyLink[]       @relation("RelatedMemberFamilyLinks")
+  notifications      Notification[]
+
+  @@index([firstNameLatin, lastNameLatin], map: "member_name_latin_idx")
+  @@index([firstNameArabic, lastNameArabic], map: "member_name_arabic_idx")
+  @@index([status])
+  @@index([type])
+  @@index([createdAt])
+  @@index([deletedAt])
+  @@map("members")
+}
+
+model MemberContact {
+  id        String      @id @default(uuid()) @db.Uuid
+  memberId  String      @map("member_id") @db.Uuid
+  type      ContactType
+  value     String
+  isPrimary Boolean     @default(false) @map("is_primary")
+  createdAt DateTime    @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt DateTime    @updatedAt @map("updated_at") @db.Timestamptz(6)
+  deletedAt DateTime?   @map("deleted_at") @db.Timestamptz(6)
+
+  member Member @relation(fields: [memberId], references: [id], onDelete: Cascade)
+
+  @@index([memberId])
+  @@index([type])
+  @@index([value])
+  @@map("member_contacts")
+}
+
+model EmergencyContact {
+  id           String    @id @default(uuid()) @db.Uuid
+  memberId     String    @map("member_id") @db.Uuid
+  name         String
+  phone        String
+  relationship String
+  createdAt    DateTime  @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt    DateTime  @updatedAt @map("updated_at") @db.Timestamptz(6)
+  deletedAt    DateTime? @map("deleted_at") @db.Timestamptz(6)
+
+  member Member @relation(fields: [memberId], references: [id], onDelete: Cascade)
+
+  @@index([memberId])
+  @@map("emergency_contacts")
+}
+
+model Discipline {
+  id        String    @id @default(uuid()) @db.Uuid
+  name      String    @unique
+  isActive  Boolean   @default(true) @map("is_active")
+  createdAt DateTime  @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt DateTime  @updatedAt @map("updated_at") @db.Timestamptz(6)
+  deletedAt DateTime? @map("deleted_at") @db.Timestamptz(6)
+
+  memberDisciplines MemberDiscipline[]
+  timeSlots         TimeSlot[]
+  equipment         Equipment[]
+  subscriptions     Subscription[]
+  attendanceRecords AttendanceRecord[]
+
+  @@index([name])
+  @@index([isActive])
+  @@map("disciplines")
+}
+
+model MemberDiscipline {
+  id             String           @id @default(uuid()) @db.Uuid
+  memberId       String           @map("member_id") @db.Uuid
+  disciplineId   String           @map("discipline_id") @db.Uuid
+  instructorId   String?          @map("instructor_id") @db.Uuid
+  beltRank       String?          @map("belt_rank")
+  enrollmentDate DateTime         @map("enrollment_date") @db.Date
+  status         EnrollmentStatus @default(active)
+  createdAt      DateTime         @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt      DateTime         @updatedAt @map("updated_at") @db.Timestamptz(6)
+  deletedAt      DateTime?        @map("deleted_at") @db.Timestamptz(6)
+
+  member     Member     @relation(fields: [memberId], references: [id], onDelete: Cascade)
+  discipline Discipline @relation(fields: [disciplineId], references: [id], onDelete: Restrict)
+  instructor User?      @relation("InstructorDiscipline", fields: [instructorId], references: [id], onDelete: SetNull)
+  schedules  Schedule[]
+
+  @@index([memberId])
+  @@index([disciplineId])
+  @@index([instructorId])
+  @@index([status])
+  @@map("member_disciplines")
+}
+
+model TimeSlot {
+  id           String    @id @default(uuid()) @db.Uuid
+  disciplineId String    @map("discipline_id") @db.Uuid
+  dayOfWeek    Int       @map("day_of_week") // 0 = Sunday, 6 = Saturday
+  startTime    String    @map("start_time") // HH:mm
+  endTime      String    @map("end_time") // HH:mm
+  maxCapacity  Int       @default(20) @map("max_capacity")
+  createdAt    DateTime  @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt    DateTime  @updatedAt @map("updated_at") @db.Timestamptz(6)
+  deletedAt    DateTime? @map("deleted_at") @db.Timestamptz(6)
+
+  discipline Discipline @relation(fields: [disciplineId], references: [id], onDelete: Cascade)
+  schedules  Schedule[]
+
+  @@index([disciplineId])
+  @@index([dayOfWeek])
+  @@map("time_slots")
+}
+
+model Schedule {
+  id                 String    @id @default(uuid()) @db.Uuid
+  memberDisciplineId String    @map("member_discipline_id") @db.Uuid
+  dayOfWeek          Int       @map("day_of_week")
+  timeSlotId         String    @map("time_slot_id") @db.Uuid
+  createdAt          DateTime  @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt          DateTime  @updatedAt @map("updated_at") @db.Timestamptz(6)
+  deletedAt          DateTime? @map("deleted_at") @db.Timestamptz(6)
+
+  memberDiscipline MemberDiscipline @relation(fields: [memberDisciplineId], references: [id], onDelete: Cascade)
+  timeSlot         TimeSlot         @relation(fields: [timeSlotId], references: [id], onDelete: Restrict)
+
+  @@index([memberDisciplineId])
+  @@index([timeSlotId])
+  @@index([dayOfWeek])
+  @@map("schedules")
+}
+
+model Document {
+  id         String         @id @default(uuid()) @db.Uuid
+  memberId   String         @map("member_id") @db.Uuid
+  type       DocumentType
+  filePath   String         @map("file_path")
+  issueDate  DateTime?      @map("issue_date") @db.Date
+  expiryDate DateTime?      @map("expiry_date") @db.Date
+  status     DocumentStatus @default(pending)
+  createdAt  DateTime       @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt  DateTime       @updatedAt @map("updated_at") @db.Timestamptz(6)
+  deletedAt  DateTime?      @map("deleted_at") @db.Timestamptz(6)
+
+  member Member @relation(fields: [memberId], references: [id], onDelete: Cascade)
+
+  @@index([memberId])
+  @@index([type])
+  @@index([status])
+  @@index([expiryDate])
+  @@map("documents")
+}
+
+model Subscription {
+  id           String             @id @default(uuid()) @db.Uuid
+  memberId     String             @map("member_id") @db.Uuid
+  disciplineId String             @map("discipline_id") @db.Uuid
+  planType     PlanType           @map("plan_type")
+  startDate    DateTime           @map("start_date") @db.Date
+  endDate      DateTime           @map("end_date") @db.Date
+  amount       Int // centimes (DZD * 100)
+  status       SubscriptionStatus @default(active)
+  autoRenew    Boolean            @default(false) @map("auto_renew")
+  createdAt    DateTime           @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt    DateTime           @updatedAt @map("updated_at") @db.Timestamptz(6)
+  deletedAt    DateTime?          @map("deleted_at") @db.Timestamptz(6)
+  createdBy    String?            @map("created_by") @db.Uuid
+  updatedBy    String?            @map("updated_by") @db.Uuid
+
+  member     Member     @relation(fields: [memberId], references: [id], onDelete: Cascade)
+  discipline Discipline @relation(fields: [disciplineId], references: [id], onDelete: Restrict)
+
+  @@index([memberId])
+  @@index([disciplineId])
+  @@index([status])
+  @@index([endDate])
+  @@index([createdAt])
+  @@map("subscriptions")
+}
+
+model Payment {
+  id            String      @id @default(uuid()) @db.Uuid
+  memberId      String      @map("member_id") @db.Uuid
+  receiptNumber String      @unique @map("receipt_number")
+  totalAmount   Int         @map("total_amount") // centimes
+  paidAmount    Int         @map("paid_amount") // centimes
+  remaining     Int // centimes
+  paymentType   PaymentType @map("payment_type")
+  notes         String?
+  createdAt     DateTime    @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt     DateTime    @updatedAt @map("updated_at") @db.Timestamptz(6)
+  deletedAt     DateTime?   @map("deleted_at") @db.Timestamptz(6)
+  createdBy     String?     @map("created_by") @db.Uuid
+  updatedBy     String?     @map("updated_by") @db.Uuid
+
+  member           Member            @relation(fields: [memberId], references: [id], onDelete: Restrict)
+  creator          User?             @relation("PaymentCreatedBy", fields: [createdBy], references: [id], onDelete: SetNull)
+  items            PaymentItem[]
+  equipmentEntries MemberEquipment[]
+
+  @@index([memberId])
+  @@index([receiptNumber])
+  @@index([createdAt])
+  @@index([paymentType])
+  @@map("payments")
+}
+
+model PaymentItem {
+  id          String          @id @default(uuid()) @db.Uuid
+  paymentId   String          @map("payment_id") @db.Uuid
+  description String
+  amount      Int // centimes
+  type        PaymentItemType
+  createdAt   DateTime        @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt   DateTime        @updatedAt @map("updated_at") @db.Timestamptz(6)
+  deletedAt   DateTime?       @map("deleted_at") @db.Timestamptz(6)
+
+  payment Payment @relation(fields: [paymentId], references: [id], onDelete: Cascade)
+
+  @@index([paymentId])
+  @@index([type])
+  @@map("payment_items")
+}
+
+model Equipment {
+  id            String    @id @default(uuid()) @db.Uuid
+  name          String
+  disciplineId  String?   @map("discipline_id") @db.Uuid
+  price         Int // centimes
+  stockQuantity Int       @default(0) @map("stock_quantity")
+  createdAt     DateTime  @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt     DateTime  @updatedAt @map("updated_at") @db.Timestamptz(6)
+  deletedAt     DateTime? @map("deleted_at") @db.Timestamptz(6)
+  createdBy     String?   @map("created_by") @db.Uuid
+  updatedBy     String?   @map("updated_by") @db.Uuid
+
+  discipline      Discipline?       @relation(fields: [disciplineId], references: [id], onDelete: SetNull)
+  memberPurchases MemberEquipment[]
+
+  @@index([name])
+  @@index([disciplineId])
+  @@map("equipment")
+}
+
+model MemberEquipment {
+  id           String    @id @default(uuid()) @db.Uuid
+  memberId     String    @map("member_id") @db.Uuid
+  equipmentId  String    @map("equipment_id") @db.Uuid
+  quantity     Int       @default(1)
+  purchaseDate DateTime  @map("purchase_date") @db.Date
+  paymentId    String?   @map("payment_id") @db.Uuid
+  createdAt    DateTime  @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt    DateTime  @updatedAt @map("updated_at") @db.Timestamptz(6)
+  deletedAt    DateTime? @map("deleted_at") @db.Timestamptz(6)
+
+  member    Member    @relation(fields: [memberId], references: [id], onDelete: Cascade)
+  equipment Equipment @relation(fields: [equipmentId], references: [id], onDelete: Restrict)
+  payment   Payment?  @relation(fields: [paymentId], references: [id], onDelete: SetNull)
+
+  @@index([memberId])
+  @@index([equipmentId])
+  @@index([paymentId])
+  @@map("member_equipment")
+}
+
+model AttendanceRecord {
+  id           String           @id @default(uuid()) @db.Uuid
+  memberId     String           @map("member_id") @db.Uuid
+  disciplineId String?          @map("discipline_id") @db.Uuid
+  checkInTime  DateTime         @map("check_in_time") @db.Timestamptz(6)
+  checkOutTime DateTime?        @map("check_out_time") @db.Timestamptz(6)
+  method       AttendanceMethod
+  device       String?
+  operatorId   String?          @map("operator_id") @db.Uuid
+  notes        String?
+  createdAt    DateTime         @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt    DateTime         @updatedAt @map("updated_at") @db.Timestamptz(6)
+  deletedAt    DateTime?        @map("deleted_at") @db.Timestamptz(6)
+
+  member     Member      @relation(fields: [memberId], references: [id], onDelete: Cascade)
+  discipline Discipline? @relation(fields: [disciplineId], references: [id], onDelete: SetNull)
+  operator   User?       @relation("AttendanceOperator", fields: [operatorId], references: [id], onDelete: SetNull)
+
+  @@index([memberId])
+  @@index([disciplineId])
+  @@index([checkInTime])
+  @@index([method])
+  @@map("attendance_records")
+}
+
+model FaceEmbedding {
+  id              String    @id @default(uuid()) @db.Uuid
+  memberId        String    @map("member_id") @db.Uuid
+  embeddingVector Bytes     @map("embedding_vector")
+  modelVersion    String?   @map("model_version")
+  createdAt       DateTime  @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt       DateTime  @updatedAt @map("updated_at") @db.Timestamptz(6)
+  deletedAt       DateTime? @map("deleted_at") @db.Timestamptz(6)
+
+  member Member @relation(fields: [memberId], references: [id], onDelete: Cascade)
+
+  @@index([memberId])
+  @@map("face_embeddings")
+}
+
+model FamilyLink {
+  id              String    @id @default(uuid()) @db.Uuid
+  memberId        String    @map("member_id") @db.Uuid
+  relatedMemberId String    @map("related_member_id") @db.Uuid
+  relationship    String
+  createdAt       DateTime  @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt       DateTime  @updatedAt @map("updated_at") @db.Timestamptz(6)
+  deletedAt       DateTime? @map("deleted_at") @db.Timestamptz(6)
+
+  member        Member @relation("MemberFamilyLinks", fields: [memberId], references: [id], onDelete: Cascade)
+  relatedMember Member @relation("RelatedMemberFamilyLinks", fields: [relatedMemberId], references: [id], onDelete: Cascade)
+
+  @@unique([memberId, relatedMemberId])
+  @@index([memberId])
+  @@index([relatedMemberId])
+  @@map("family_links")
+}
+
+model AuditLog {
+  id        String   @id @default(uuid()) @db.Uuid
+  tableName String   @map("table_name")
+  recordId  String   @map("record_id") @db.Uuid
+  fieldName String   @map("field_name")
+  oldValue  String?  @map("old_value")
+  newValue  String?  @map("new_value")
+  userId    String?  @map("user_id") @db.Uuid
+  reason    String?
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+
+  user User? @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([tableName, recordId])
+  @@index([userId])
+  @@index([createdAt])
+  @@map("audit_logs")
+}
+
+model Expense {
+  id          String    @id @default(uuid()) @db.Uuid
+  date        DateTime  @db.Date
+  category    String
+  amount      Int // centimes
+  description String?
+  receiptPath String?   @map("receipt_path")
+  createdBy   String?   @map("created_by") @db.Uuid
+  updatedBy   String?   @map("updated_by") @db.Uuid
+  createdAt   DateTime  @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt   DateTime  @updatedAt @map("updated_at") @db.Timestamptz(6)
+  deletedAt   DateTime? @map("deleted_at") @db.Timestamptz(6)
+
+  creator User? @relation(fields: [createdBy], references: [id], onDelete: SetNull)
+
+  @@index([date])
+  @@index([category])
+  @@index([createdAt])
+  @@map("expenses")
+}
+
+model Notification {
+  id        String           @id @default(uuid()) @db.Uuid
+  type      NotificationType
+  memberId  String?          @map("member_id") @db.Uuid
+  message   String
+  isRead    Boolean          @default(false) @map("is_read")
+  createdAt DateTime         @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt DateTime         @updatedAt @map("updated_at") @db.Timestamptz(6)
+  deletedAt DateTime?        @map("deleted_at") @db.Timestamptz(6)
+
+  member Member? @relation(fields: [memberId], references: [id], onDelete: Cascade)
+
+  @@index([memberId])
+  @@index([type])
+  @@index([isRead])
+  @@index([createdAt])
+  @@map("notifications")
+}
+
+model Setting {
+  id        String   @id @default(uuid()) @db.Uuid
+  key       String   @unique
+  value     String
+  updatedBy String?  @map("updated_by") @db.Uuid
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt DateTime @updatedAt @map("updated_at") @db.Timestamptz(6)
+
+  updater User? @relation(fields: [updatedBy], references: [id], onDelete: SetNull)
+
+  @@index([key])
+  @@map("settings")
+}
