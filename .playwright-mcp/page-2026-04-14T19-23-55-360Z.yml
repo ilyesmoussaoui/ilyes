@@ -1,0 +1,347 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - link "Sport ERP home" [ref=e5] [cursor=pointer]:
+        - /url: /dashboard
+        - generic [ref=e6]: S
+        - generic [ref=e7]: Sport ERP
+      - generic [ref=e9]:
+        - generic:
+          - img
+        - searchbox "Search" [ref=e10]
+        - button "Face search coming soon" [disabled] [ref=e11]:
+          - img [ref=e12]
+      - generic [ref=e15]:
+        - 'button "Sync status: Synced. 0 pending." [ref=e17] [cursor=pointer]':
+          - img [ref=e19]
+          - generic [ref=e21]: Synced
+        - button "Notifications, 3 unread" [ref=e22] [cursor=pointer]:
+          - img [ref=e23]
+          - generic [ref=e26]: "3"
+        - button "Account menu" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29]: SA
+          - generic [ref=e30]:
+            - generic [ref=e31]: System Administrator
+            - generic [ref=e32]: Admin
+    - complementary "Primary" [ref=e33]:
+      - navigation "Main navigation" [ref=e34]:
+        - list [ref=e35]:
+          - listitem [ref=e36]:
+            - link "Dashboard" [ref=e37] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e39]
+              - generic [ref=e44]: Dashboard
+          - listitem [ref=e45]:
+            - link "Members" [ref=e46] [cursor=pointer]:
+              - /url: /members
+              - img [ref=e48]
+              - generic [ref=e53]: Members
+          - listitem [ref=e54]:
+            - link "Attendance" [ref=e55] [cursor=pointer]:
+              - /url: /attendance
+              - img [ref=e57]
+              - generic [ref=e65]: Attendance
+          - listitem [ref=e66]:
+            - link "Sessions" [ref=e67] [cursor=pointer]:
+              - /url: /sessions
+              - img [ref=e69]
+              - generic [ref=e71]: Sessions
+          - listitem [ref=e72]:
+            - link "POS" [ref=e73] [cursor=pointer]:
+              - /url: /pos
+              - img [ref=e75]
+              - generic [ref=e79]: POS
+          - listitem [ref=e80]:
+            - link "Payments" [ref=e81] [cursor=pointer]:
+              - /url: /payments
+              - img [ref=e83]
+              - generic [ref=e85]: Payments
+          - listitem [ref=e86]:
+            - link "Inventory" [ref=e87] [cursor=pointer]:
+              - /url: /inventory
+              - img [ref=e89]
+              - generic [ref=e93]: Inventory
+          - listitem [ref=e94]:
+            - link "Expenses" [ref=e95] [cursor=pointer]:
+              - /url: /expenses
+              - img [ref=e97]
+              - generic [ref=e100]: Expenses
+          - listitem [ref=e101]:
+            - link "Reports" [ref=e102] [cursor=pointer]:
+              - /url: /reports
+              - img [ref=e104]
+              - generic [ref=e106]: Reports
+          - listitem [ref=e107]:
+            - link "Settings" [ref=e108] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e110]
+              - generic [ref=e113]: Settings
+      - generic [ref=e114]:
+        - generic [ref=e115]:
+          - generic [ref=e116]: SA
+          - generic [ref=e117]:
+            - paragraph [ref=e118]: System Administrator
+            - paragraph [ref=e119]: Administrator
+          - button "Sign out" [ref=e120] [cursor=pointer]:
+            - img [ref=e121]
+        - button "Collapse sidebar" [ref=e124] [cursor=pointer]:
+          - img [ref=e125]
+          - generic [ref=e127]: Collapse
+    - main [ref=e128]:
+      - generic [ref=e129]:
+        - navigation "Breadcrumb" [ref=e130]:
+          - list [ref=e131]:
+            - listitem [ref=e132]:
+              - link "Home" [ref=e133] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=e134]:
+              - img [ref=e135]
+            - listitem [ref=e137]: Sessions
+        - generic [ref=e140]:
+          - generic [ref=e141]:
+            - heading "Sessions & Scheduling" [level=1] [ref=e142]
+            - paragraph [ref=e143]: Manage weekly time slots, view rosters, and track attendance.
+          - button "Add Session" [ref=e144] [cursor=pointer]:
+            - img [ref=e146]
+            - generic [ref=e147]: Add Session
+        - tablist "Filter by day of week" [ref=e149]:
+          - tab "All Days(20)" [selected] [ref=e150] [cursor=pointer]:
+            - img [ref=e151]
+            - text: All Days
+            - generic [ref=e153]: (20)
+          - tab "Sun(2)" [ref=e154] [cursor=pointer]:
+            - text: Sun
+            - generic [ref=e155]: (2)
+          - tab "Mon(3)" [ref=e156] [cursor=pointer]:
+            - text: Mon
+            - generic [ref=e157]: (3)
+          - tab "Tue(4)" [ref=e158] [cursor=pointer]:
+            - text: Tue
+            - generic [ref=e159]: (4)
+          - tab "Wed(3)" [ref=e160] [cursor=pointer]:
+            - text: Wed
+            - generic [ref=e161]: (3)
+          - tab "Thu(2)" [ref=e162] [cursor=pointer]:
+            - text: Thu
+            - generic [ref=e163]: (2)
+          - tab "Fri(2)" [ref=e164] [cursor=pointer]:
+            - text: Fri
+            - generic [ref=e165]: (2)
+          - tab "Sat(4)" [ref=e166] [cursor=pointer]:
+            - text: Sat
+            - generic [ref=e167]: (4)
+        - generic [ref=e173]:
+          - generic [ref=e174]:
+            - generic [ref=e176]: Sun
+            - generic [ref=e177]: Mon
+            - generic [ref=e178]: Tue
+            - generic [ref=e180]: Wed
+            - generic [ref=e181]: Thu
+            - generic [ref=e182]: Fri
+            - generic [ref=e183]: Sat
+          - generic [ref=e184]:
+            - generic [ref=e185]:
+              - generic [ref=e187]: 6 AM
+              - generic [ref=e189]: 7 AM
+              - generic [ref=e191]: 8 AM
+              - generic [ref=e193]: 9 AM
+              - generic [ref=e195]: 10 AM
+              - generic [ref=e197]: 11 AM
+              - generic [ref=e199]: 12 PM
+              - generic [ref=e201]: 1 PM
+              - generic [ref=e203]: 2 PM
+              - generic [ref=e205]: 3 PM
+              - generic [ref=e207]: 4 PM
+              - generic [ref=e209]: 5 PM
+              - generic [ref=e211]: 6 PM
+              - generic [ref=e213]: 7 PM
+              - generic [ref=e215]: 8 PM
+              - generic [ref=e217]: 9 PM
+            - generic [ref=e218]:
+              - button "Taekwondo, 09:00 to 10:30, 0 of 25 enrolled" [ref=e235] [cursor=pointer]:
+                - generic [ref=e237]:
+                  - paragraph [ref=e238]: Taekwondo
+                  - paragraph [ref=e239]:
+                    - img [ref=e240]
+                    - text: 09:00 - 10:30
+                  - generic [ref=e243]:
+                    - img [ref=e244]
+                    - generic "0 of 25 enrolled" [ref=e249]: 0/25
+              - button "Taekwondo, 16:00 to 17:30, 0 of 25 enrolled" [ref=e250] [cursor=pointer]:
+                - generic [ref=e252]:
+                  - paragraph [ref=e253]: Taekwondo
+                  - paragraph [ref=e254]:
+                    - img [ref=e255]
+                    - text: 16:00 - 17:30
+                  - generic [ref=e258]:
+                    - img [ref=e259]
+                    - generic "0 of 25 enrolled" [ref=e264]: 0/25
+            - generic [ref=e265]:
+              - button "Swimming, 08:00 to 09:00, 0 of 15 enrolled" [ref=e282] [cursor=pointer]:
+                - generic [ref=e284]:
+                  - paragraph [ref=e285]: Swimming
+                  - paragraph [ref=e286]:
+                    - img [ref=e287]
+                    - text: 08:00 - 09:00
+                  - generic [ref=e290]:
+                    - img [ref=e291]
+                    - generic "0 of 15 enrolled" [ref=e296]: 0/15
+              - button "Swimming, 10:00 to 11:00, 0 of 15 enrolled" [ref=e297] [cursor=pointer]:
+                - generic [ref=e299]:
+                  - paragraph [ref=e300]: Swimming
+                  - paragraph [ref=e301]:
+                    - img [ref=e302]
+                    - text: 10:00 - 11:00
+                  - generic [ref=e305]:
+                    - img [ref=e306]
+                    - generic "0 of 15 enrolled" [ref=e311]: 0/15
+              - button "Swimming, 17:00 to 18:00, 0 of 15 enrolled" [ref=e312] [cursor=pointer]:
+                - generic [ref=e314]:
+                  - paragraph [ref=e315]: Swimming
+                  - paragraph [ref=e316]:
+                    - img [ref=e317]
+                    - text: 17:00 - 18:00
+                  - generic [ref=e320]:
+                    - img [ref=e321]
+                    - generic "0 of 15 enrolled" [ref=e326]: 0/15
+            - generic [ref=e327]:
+              - button "Equestrian, 07:00 to 08:30, 0 of 8 enrolled" [ref=e344] [cursor=pointer]:
+                - generic [ref=e346]:
+                  - paragraph [ref=e347]: Equestrian
+                  - paragraph [ref=e348]:
+                    - img [ref=e349]
+                    - text: 07:00 - 08:30
+                  - generic [ref=e352]:
+                    - img [ref=e353]
+                    - generic "0 of 8 enrolled" [ref=e358]: 0/8
+              - button "Taekwondo, 09:00 to 10:30, 0 of 25 enrolled" [ref=e359] [cursor=pointer]:
+                - generic [ref=e361]:
+                  - paragraph [ref=e362]: Taekwondo
+                  - paragraph [ref=e363]:
+                    - img [ref=e364]
+                    - text: 09:00 - 10:30
+                  - generic [ref=e367]:
+                    - img [ref=e368]
+                    - generic "0 of 25 enrolled" [ref=e373]: 0/25
+              - button "Equestrian, 14:00 to 15:30, 0 of 8 enrolled" [ref=e374] [cursor=pointer]:
+                - generic [ref=e376]:
+                  - paragraph [ref=e377]: Equestrian
+                  - paragraph [ref=e378]:
+                    - img [ref=e379]
+                    - text: 14:00 - 15:30
+                  - generic [ref=e382]:
+                    - img [ref=e383]
+                    - generic "0 of 8 enrolled" [ref=e388]: 0/8
+              - button "Taekwondo, 16:00 to 17:30, 0 of 25 enrolled" [ref=e389] [cursor=pointer]:
+                - generic [ref=e391]:
+                  - paragraph [ref=e392]: Taekwondo
+                  - paragraph [ref=e393]:
+                    - img [ref=e394]
+                    - text: 16:00 - 17:30
+                  - generic [ref=e397]:
+                    - img [ref=e398]
+                    - generic "0 of 25 enrolled" [ref=e403]: 0/25
+            - generic [ref=e404]:
+              - button "Swimming, 08:00 to 09:00, 0 of 15 enrolled" [ref=e421] [cursor=pointer]:
+                - generic [ref=e423]:
+                  - paragraph [ref=e424]: Swimming
+                  - paragraph [ref=e425]:
+                    - img [ref=e426]
+                    - text: 08:00 - 09:00
+                  - generic [ref=e429]:
+                    - img [ref=e430]
+                    - generic "0 of 15 enrolled" [ref=e435]: 0/15
+              - button "Swimming, 10:00 to 11:00, 0 of 15 enrolled" [ref=e436] [cursor=pointer]:
+                - generic [ref=e438]:
+                  - paragraph [ref=e439]: Swimming
+                  - paragraph [ref=e440]:
+                    - img [ref=e441]
+                    - text: 10:00 - 11:00
+                  - generic [ref=e444]:
+                    - img [ref=e445]
+                    - generic "0 of 15 enrolled" [ref=e450]: 0/15
+              - button "Swimming, 17:00 to 18:00, 0 of 15 enrolled" [ref=e451] [cursor=pointer]:
+                - generic [ref=e453]:
+                  - paragraph [ref=e454]: Swimming
+                  - paragraph [ref=e455]:
+                    - img [ref=e456]
+                    - text: 17:00 - 18:00
+                  - generic [ref=e459]:
+                    - img [ref=e460]
+                    - generic "0 of 15 enrolled" [ref=e465]: 0/15
+            - generic [ref=e466]:
+              - button "Taekwondo, 09:00 to 10:30, 0 of 25 enrolled" [ref=e483] [cursor=pointer]:
+                - generic [ref=e485]:
+                  - paragraph [ref=e486]: Taekwondo
+                  - paragraph [ref=e487]:
+                    - img [ref=e488]
+                    - text: 09:00 - 10:30
+                  - generic [ref=e491]:
+                    - img [ref=e492]
+                    - generic "0 of 25 enrolled" [ref=e497]: 0/25
+              - button "Taekwondo, 16:00 to 17:30, 0 of 25 enrolled" [ref=e498] [cursor=pointer]:
+                - generic [ref=e500]:
+                  - paragraph [ref=e501]: Taekwondo
+                  - paragraph [ref=e502]:
+                    - img [ref=e503]
+                    - text: 16:00 - 17:30
+                  - generic [ref=e506]:
+                    - img [ref=e507]
+                    - generic "0 of 25 enrolled" [ref=e512]: 0/25
+            - generic [ref=e513]:
+              - button "Equestrian, 07:00 to 08:30, 0 of 8 enrolled" [ref=e530] [cursor=pointer]:
+                - generic [ref=e532]:
+                  - paragraph [ref=e533]: Equestrian
+                  - paragraph [ref=e534]:
+                    - img [ref=e535]
+                    - text: 07:00 - 08:30
+                  - generic [ref=e538]:
+                    - img [ref=e539]
+                    - generic "0 of 8 enrolled" [ref=e544]: 0/8
+              - button "Equestrian, 14:00 to 15:30, 0 of 8 enrolled" [ref=e545] [cursor=pointer]:
+                - generic [ref=e547]:
+                  - paragraph [ref=e548]: Equestrian
+                  - paragraph [ref=e549]:
+                    - img [ref=e550]
+                    - text: 14:00 - 15:30
+                  - generic [ref=e553]:
+                    - img [ref=e554]
+                    - generic "0 of 8 enrolled" [ref=e559]: 0/8
+            - generic [ref=e560]:
+              - button "Equestrian, 08:00 to 09:30, 0 of 10 enrolled" [ref=e577] [cursor=pointer]:
+                - generic [ref=e579]:
+                  - paragraph [ref=e580]: Equestrian
+                  - paragraph [ref=e581]:
+                    - img [ref=e582]
+                    - text: 08:00 - 09:30
+                  - generic [ref=e585]:
+                    - img [ref=e586]
+                    - generic "0 of 10 enrolled" [ref=e591]: 0/10
+              - button "Swimming, 09:00 to 10:00, 0 of 20 enrolled" [ref=e592] [cursor=pointer]:
+                - generic [ref=e594]:
+                  - paragraph [ref=e595]: Swimming
+                  - paragraph [ref=e596]:
+                    - img [ref=e597]
+                    - text: 09:00 - 10:00
+                  - generic [ref=e600]:
+                    - img [ref=e601]
+                    - generic "0 of 20 enrolled" [ref=e606]: 0/20
+              - button "Swimming, 11:00 to 12:00, 0 of 20 enrolled" [ref=e607] [cursor=pointer]:
+                - generic [ref=e609]:
+                  - paragraph [ref=e610]: Swimming
+                  - paragraph [ref=e611]:
+                    - img [ref=e612]
+                    - text: 11:00 - 12:00
+                  - generic [ref=e615]:
+                    - img [ref=e616]
+                    - generic "0 of 20 enrolled" [ref=e621]: 0/20
+              - button "Equestrian, 15:00 to 16:30, 0 of 10 enrolled" [ref=e622] [cursor=pointer]:
+                - generic [ref=e624]:
+                  - paragraph [ref=e625]: Equestrian
+                  - paragraph [ref=e626]:
+                    - img [ref=e627]
+                    - text: 15:00 - 16:30
+                  - generic [ref=e630]:
+                    - img [ref=e631]
+                    - generic "0 of 10 enrolled" [ref=e636]: 0/10
+  - region "Notifications"

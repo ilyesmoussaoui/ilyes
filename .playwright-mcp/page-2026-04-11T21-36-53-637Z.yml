@@ -1,0 +1,153 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - link "Sport ERP home" [ref=e5] [cursor=pointer]:
+        - /url: /dashboard
+        - generic [ref=e6]: S
+        - generic [ref=e7]: Sport ERP
+      - generic [ref=e9]:
+        - generic:
+          - img
+        - searchbox "Search" [ref=e10]
+        - button "Face search coming soon" [disabled] [ref=e11]:
+          - img [ref=e12]
+      - generic [ref=e15]:
+        - button "Notifications, 3 unread" [ref=e16] [cursor=pointer]:
+          - img [ref=e17]
+          - generic [ref=e20]: "3"
+        - button "Account menu" [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]: SA
+          - generic [ref=e24]:
+            - generic [ref=e25]: System Administrator
+            - generic [ref=e26]: Admin
+    - complementary "Primary" [ref=e27]:
+      - navigation "Main navigation" [ref=e28]:
+        - list [ref=e29]:
+          - listitem [ref=e30]:
+            - link "Dashboard" [ref=e31] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e33]
+              - generic [ref=e38]: Dashboard
+          - listitem [ref=e39]:
+            - link "Members" [ref=e40] [cursor=pointer]:
+              - /url: /members
+              - img [ref=e42]
+              - generic [ref=e47]: Members
+          - listitem [ref=e48]:
+            - link "Attendance" [ref=e49] [cursor=pointer]:
+              - /url: /attendance
+              - img [ref=e51]
+              - generic [ref=e59]: Attendance
+          - listitem [ref=e60]:
+            - link "Sessions" [ref=e61] [cursor=pointer]:
+              - /url: /sessions
+              - img [ref=e63]
+              - generic [ref=e65]: Sessions
+          - listitem [ref=e66]:
+            - link "POS" [ref=e67] [cursor=pointer]:
+              - /url: /pos
+              - img [ref=e69]
+              - generic [ref=e73]: POS
+          - listitem [ref=e74]:
+            - link "Payments" [ref=e75] [cursor=pointer]:
+              - /url: /payments
+              - img [ref=e77]
+              - generic [ref=e79]: Payments
+          - listitem [ref=e80]:
+            - link "Inventory" [ref=e81] [cursor=pointer]:
+              - /url: /inventory
+              - img [ref=e83]
+              - generic [ref=e87]: Inventory
+          - listitem [ref=e88]:
+            - link "Reports" [ref=e89] [cursor=pointer]:
+              - /url: /reports
+              - img [ref=e91]
+              - generic [ref=e93]: Reports
+          - listitem [ref=e94]:
+            - link "Settings" [ref=e95] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e97]
+              - generic [ref=e100]: Settings
+      - generic [ref=e101]:
+        - generic [ref=e102]:
+          - generic [ref=e103]: SA
+          - generic [ref=e104]:
+            - paragraph [ref=e105]: System Administrator
+            - paragraph [ref=e106]: Administrator
+          - button "Sign out" [ref=e107] [cursor=pointer]:
+            - img [ref=e108]
+        - button "Collapse sidebar" [ref=e111] [cursor=pointer]:
+          - img [ref=e112]
+          - generic [ref=e114]: Collapse
+    - main [ref=e115]:
+      - generic [ref=e120]:
+        - navigation "Breadcrumb" [ref=e121]:
+          - list [ref=e122]:
+            - listitem [ref=e123]:
+              - link "Home" [ref=e124] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=e125]:
+              - img [ref=e126]
+            - listitem [ref=e128]:
+              - link "Members" [ref=e129] [cursor=pointer]:
+                - /url: /members
+            - listitem [ref=e130]:
+              - img [ref=e131]
+            - listitem [ref=e133]: Add
+        - generic [ref=e135]:
+          - generic [ref=e136]:
+            - generic [ref=e137]:
+              - heading "Add member" [level=1] [ref=e138]
+              - paragraph [ref=e139]: Step 2 of 8
+            - button "Discard draft" [ref=e140] [cursor=pointer]
+          - navigation "Wizard progress" [ref=e141]:
+            - list [ref=e142]:
+              - listitem [ref=e143]:
+                - 'button "Step 1: Classification" [ref=e146] [cursor=pointer]':
+                  - img [ref=e147]
+                - generic [ref=e150]: Classification
+              - listitem [ref=e151]:
+                - 'button "Step 2: Photo" [disabled] [ref=e154]':
+                  - generic [ref=e155]: "2"
+                - generic [ref=e157]: Photo
+              - listitem [ref=e158]:
+                - 'button "Step 3: Identity" [disabled] [ref=e161]':
+                  - generic [ref=e162]: "3"
+                - generic [ref=e164]: Identity
+              - listitem [ref=e165]:
+                - 'button "Step 4: Contact" [disabled] [ref=e168]':
+                  - generic [ref=e169]: "4"
+                - generic [ref=e171]: Contact
+              - listitem [ref=e172]:
+                - 'button "Step 5: Disciplines" [disabled] [ref=e175]':
+                  - generic [ref=e176]: "5"
+                - generic [ref=e178]: Disciplines
+              - listitem [ref=e179]:
+                - 'button "Step 6: Schedule" [disabled] [ref=e182]':
+                  - generic [ref=e183]: "6"
+                - generic [ref=e185]: Schedule
+              - listitem [ref=e186]:
+                - 'button "Step 7: Documents" [disabled] [ref=e189]':
+                  - generic [ref=e190]: "7"
+                - generic [ref=e192]: Documents
+              - listitem [ref=e193]:
+                - 'button "Step 8: Review" [disabled] [ref=e196]':
+                  - generic [ref=e197]: "8"
+                - generic [ref=e199]: Review
+          - generic [ref=e201]:
+            - generic [ref=e202]:
+              - heading "Photo capture" [level=2] [ref=e203]
+              - paragraph [ref=e204]: Center the face inside the oval. Bright, even lighting works best.
+            - generic [ref=e227]:
+              - button "Capture" [ref=e228] [cursor=pointer]:
+                - generic [ref=e229]: Capture
+              - button "Stop Camera" [ref=e230] [cursor=pointer]:
+                - generic [ref=e231]: Stop Camera
+            - button "Skip for now" [ref=e214] [cursor=pointer]:
+              - generic [ref=e215]: Skip for now
+          - generic [ref=e218]:
+            - button "Previous" [ref=e220] [cursor=pointer]:
+              - generic [ref=e221]: Previous
+            - button "Next" [ref=e223] [cursor=pointer]:
+              - generic [ref=e224]: Next
+  - region "Notifications"

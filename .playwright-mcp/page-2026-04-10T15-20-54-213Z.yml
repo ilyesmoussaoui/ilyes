@@ -1,0 +1,788 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - paragraph [ref=e6]: Gym SaaS
+        - heading "Design System — Part 1" [level=1] [ref=e7]
+        - paragraph [ref=e8]: Every shared UI primitive in every state. Frozen tech stack, locked tokens.
+    - main [ref=e9]:
+      - region "Design tokens" [ref=e10]:
+        - generic [ref=e11]:
+          - heading "Design tokens" [level=2] [ref=e12]
+          - paragraph [ref=e13]: Colors, spacing, typography and shadows.
+        - generic [ref=e14]:
+          - generic [ref=e15]:
+            - heading "Primary palette" [level=3] [ref=e17]
+            - generic [ref=e19]:
+              - generic [ref=e22]: "50"
+              - generic [ref=e25]: "100"
+              - generic [ref=e28]: "200"
+              - generic [ref=e31]: "300"
+              - generic [ref=e34]: "400"
+              - generic [ref=e37]: "500"
+              - generic [ref=e40]: "600"
+          - generic [ref=e41]:
+            - heading "Neutral palette" [level=3] [ref=e43]
+            - generic [ref=e45]:
+              - generic [ref=e48]: "50"
+              - generic [ref=e51]: "100"
+              - generic [ref=e54]: "200"
+              - generic [ref=e57]: "300"
+              - generic [ref=e60]: "400"
+              - generic [ref=e63]: "500"
+              - generic [ref=e66]: "600"
+              - generic [ref=e69]: "700"
+              - generic [ref=e72]: "800"
+              - generic [ref=e75]: "900"
+          - generic [ref=e76]:
+            - heading "Semantic colors" [level=3] [ref=e78]
+            - generic [ref=e80]:
+              - generic [ref=e83]: success
+              - generic [ref=e86]: danger
+              - generic [ref=e89]: warning
+              - generic [ref=e92]: info
+          - generic [ref=e93]:
+            - heading "Shadows & radii" [level=3] [ref=e95]
+            - generic [ref=e97]:
+              - generic [ref=e100]: elevation-1
+              - generic [ref=e103]: elevation-2
+              - generic [ref=e106]: elevation-3
+              - generic [ref=e109]: radius-full
+          - generic [ref=e110]:
+            - heading "Typography (Latin)" [level=3] [ref=e112]
+            - generic [ref=e114]:
+              - paragraph [ref=e115]: xs · 12 — The quick brown fox
+              - paragraph [ref=e116]: sm · 14 — The quick brown fox
+              - paragraph [ref=e117]: base · 16 — The quick brown fox
+              - paragraph [ref=e118]: lg · 20 — The quick brown fox
+              - paragraph [ref=e119]: xl · 24 — The quick brown fox
+          - generic [ref=e120]:
+            - heading "Typography (Arabic)" [level=3] [ref=e122]
+            - generic [ref=e124]:
+              - paragraph [ref=e125]: ١٢ — الثعلب البني السريع
+              - paragraph [ref=e126]: ١٤ — الثعلب البني السريع
+              - paragraph [ref=e127]: ١٦ — الثعلب البني السريع
+              - paragraph [ref=e128]: ٢٠ — الثعلب البني السريع
+              - paragraph [ref=e129]: ٢٤ — الثعلب البني السريع
+      - region "Button" [ref=e130]:
+        - generic [ref=e131]:
+          - heading "Button" [level=2] [ref=e132]
+          - paragraph [ref=e133]: 5 variants, 2 sizes, loading and icon states.
+        - generic [ref=e136]:
+          - generic [ref=e137]:
+            - paragraph [ref=e138]: Variants — default size (40px)
+            - generic [ref=e139]:
+              - button "Primary" [ref=e140] [cursor=pointer]:
+                - generic [ref=e141]: Primary
+              - button "Secondary" [ref=e142] [cursor=pointer]:
+                - generic [ref=e143]: Secondary
+              - button "Danger" [ref=e144] [cursor=pointer]:
+                - generic [ref=e145]: Danger
+              - button "Ghost" [ref=e146] [cursor=pointer]:
+                - generic [ref=e147]: Ghost
+              - button "Disabled" [disabled] [ref=e148]:
+                - generic [ref=e149]: Disabled
+          - generic [ref=e150]:
+            - paragraph [ref=e151]: Touch size (48px)
+            - generic [ref=e152]:
+              - button "Primary" [ref=e153] [cursor=pointer]:
+                - generic [ref=e154]: Primary
+              - button "Secondary" [ref=e155] [cursor=pointer]:
+                - generic [ref=e156]: Secondary
+              - button "Danger" [ref=e157] [cursor=pointer]:
+                - generic [ref=e158]: Danger
+          - generic [ref=e159]:
+            - paragraph [ref=e160]: States — loading, icons, disabled
+            - generic [ref=e161]:
+              - button "Saving…" [disabled] [ref=e162]:
+                - img [ref=e163]
+                - generic [ref=e165]: Saving…
+              - button "Add member" [ref=e166] [cursor=pointer]:
+                - img [ref=e168]
+                - generic [ref=e169]: Add member
+              - button "Confirm" [ref=e170] [cursor=pointer]:
+                - generic [ref=e171]: Confirm
+                - img [ref=e173]
+              - button "Delete" [ref=e175] [cursor=pointer]:
+                - img [ref=e177]
+                - generic [ref=e181]: Delete
+              - button "Disabled" [disabled] [ref=e182]:
+                - generic [ref=e183]: Disabled
+      - region "Input" [ref=e184]:
+        - generic [ref=e185]:
+          - heading "Input" [level=2] [ref=e186]
+          - paragraph [ref=e187]: Label, validation, icons, multi-script.
+        - generic [ref=e190]:
+          - generic [ref=e191]:
+            - generic [ref=e192]: Email address
+            - textbox "Email address" [ref=e194]:
+              - /placeholder: member@gym.dz
+          - generic [ref=e195]:
+            - generic [ref=e196]: Phone
+            - textbox "Phone" [ref=e198]:
+              - /placeholder: 0555 123 456
+          - generic [ref=e199]:
+            - generic [ref=e200]: Phone (auto-format preview)
+            - textbox "Phone (auto-format preview)" [ref=e202]:
+              - /placeholder: 0555 123 456
+            - paragraph [ref=e203]: Digits only — formatted as you type.
+          - generic [ref=e204]:
+            - generic [ref=e205]: الاسم الكامل
+            - textbox "الاسم الكامل" [ref=e207]:
+              - /placeholder: أدخل الاسم بالعربية
+          - generic [ref=e208]:
+            - generic [ref=e209]: Disabled
+            - textbox "Disabled" [disabled] [ref=e211]: Locked
+          - generic [ref=e212]:
+            - generic [ref=e213]: With icon
+            - generic [ref=e214]:
+              - generic:
+                - img
+              - textbox "With icon" [ref=e215]:
+                - /placeholder: Search members
+      - region "Select & DatePicker" [ref=e216]:
+        - generic [ref=e217]:
+          - heading "Select & DatePicker" [level=2] [ref=e218]
+          - paragraph [ref=e219]: Native and searchable, and the three-dropdown date picker.
+        - generic [ref=e220]:
+          - generic [ref=e221]:
+            - heading "Select — native (<8)" [level=3] [ref=e223]
+            - generic [ref=e224]:
+              - generic [ref=e225]:
+                - generic [ref=e226]: Discipline
+                - generic [ref=e227]:
+                  - combobox "Discipline" [ref=e228]:
+                    - option "Select..." [disabled]
+                    - option "Taekwondo" [selected]
+                    - option "Karate"
+                    - option "Boxing"
+                    - option "Judo"
+                  - img
+              - paragraph [ref=e229]: "Value: taekwondo"
+          - generic [ref=e230]:
+            - heading "Select — searchable combobox (>=8)" [level=3] [ref=e232]
+            - generic [ref=e233]:
+              - generic [ref=e234]:
+                - generic [ref=e235]: Discipline (grouped)
+                - generic [ref=e236]:
+                  - img [ref=e237]
+                  - combobox "Discipline (grouped)" [ref=e240]
+                  - img [ref=e241]
+              - paragraph [ref=e243]: "Value: tkd"
+          - generic [ref=e244]:
+            - heading "DatePicker — three dropdowns" [level=3] [ref=e246]
+            - generic [ref=e247]:
+              - generic [ref=e248]:
+                - generic [ref=e249]: Date of birth
+                - generic [ref=e250]:
+                  - generic [ref=e251]:
+                    - generic [ref=e252]: Day
+                    - combobox "Day" [ref=e253]:
+                      - option "Day" [disabled]
+                      - option "1"
+                      - option "2"
+                      - option "3"
+                      - option "4"
+                      - option "5"
+                      - option "6"
+                      - option "7"
+                      - option "8"
+                      - option "9"
+                      - option "10"
+                      - option "11"
+                      - option "12"
+                      - option "13"
+                      - option "14"
+                      - option "15" [selected]
+                      - option "16"
+                      - option "17"
+                      - option "18"
+                      - option "19"
+                      - option "20"
+                      - option "21"
+                      - option "22"
+                      - option "23"
+                      - option "24"
+                      - option "25"
+                      - option "26"
+                      - option "27"
+                      - option "28"
+                      - option "29"
+                      - option "30"
+                    - img
+                  - generic [ref=e254]:
+                    - generic [ref=e255]: Month
+                    - combobox "Month" [ref=e256]:
+                      - option "Month" [disabled]
+                      - option "January"
+                      - option "February"
+                      - option "March"
+                      - option "April"
+                      - option "May"
+                      - option "June" [selected]
+                      - option "July"
+                      - option "August"
+                      - option "September"
+                      - option "October"
+                      - option "November"
+                      - option "December"
+                    - img
+                  - generic [ref=e257]:
+                    - generic [ref=e258]: Year
+                    - combobox "Year" [ref=e259]:
+                      - option "Year" [disabled]
+                      - option "2026"
+                      - option "2025"
+                      - option "2024"
+                      - option "2023"
+                      - option "2022"
+                      - option "2021"
+                      - option "2020"
+                      - option "2019"
+                      - option "2018"
+                      - option "2017"
+                      - option "2016"
+                      - option "2015"
+                      - option "2014"
+                      - option "2013"
+                      - option "2012"
+                      - option "2011"
+                      - option "2010"
+                      - option "2009"
+                      - option "2008"
+                      - option "2007"
+                      - option "2006"
+                      - option "2005"
+                      - option "2004"
+                      - option "2003"
+                      - option "2002"
+                      - option "2001"
+                      - option "2000" [selected]
+                      - option "1999"
+                      - option "1998"
+                      - option "1997"
+                      - option "1996"
+                      - option "1995"
+                      - option "1994"
+                      - option "1993"
+                      - option "1992"
+                      - option "1991"
+                      - option "1990"
+                      - option "1989"
+                      - option "1988"
+                      - option "1987"
+                      - option "1986"
+                      - option "1985"
+                      - option "1984"
+                      - option "1983"
+                      - option "1982"
+                      - option "1981"
+                      - option "1980"
+                      - option "1979"
+                      - option "1978"
+                      - option "1977"
+                      - option "1976"
+                      - option "1975"
+                      - option "1974"
+                      - option "1973"
+                      - option "1972"
+                      - option "1971"
+                      - option "1970"
+                      - option "1969"
+                      - option "1968"
+                      - option "1967"
+                      - option "1966"
+                      - option "1965"
+                      - option "1964"
+                      - option "1963"
+                      - option "1962"
+                      - option "1961"
+                      - option "1960"
+                      - option "1959"
+                      - option "1958"
+                      - option "1957"
+                      - option "1956"
+                      - option "1955"
+                      - option "1954"
+                      - option "1953"
+                      - option "1952"
+                      - option "1951"
+                      - option "1950"
+                      - option "1949"
+                      - option "1948"
+                      - option "1947"
+                      - option "1946"
+                      - option "1945"
+                      - option "1944"
+                      - option "1943"
+                      - option "1942"
+                      - option "1941"
+                      - option "1940"
+                      - option "1939"
+                      - option "1938"
+                      - option "1937"
+                      - option "1936"
+                      - option "1935"
+                      - option "1934"
+                      - option "1933"
+                      - option "1932"
+                      - option "1931"
+                      - option "1930"
+                      - option "1929"
+                      - option "1928"
+                      - option "1927"
+                      - option "1926"
+                      - option "1925"
+                      - option "1924"
+                      - option "1923"
+                      - option "1922"
+                      - option "1921"
+                      - option "1920"
+                    - img
+              - paragraph [ref=e260]: "ISO: 2000-06-15"
+              - paragraph [ref=e261]: "Age: 25 years"
+          - generic [ref=e262]:
+            - heading "DatePicker — disabled" [level=3] [ref=e264]
+            - generic [ref=e266]:
+              - generic [ref=e267]: Joined on
+              - generic [ref=e268]:
+                - generic [ref=e269]:
+                  - generic [ref=e270]: Day
+                  - combobox "Day" [disabled] [ref=e271]:
+                    - option "Day" [disabled]
+                    - option "1"
+                    - option "2"
+                    - option "3"
+                    - option "4"
+                    - option "5"
+                    - option "6"
+                    - option "7"
+                    - option "8"
+                    - option "9"
+                    - option "10"
+                    - option "11"
+                    - option "12"
+                    - option "13"
+                    - option "14"
+                    - option "15"
+                    - option "16"
+                    - option "17"
+                    - option "18" [selected]
+                    - option "19"
+                    - option "20"
+                    - option "21"
+                    - option "22"
+                    - option "23"
+                    - option "24"
+                    - option "25"
+                    - option "26"
+                    - option "27"
+                    - option "28"
+                    - option "29"
+                    - option "30"
+                  - img
+                - generic [ref=e272]:
+                  - generic [ref=e273]: Month
+                  - combobox "Month" [disabled] [ref=e274]:
+                    - option "Month" [disabled]
+                    - option "January"
+                    - option "February"
+                    - option "March"
+                    - option "April"
+                    - option "May"
+                    - option "June"
+                    - option "July"
+                    - option "August"
+                    - option "September"
+                    - option "October"
+                    - option "November" [selected]
+                    - option "December"
+                  - img
+                - generic [ref=e275]:
+                  - generic [ref=e276]: Year
+                  - combobox "Year" [disabled] [ref=e277]:
+                    - option "Year" [disabled]
+                    - option "2026"
+                    - option "2025"
+                    - option "2024"
+                    - option "2023" [selected]
+                    - option "2022"
+                    - option "2021"
+                    - option "2020"
+                    - option "2019"
+                    - option "2018"
+                    - option "2017"
+                    - option "2016"
+                    - option "2015"
+                    - option "2014"
+                    - option "2013"
+                    - option "2012"
+                    - option "2011"
+                    - option "2010"
+                    - option "2009"
+                    - option "2008"
+                    - option "2007"
+                    - option "2006"
+                    - option "2005"
+                    - option "2004"
+                    - option "2003"
+                    - option "2002"
+                    - option "2001"
+                    - option "2000"
+                    - option "1999"
+                    - option "1998"
+                    - option "1997"
+                    - option "1996"
+                    - option "1995"
+                    - option "1994"
+                    - option "1993"
+                    - option "1992"
+                    - option "1991"
+                    - option "1990"
+                    - option "1989"
+                    - option "1988"
+                    - option "1987"
+                    - option "1986"
+                    - option "1985"
+                    - option "1984"
+                    - option "1983"
+                    - option "1982"
+                    - option "1981"
+                    - option "1980"
+                    - option "1979"
+                    - option "1978"
+                    - option "1977"
+                    - option "1976"
+                    - option "1975"
+                    - option "1974"
+                    - option "1973"
+                    - option "1972"
+                    - option "1971"
+                    - option "1970"
+                    - option "1969"
+                    - option "1968"
+                    - option "1967"
+                    - option "1966"
+                    - option "1965"
+                    - option "1964"
+                    - option "1963"
+                    - option "1962"
+                    - option "1961"
+                    - option "1960"
+                    - option "1959"
+                    - option "1958"
+                    - option "1957"
+                    - option "1956"
+                    - option "1955"
+                    - option "1954"
+                    - option "1953"
+                    - option "1952"
+                    - option "1951"
+                    - option "1950"
+                    - option "1949"
+                    - option "1948"
+                    - option "1947"
+                    - option "1946"
+                    - option "1945"
+                    - option "1944"
+                    - option "1943"
+                    - option "1942"
+                    - option "1941"
+                    - option "1940"
+                    - option "1939"
+                    - option "1938"
+                    - option "1937"
+                    - option "1936"
+                    - option "1935"
+                    - option "1934"
+                    - option "1933"
+                    - option "1932"
+                    - option "1931"
+                    - option "1930"
+                    - option "1929"
+                    - option "1928"
+                    - option "1927"
+                    - option "1926"
+                    - option "1925"
+                    - option "1924"
+                    - option "1923"
+                    - option "1922"
+                    - option "1921"
+                    - option "1920"
+                  - img
+      - region "Badge" [ref=e278]:
+        - generic [ref=e279]:
+          - heading "Badge" [level=2] [ref=e280]
+          - paragraph [ref=e281]: 8 status variants — each with icon, label and color.
+        - generic [ref=e284]:
+          - generic [ref=e285]:
+            - img [ref=e287]
+            - generic [ref=e289]: Active
+          - generic [ref=e290]:
+            - img [ref=e292]
+            - generic [ref=e295]: Inactive
+          - generic [ref=e296]:
+            - img [ref=e298]
+            - generic [ref=e301]: Suspended
+          - generic [ref=e302]:
+            - img [ref=e304]
+            - generic [ref=e307]: Expired
+          - generic [ref=e308]:
+            - img [ref=e310]
+            - generic [ref=e313]: Pending
+          - generic [ref=e314]:
+            - img [ref=e316]
+            - generic [ref=e318]: Paid
+          - generic [ref=e319]:
+            - img [ref=e321]
+            - generic [ref=e323]: Partial
+          - generic [ref=e324]:
+            - img [ref=e326]
+            - generic [ref=e329]: Unpaid
+      - region "Card" [ref=e330]:
+        - generic [ref=e331]:
+          - heading "Card" [level=2] [ref=e332]
+          - paragraph [ref=e333]: With header, action, hover variant.
+        - generic [ref=e334]:
+          - generic [ref=e335]:
+            - heading "Standard card" [level=3] [ref=e337]
+            - paragraph [ref=e339]: Simple card with padding and a header title.
+          - generic [ref=e340]:
+            - generic [ref=e341]:
+              - heading "With action" [level=3] [ref=e342]
+              - button "Edit" [ref=e344] [cursor=pointer]:
+                - generic [ref=e345]: Edit
+            - paragraph [ref=e347]: Actions sit in the header, aligned right.
+          - generic [ref=e348] [cursor=pointer]:
+            - heading "Hoverable" [level=3] [ref=e350]
+            - paragraph [ref=e352]: Raises on hover for interactive lists.
+      - region "Modal & Toast" [ref=e353]:
+        - generic [ref=e354]:
+          - heading "Modal & Toast" [level=2] [ref=e355]
+          - paragraph [ref=e356]: Focus trap, Escape close, and stacked toasts.
+        - generic [ref=e359]:
+          - button "Open modal" [ref=e360] [cursor=pointer]:
+            - generic [ref=e361]: Open modal
+          - button "Open confirm modal" [ref=e362] [cursor=pointer]:
+            - generic [ref=e363]: Open confirm modal
+          - button "Toast · success" [ref=e364] [cursor=pointer]:
+            - generic [ref=e365]: Toast · success
+          - button "Toast · error" [ref=e366] [cursor=pointer]:
+            - generic [ref=e367]: Toast · error
+          - button "Toast · warning" [ref=e368] [cursor=pointer]:
+            - generic [ref=e369]: Toast · warning
+          - button "Toast · info" [ref=e370] [cursor=pointer]:
+            - generic [ref=e371]: Toast · info
+      - region "Table" [ref=e372]:
+        - generic [ref=e373]:
+          - heading "Table" [level=2] [ref=e374]
+          - paragraph [ref=e375]: Sorting, pagination, empty and skeleton states.
+        - generic [ref=e376]:
+          - generic [ref=e377]:
+            - heading "Members" [level=3] [ref=e378]
+            - button "Show skeleton" [ref=e380] [cursor=pointer]:
+              - generic [ref=e381]: Show skeleton
+          - generic [ref=e383]:
+            - table [ref=e385]:
+              - rowgroup [ref=e386]:
+                - row "Member Discipline Status Payment Joined" [ref=e387]:
+                  - columnheader "Member" [ref=e388]:
+                    - button "Member" [ref=e389] [cursor=pointer]:
+                      - text: Member
+                      - generic [ref=e390]:
+                        - img [ref=e391]
+                        - img [ref=e393]
+                  - columnheader "Discipline" [ref=e395]:
+                    - button "Discipline" [ref=e396] [cursor=pointer]:
+                      - text: Discipline
+                      - generic [ref=e397]:
+                        - img [ref=e398]
+                        - img [ref=e400]
+                  - columnheader "Status" [ref=e402]:
+                    - button "Status" [ref=e403] [cursor=pointer]:
+                      - text: Status
+                      - generic [ref=e404]:
+                        - img [ref=e405]
+                        - img [ref=e407]
+                  - columnheader "Payment" [ref=e409]:
+                    - button "Payment" [ref=e410] [cursor=pointer]:
+                      - text: Payment
+                      - generic [ref=e411]:
+                        - img [ref=e412]
+                        - img [ref=e414]
+                  - columnheader "Joined" [ref=e416]:
+                    - button "Joined" [ref=e417] [cursor=pointer]:
+                      - text: Joined
+                      - generic [ref=e418]:
+                        - img [ref=e419]
+                        - img [ref=e421]
+              - rowgroup [ref=e423]:
+                - row "Amine Bensalah أمين بن صالح Taekwondo Active Paid 2024-01-12" [ref=e424]:
+                  - cell "Amine Bensalah أمين بن صالح" [ref=e425]:
+                    - generic [ref=e426]:
+                      - generic [ref=e427]: Amine Bensalah
+                      - generic [ref=e428]: أمين بن صالح
+                  - cell "Taekwondo" [ref=e429]
+                  - cell "Active" [ref=e430]:
+                    - generic [ref=e431]:
+                      - img [ref=e433]
+                      - generic [ref=e435]: Active
+                  - cell "Paid" [ref=e436]:
+                    - generic [ref=e437]:
+                      - img [ref=e439]
+                      - generic [ref=e441]: Paid
+                  - cell "2024-01-12" [ref=e442]
+                - row "Yasmine Kaci ياسمين قاسي Karate Active Partial 2024-02-03" [ref=e443]:
+                  - cell "Yasmine Kaci ياسمين قاسي" [ref=e444]:
+                    - generic [ref=e445]:
+                      - generic [ref=e446]: Yasmine Kaci
+                      - generic [ref=e447]: ياسمين قاسي
+                  - cell "Karate" [ref=e448]
+                  - cell "Active" [ref=e449]:
+                    - generic [ref=e450]:
+                      - img [ref=e452]
+                      - generic [ref=e454]: Active
+                  - cell "Partial" [ref=e455]:
+                    - generic [ref=e456]:
+                      - img [ref=e458]
+                      - generic [ref=e460]: Partial
+                  - cell "2024-02-03" [ref=e461]
+                - row "Omar Haddad عمر حداد Boxing Suspended Unpaid 2023-11-28" [ref=e462]:
+                  - cell "Omar Haddad عمر حداد" [ref=e463]:
+                    - generic [ref=e464]:
+                      - generic [ref=e465]: Omar Haddad
+                      - generic [ref=e466]: عمر حداد
+                  - cell "Boxing" [ref=e467]
+                  - cell "Suspended" [ref=e468]:
+                    - generic [ref=e469]:
+                      - img [ref=e471]
+                      - generic [ref=e474]: Suspended
+                  - cell "Unpaid" [ref=e475]:
+                    - generic [ref=e476]:
+                      - img [ref=e478]
+                      - generic [ref=e481]: Unpaid
+                  - cell "2023-11-28" [ref=e482]
+                - row "Lina Berkane لينا بركان Judo Expired Unpaid 2023-08-14" [ref=e483]:
+                  - cell "Lina Berkane لينا بركان" [ref=e484]:
+                    - generic [ref=e485]:
+                      - generic [ref=e486]: Lina Berkane
+                      - generic [ref=e487]: لينا بركان
+                  - cell "Judo" [ref=e488]
+                  - cell "Expired" [ref=e489]:
+                    - generic [ref=e490]:
+                      - img [ref=e492]
+                      - generic [ref=e495]: Expired
+                  - cell "Unpaid" [ref=e496]:
+                    - generic [ref=e497]:
+                      - img [ref=e499]
+                      - generic [ref=e502]: Unpaid
+                  - cell "2023-08-14" [ref=e503]
+                - row "Karim Bouzid كريم بوزيد Taekwondo Pending Pending 2024-03-19" [ref=e504]:
+                  - cell "Karim Bouzid كريم بوزيد" [ref=e505]:
+                    - generic [ref=e506]:
+                      - generic [ref=e507]: Karim Bouzid
+                      - generic [ref=e508]: كريم بوزيد
+                  - cell "Taekwondo" [ref=e509]
+                  - cell "Pending" [ref=e510]:
+                    - generic [ref=e511]:
+                      - img [ref=e513]
+                      - generic [ref=e516]: Pending
+                  - cell "Pending" [ref=e517]:
+                    - generic [ref=e518]:
+                      - img [ref=e520]
+                      - generic [ref=e523]: Pending
+                  - cell "2024-03-19" [ref=e524]
+            - generic [ref=e525]:
+              - generic [ref=e526]: Page 1 of 3 — 12 records
+              - generic [ref=e527]:
+                - button "Previous" [disabled] [ref=e528]:
+                  - generic [ref=e529]: Previous
+                - button "Next" [ref=e530] [cursor=pointer]:
+                  - generic [ref=e531]: Next
+        - generic [ref=e533]:
+          - heading "Empty state" [level=3] [ref=e535]
+          - table [ref=e539]:
+            - rowgroup [ref=e540]:
+              - row "Member Discipline Status Payment Joined" [ref=e541]:
+                - columnheader "Member" [ref=e542]:
+                  - button "Member" [ref=e543] [cursor=pointer]:
+                    - text: Member
+                    - generic [ref=e544]:
+                      - img [ref=e545]
+                      - img [ref=e547]
+                - columnheader "Discipline" [ref=e549]:
+                  - button "Discipline" [ref=e550] [cursor=pointer]:
+                    - text: Discipline
+                    - generic [ref=e551]:
+                      - img [ref=e552]
+                      - img [ref=e554]
+                - columnheader "Status" [ref=e556]:
+                  - button "Status" [ref=e557] [cursor=pointer]:
+                    - text: Status
+                    - generic [ref=e558]:
+                      - img [ref=e559]
+                      - img [ref=e561]
+                - columnheader "Payment" [ref=e563]:
+                  - button "Payment" [ref=e564] [cursor=pointer]:
+                    - text: Payment
+                    - generic [ref=e565]:
+                      - img [ref=e566]
+                      - img [ref=e568]
+                - columnheader "Joined" [ref=e570]:
+                  - button "Joined" [ref=e571] [cursor=pointer]:
+                    - text: Joined
+                    - generic [ref=e572]:
+                      - img [ref=e573]
+                      - img [ref=e575]
+            - rowgroup [ref=e577]:
+              - row "No members yet Create your first member to see them listed here." [ref=e578]:
+                - cell "No members yet Create your first member to see them listed here." [ref=e579]:
+                  - generic [ref=e580]:
+                    - img [ref=e582]
+                    - generic [ref=e585]:
+                      - paragraph [ref=e586]: No members yet
+                      - paragraph [ref=e587]: Create your first member to see them listed here.
+      - region "Skeleton" [ref=e588]:
+        - generic [ref=e589]:
+          - heading "Skeleton" [level=2] [ref=e590]
+          - paragraph [ref=e591]: Text, avatar, card and row variants.
+        - generic [ref=e592]:
+          - heading "Text" [level=3] [ref=e595]
+          - heading "Avatar" [level=3] [ref=e603]
+          - heading "Card" [level=3] [ref=e613]
+          - heading "Row" [level=3] [ref=e622]
+  - region "Notifications"
+  - dialog "Enroll a new member" [ref=e636]:
+    - button "Close modal" [ref=e637]
+    - generic [ref=e638]:
+      - generic [ref=e639]:
+        - generic [ref=e640]:
+          - heading "Enroll a new member" [level=2] [ref=e641]
+          - paragraph [ref=e642]: Fill in the basics — you can edit later.
+        - button "Close" [active] [ref=e643] [cursor=pointer]:
+          - img [ref=e644]
+      - generic [ref=e647]:
+        - generic [ref=e648]:
+          - generic [ref=e649]:
+            - generic [ref=e650]: Full name (Latin)
+            - textbox "Full name (Latin)" [ref=e652]:
+              - /placeholder: Amine Bensalah
+          - generic [ref=e653]:
+            - generic [ref=e654]: Full name (Arabic)
+            - textbox "Full name (Arabic)" [ref=e656]:
+              - /placeholder: أمين بن صالح
+          - generic [ref=e657]:
+            - generic [ref=e658]: Discipline
+            - generic [ref=e659]:
+              - combobox "Discipline" [ref=e660]:
+                - option "Select..." [disabled]
+                - option "Taekwondo" [selected]
+                - option "Karate"
+                - option "Boxing"
+                - option "Judo"
+              - img
+        - generic [ref=e661]:
+          - button "Cancel" [ref=e662] [cursor=pointer]:
+            - generic [ref=e663]: Cancel
+          - button "Save" [ref=e664] [cursor=pointer]:
+            - generic [ref=e665]: Save

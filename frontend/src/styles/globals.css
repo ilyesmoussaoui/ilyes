@@ -40,4 +40,52 @@
     );
     background-size: 1000px 100%;
   }
+
+  .animate-shake {
+    animation: shake 0.4s ease-in-out;
+  }
+
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-6px); }
+    40%, 80% { transform: translateX(6px); }
+  }
+
+  /* §9 — Member Profile highlight animation */
+  .section-highlight {
+    animation: highlight-pulse 2000ms ease-in-out forwards;
+    border-radius: var(--radius-lg, 12px);
+  }
+
+  @keyframes highlight-pulse {
+    0%   { background-color: transparent; }
+    15%  { background-color: var(--color-primary-50); }
+    75%  { background-color: var(--color-primary-50); }
+    100% { background-color: transparent; }
+  }
+
+  @keyframes icon-glow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
+    50%       { box-shadow: 0 0 0 6px rgba(37, 99, 235, 0.18); }
+  }
+
+  .animate-icon-glow {
+    animation: icon-glow 1.6s ease-in-out infinite;
+  }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .section-highlight,
+  .animate-highlight-pulse,
+  .animate-icon-glow {
+    animation: none;
+  }
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* Print styles are fully managed by src/styles/print.css which is imported
+   in main.tsx. Do NOT add @media print rules here — they conflict with
+   the mode-scoped rules in print.css (print-mode-receipt / print-mode-document). */

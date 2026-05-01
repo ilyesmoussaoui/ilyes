@@ -1,0 +1,70 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e181]:
+    - banner [ref=e182]:
+      - link "Sport ERP home" [ref=e183] [cursor=pointer]:
+        - /url: /dashboard
+        - generic [ref=e184]: S
+        - generic [ref=e185]: Sport ERP
+      - generic [ref=e187]:
+        - generic:
+          - img
+        - searchbox "Search" [ref=e188]
+        - button "Face search coming soon" [disabled] [ref=e189]:
+          - img [ref=e190]
+      - generic [ref=e193]:
+        - button "Notifications, 3 unread" [ref=e194] [cursor=pointer]:
+          - img [ref=e195]
+          - generic [ref=e198]: "3"
+        - button "Account menu" [ref=e200] [cursor=pointer]:
+          - generic [ref=e201]: MR
+          - generic [ref=e202]:
+            - generic [ref=e203]: Main Receptionist
+            - generic [ref=e204]: Receptionist
+    - complementary "Primary" [ref=e205]:
+      - navigation "Main navigation" [ref=e206]:
+        - list [ref=e207]:
+          - listitem [ref=e208]:
+            - link "Dashboard" [ref=e209] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e211]
+              - generic [ref=e216]: Dashboard
+          - listitem [ref=e217]:
+            - link "Members" [ref=e218] [cursor=pointer]:
+              - /url: /members
+              - img [ref=e220]
+              - generic [ref=e225]: Members
+          - listitem [ref=e226]:
+            - link "Attendance" [ref=e227] [cursor=pointer]:
+              - /url: /attendance
+              - img [ref=e229]
+              - generic [ref=e237]: Attendance
+          - listitem [ref=e238]:
+            - link "POS" [ref=e239] [cursor=pointer]:
+              - /url: /pos
+              - img [ref=e241]
+              - generic [ref=e245]: POS
+      - generic [ref=e246]:
+        - generic [ref=e247]:
+          - generic [ref=e248]: MR
+          - generic [ref=e249]:
+            - paragraph [ref=e250]: Main Receptionist
+            - paragraph [ref=e251]: Receptionist
+          - button "Sign out" [ref=e252] [cursor=pointer]:
+            - img [ref=e253]
+        - button "Collapse sidebar" [ref=e256] [cursor=pointer]:
+          - img [ref=e257]
+          - generic [ref=e259]: Collapse
+    - main [ref=e260]:
+      - generic [ref=e261]:
+        - navigation "Breadcrumb" [ref=e262]:
+          - list [ref=e263]:
+            - listitem [ref=e264]:
+              - link "Home" [ref=e265] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=e266]:
+              - img [ref=e267]
+            - listitem [ref=e269]: Dashboard
+        - generic [ref=e271]:
+          - heading "Dashboard" [level=1] [ref=e272]
+          - paragraph [ref=e273]: Coming in a later part
+  - region "Notifications"

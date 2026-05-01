@@ -1,0 +1,166 @@
+- generic [ref=e1]:
+  - generic [ref=e29]:
+    - banner [ref=e30]:
+      - link "Sport ERP home" [ref=e31] [cursor=pointer]:
+        - /url: /dashboard
+        - generic [ref=e32]: S
+        - generic [ref=e33]: Sport ERP
+      - generic [ref=e35]:
+        - generic:
+          - img
+        - searchbox "Search" [ref=e36]
+        - button "Face search coming soon" [disabled] [ref=e37]:
+          - img [ref=e38]
+      - generic [ref=e41]:
+        - button "Notifications, 3 unread" [ref=e42] [cursor=pointer]:
+          - img [ref=e43]
+          - generic [ref=e46]: "3"
+        - button "Account menu" [ref=e48] [cursor=pointer]:
+          - generic [ref=e49]: SA
+          - generic [ref=e50]:
+            - generic [ref=e51]: System Administrator
+            - generic [ref=e52]: Admin
+    - complementary "Primary" [ref=e53]:
+      - navigation "Main navigation" [ref=e54]:
+        - list [ref=e55]:
+          - listitem [ref=e56]:
+            - link "Dashboard" [ref=e57] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e59]
+              - generic [ref=e64]: Dashboard
+          - listitem [ref=e65]:
+            - link "Members" [ref=e66] [cursor=pointer]:
+              - /url: /members
+              - img [ref=e68]
+              - generic [ref=e73]: Members
+          - listitem [ref=e74]:
+            - link "Attendance" [ref=e75] [cursor=pointer]:
+              - /url: /attendance
+              - img [ref=e77]
+              - generic [ref=e85]: Attendance
+          - listitem [ref=e86]:
+            - link "Sessions" [ref=e87] [cursor=pointer]:
+              - /url: /sessions
+              - img [ref=e89]
+              - generic [ref=e91]: Sessions
+          - listitem [ref=e92]:
+            - link "POS" [ref=e93] [cursor=pointer]:
+              - /url: /pos
+              - img [ref=e95]
+              - generic [ref=e99]: POS
+          - listitem [ref=e100]:
+            - link "Payments" [ref=e101] [cursor=pointer]:
+              - /url: /payments
+              - img [ref=e103]
+              - generic [ref=e105]: Payments
+          - listitem [ref=e106]:
+            - link "Inventory" [ref=e107] [cursor=pointer]:
+              - /url: /inventory
+              - img [ref=e109]
+              - generic [ref=e113]: Inventory
+          - listitem [ref=e114]:
+            - link "Reports" [ref=e115] [cursor=pointer]:
+              - /url: /reports
+              - img [ref=e117]
+              - generic [ref=e119]: Reports
+          - listitem [ref=e120]:
+            - link "Settings" [ref=e121] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e123]
+              - generic [ref=e126]: Settings
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - generic [ref=e129]: SA
+          - generic [ref=e130]:
+            - paragraph [ref=e131]: System Administrator
+            - paragraph [ref=e132]: Administrator
+          - button "Sign out" [ref=e133] [cursor=pointer]:
+            - img [ref=e134]
+        - button "Collapse sidebar" [ref=e137] [cursor=pointer]:
+          - img [ref=e138]
+          - generic [ref=e140]: Collapse
+    - main [ref=e141]:
+      - generic [ref=e142]:
+        - navigation "Breadcrumb" [ref=e143]:
+          - list [ref=e144]:
+            - listitem [ref=e145]:
+              - link "Home" [ref=e146] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=e147]:
+              - img [ref=e148]
+            - listitem [ref=e150]:
+              - link "Members" [ref=e151] [cursor=pointer]:
+                - /url: /members
+            - listitem [ref=e152]:
+              - img [ref=e153]
+            - listitem [ref=e155]: Add
+        - generic [ref=e157]:
+          - generic [ref=e158]:
+            - generic [ref=e159]:
+              - heading "Add member" [level=1] [ref=e160]
+              - paragraph [ref=e161]: Step 1 of 7
+            - button "Discard draft" [ref=e162] [cursor=pointer]
+          - navigation "Wizard progress" [ref=e163]:
+            - list [ref=e164]:
+              - listitem [ref=e165]:
+                - 'button "Step 1: Classification" [disabled] [ref=e168]':
+                  - generic [ref=e169]: "1"
+                - generic [ref=e171]: Classification
+              - listitem [ref=e172]:
+                - 'button "Step 2: Photo" [disabled] [ref=e175]':
+                  - generic [ref=e176]: "2"
+                - generic [ref=e178]: Photo
+              - listitem [ref=e179]:
+                - 'button "Step 3: Identity" [disabled] [ref=e182]':
+                  - generic [ref=e183]: "3"
+                - generic [ref=e185]: Identity
+              - listitem [ref=e186]:
+                - 'button "Step 4: Contact" [disabled] [ref=e189]':
+                  - generic [ref=e190]: "4"
+                - generic [ref=e192]: Contact
+              - listitem [ref=e193]:
+                - 'button "Step 5: Schedule" [disabled] [ref=e196]':
+                  - generic [ref=e197]: "5"
+                - generic [ref=e199]: Schedule
+              - listitem [ref=e200]:
+                - 'button "Step 6: Documents" [disabled] [ref=e203]':
+                  - generic [ref=e204]: "6"
+                - generic [ref=e206]: Documents
+              - listitem [ref=e207]:
+                - 'button "Step 7: Review" [disabled] [ref=e210]':
+                  - generic [ref=e211]: "7"
+                - generic [ref=e213]: Review
+          - generic [ref=e215]:
+            - generic [ref=e216]:
+              - heading "Member classification" [level=2] [ref=e217]
+              - paragraph [ref=e218]: Choose the type of member you are registering. You can change this later.
+            - generic [ref=e219]:
+              - button "Athlete Members training on disciplines and schedules." [ref=e220] [cursor=pointer]:
+                - img [ref=e222]
+                - generic [ref=e223]:
+                  - heading "Athlete" [level=3] [ref=e224]
+                  - paragraph [ref=e225]: Members training on disciplines and schedules.
+              - button "Staff Managers, receptionists, coaches, accountants." [active] [pressed] [ref=e226] [cursor=pointer]:
+                - img [ref=e228]
+                - generic [ref=e231]:
+                  - heading "Staff" [level=3] [ref=e232]
+                  - paragraph [ref=e233]: Managers, receptionists, coaches, accountants.
+              - button "External Visitors or consultants with limited access." [ref=e234] [cursor=pointer]:
+                - img [ref=e236]
+                - generic [ref=e239]:
+                  - heading "External" [level=3] [ref=e240]
+                  - paragraph [ref=e241]: Visitors or consultants with limited access.
+            - generic [ref=e243]:
+              - generic [ref=e244]: Staff role
+              - generic [ref=e245]:
+                - combobox "Staff role" [ref=e246]:
+                  - option "Select staff role" [disabled] [selected]
+                  - option "Manager"
+                  - option "Receptionist"
+                  - option "Coach"
+                  - option "Accountant"
+                - img
+              - paragraph [ref=e247]: Please select a staff role
+          - button "Next" [disabled] [ref=e252]:
+            - generic [ref=e253]: Next
+  - region "Notifications"

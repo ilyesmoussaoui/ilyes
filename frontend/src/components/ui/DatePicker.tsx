@@ -1,4 +1,4 @@
-import { useId } from 'react';
+import { useEffect, useId, useState } from 'react';
 import { cn } from '../../lib/cn';
 import { daysInMonth, toIsoDate } from '../../lib/format';
 import { ChevronDownIcon } from './Icon';
@@ -52,9 +52,16 @@ export function DatePicker({
   const effectiveMaxYear = maxYear ?? currentYear;
 
   const parsed = parseIso(value);
-  const year = parsed.year;
-  const month = parsed.month;
-  const day = parsed.day;
+  const [year, setYear] = useState<number | null>(parsed.year);
+  const [month, setMonth] = useState<number | null>(parsed.month);
+  const [day, setDay] = useState<number | null>(parsed.day);
+
+  useEffect(() => {
+    const p = parseIso(value);
+    setYear(p.year);
+    setMonth(p.month);
+    setDay(p.day);
+  }, [value]);
 
   const years: number[] = [];
   for (let y = effectiveMaxYear; y >= minYear; y--) years.push(y);
@@ -63,7 +70,7 @@ export function DatePicker({
   const dayCount = year && month ? daysInMonth(year, month) : 31;
   const maxDay = year === currentYear && month === currentMonth ? currentDay : dayCount;
 
-  const emit = (nextYear: number | null, nextMonth: number | null, nextDay: number | null) => {
+  const emitIfComplete = (nextYear: number | null, nextMonth: number | null, nextDay: number | null) => {
     if (nextYear && nextMonth && nextDay) {
       const safeDay = Math.min(nextDay, daysInMonth(nextYear, nextMonth));
       const iso = toIsoDate(nextYear, nextMonth, safeDay);
@@ -73,9 +80,43 @@ export function DatePicker({
         return;
       }
       setValue(iso);
-    } else {
+    } else if (value !== null) {
       setValue(null);
     }
+  };
+
+  const handleYear = (v: string) => {
+    const nextYear = v ? Number(v) : null;
+    setYear(nextYear);
+    let nextMonth = month;
+    let nextDay = day;
+    if (nextYear === currentYear && month && month > currentMonth) {
+      nextMonth = null;
+      nextDay = null;
+      setMonth(null);
+      setDay(null);
+    }
+    emitIfComplete(nextYear, nextMonth, nextDay);
+  };
+
+  const handleMonth = (v: string) => {
+    const nextMonth = v ? Number(v) : null;
+    setMonth(nextMonth);
+    let nextDay = day;
+    if (year && nextMonth && day) {
+      const maxDays = daysInMonth(year, nextMonth);
+      if (day > maxDays) {
+        nextDay = null;
+        setDay(null);
+      }
+    }
+    emitIfComplete(year, nextMonth, nextDay);
+  };
+
+  const handleDay = (v: string) => {
+    const nextDay = v ? Number(v) : null;
+    setDay(nextDay);
+    emitIfComplete(year, month, nextDay);
   };
 
   return (
@@ -83,19 +124,19 @@ export function DatePicker({
       {label && <label className="text-sm font-medium text-neutral-700">{label}</label>}
       <div className="grid grid-cols-3 gap-2">
         <NativeSelect
-          id={`${baseId}-day`}
-          label="Day"
-          value={day ?? ''}
-          disabled={disabled || !month || !year}
+          id={`${baseId}-year`}
+          label="Year"
+          value={year ?? ''}
+          disabled={disabled}
           hasError={Boolean(error)}
-          setValue={(v) => emit(year, month, v ? Number(v) : null)}
+          setValue={handleYear}
         >
           <option value="" disabled>
-            Day
+            Year
           </option>
-          {Array.from({ length: maxDay }, (_, i) => i + 1).map((d) => (
-            <option key={d} value={d}>
-              {d}
+          {years.map((y) => (
+            <option key={y} value={y}>
+              {y}
             </option>
           ))}
         </NativeSelect>
@@ -106,7 +147,7 @@ export function DatePicker({
           value={month ?? ''}
           disabled={disabled || !year}
           hasError={Boolean(error)}
-          setValue={(v) => emit(year, v ? Number(v) : null, day)}
+          setValue={handleMonth}
         >
           <option value="" disabled>
             Month
@@ -122,19 +163,19 @@ export function DatePicker({
         </NativeSelect>
 
         <NativeSelect
-          id={`${baseId}-year`}
-          label="Year"
-          value={year ?? ''}
-          disabled={disabled}
+          id={`${baseId}-day`}
+          label="Day"
+          value={day ?? ''}
+          disabled={disabled || !month || !year}
           hasError={Boolean(error)}
-          setValue={(v) => emit(v ? Number(v) : null, month, day)}
+          setValue={handleDay}
         >
           <option value="" disabled>
-            Year
+            Day
           </option>
-          {years.map((y) => (
-            <option key={y} value={y}>
-              {y}
+          {Array.from({ length: maxDay }, (_, i) => i + 1).map((d) => (
+            <option key={d} value={d}>
+              {d}
             </option>
           ))}
         </NativeSelect>

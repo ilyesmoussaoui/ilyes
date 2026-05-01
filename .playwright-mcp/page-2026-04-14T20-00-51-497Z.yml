@@ -1,0 +1,25 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic "Manual search area" [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - generic [ref=e7]: Search members by name
+          - img
+          - searchbox "Search members by name" [active] [ref=e8]
+        - region "Search results" [ref=e9]:
+          - generic [ref=e10]:
+            - img [ref=e11]
+            - paragraph [ref=e14]: Type at least 2 characters to search
+    - navigation "Kiosk controls" [ref=e15]:
+      - generic [ref=e16]:
+        - img [ref=e17]
+        - time [ref=e20]: 21:00:51|Tuesday 14 April 2026
+      - generic [ref=e21]:
+        - button "Switch to camera mode" [ref=e22] [cursor=pointer]:
+          - img [ref=e23]
+          - generic [ref=e26]: Camera Mode
+        - link "Exit kiosk mode" [ref=e27] [cursor=pointer]:
+          - /url: /attendance
+          - img [ref=e28]
+          - generic [ref=e31]: Exit Kiosk
+  - region "Notifications"

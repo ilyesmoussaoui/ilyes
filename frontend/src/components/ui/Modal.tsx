@@ -1,5 +1,6 @@
 import { useEffect, useRef, type ReactNode } from 'react';
 import { createPortal } from 'react-dom';
+import { useTranslation } from 'react-i18next';
 import { cn } from '../../lib/cn';
 import { useFocusTrap } from '../../hooks/useFocusTrap';
 import { Button } from './Button';
@@ -30,6 +31,7 @@ export function Modal({
   size = 'md',
   closeOnOverlay = true,
 }: ModalProps) {
+  const { t } = useTranslation();
   const panelRef = useRef<HTMLDivElement>(null);
   useFocusTrap(panelRef, open);
 
@@ -60,7 +62,7 @@ export function Modal({
     >
       <button
         type="button"
-        aria-label="Close modal"
+        aria-label={t('modal.close')}
         className="absolute inset-0 h-full w-full cursor-default bg-neutral-900/60"
         onClick={() => closeOnOverlay && onClose()}
       />
@@ -87,7 +89,7 @@ export function Modal({
             </div>
             <button
               type="button"
-              aria-label="Close"
+              aria-label={t('modal.close')}
               onClick={onClose}
               className="flex h-8 w-8 items-center justify-center rounded-md text-neutral-500 transition-colors hover:bg-neutral-100 hover:text-neutral-700 focus:outline-none focus:ring-2 focus:ring-primary-400"
             >
@@ -120,24 +122,27 @@ export function ConfirmModal({
   onConfirm,
   title,
   message,
-  confirmLabel = 'Confirm',
-  cancelLabel = 'Cancel',
+  confirmLabel,
+  cancelLabel,
   destructive = true,
   loading = false,
 }: ConfirmModalProps) {
+  const { t } = useTranslation();
+  const resolvedConfirmLabel = confirmLabel ?? t('common.actions.confirm');
+  const resolvedCancelLabel = cancelLabel ?? t('common.actions.cancel');
   return (
     <Modal open={open} onClose={onClose} title={title} size="sm">
       <p className="text-sm text-neutral-600">{message}</p>
       <div className="mt-6 flex justify-end gap-2">
         <Button variant="ghost" onClick={onClose} disabled={loading}>
-          {cancelLabel}
+          {resolvedCancelLabel}
         </Button>
         <Button
           variant={destructive ? 'danger' : 'primary'}
           onClick={onConfirm}
           loading={loading}
         >
-          {confirmLabel}
+          {resolvedConfirmLabel}
         </Button>
       </div>
     </Modal>

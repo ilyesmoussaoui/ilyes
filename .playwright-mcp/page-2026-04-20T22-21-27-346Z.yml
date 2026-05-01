@@ -1,0 +1,13 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - heading "Unexpected Application Error!" [level=2] [ref=e582]
+    - heading "Cannot read properties of undefined (reading 'charAt')" [level=3] [ref=e583]
+    - generic [ref=e584]: "TypeError: Cannot read properties of undefined (reading 'charAt') at Object.accessor (http://localhost:5173/src/features/members/profile/sections/AttendanceSection.tsx?t=1776722691752:169:23) at http://localhost:5173/src/components/ui/Table.tsx:150:22 at Array.map (<anonymous>) at http://localhost:5173/src/components/ui/Table.tsx:146:24 at Array.map (<anonymous>) at Table (http://localhost:5173/src/components/ui/Table.tsx:143:22) at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom-DoAJ_auL.js?v=b9b54483:9624:19) at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/react-dom-DoAJ_auL.js?v=b9b54483:12366:12) at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom-DoAJ_auL.js?v=b9b54483:13093:41) at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/react-dom-DoAJ_auL.js?v=b9b54483:15986:12)"
+    - paragraph [ref=e585]: 💿 Hey developer 👋
+    - paragraph [ref=e586]:
+      - text: You can provide a way better UX than this when your app throws errors by providing your own
+      - code [ref=e587]: ErrorBoundary
+      - text: or
+      - code [ref=e588]: errorElement
+      - text: prop on your route.
+  - region "Notifications"

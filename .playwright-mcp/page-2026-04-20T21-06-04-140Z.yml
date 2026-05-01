@@ -1,0 +1,388 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - link "Sport ERP home" [ref=e5] [cursor=pointer]:
+        - /url: /dashboard
+        - generic [ref=e6]: S
+        - generic [ref=e7]: Sport ERP
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - generic:
+            - img
+          - combobox "Search" [ref=e11]
+          - button "Recherche par visage — désactivé" [ref=e12] [cursor=pointer]:
+            - img [ref=e13]
+        - radiogroup "Search scope" [ref=e16]:
+          - radio "All" [checked] [ref=e17] [cursor=pointer]
+          - radio "Members" [ref=e18] [cursor=pointer]
+          - radio "Payments" [ref=e19] [cursor=pointer]
+          - radio "Products" [ref=e20] [cursor=pointer]
+      - generic [ref=e21]:
+        - 'button "Sync status: Synced. 0 pending." [ref=e23] [cursor=pointer]':
+          - img [ref=e25]
+          - generic [ref=e27]: Synced
+        - button "Notifications" [ref=e28] [cursor=pointer]:
+          - img [ref=e29]
+        - button "Account menu" [ref=e33] [cursor=pointer]:
+          - generic [ref=e34]: SA
+          - generic [ref=e35]:
+            - generic [ref=e36]: System Administrator
+            - generic [ref=e37]: Admin
+    - complementary "Primary" [ref=e38]:
+      - navigation "Main navigation" [ref=e39]:
+        - list [ref=e40]:
+          - listitem [ref=e41]:
+            - link "Dashboard" [ref=e42] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e44]
+              - generic [ref=e49]: Dashboard
+          - listitem [ref=e50]:
+            - link "Members" [ref=e51] [cursor=pointer]:
+              - /url: /members
+              - img [ref=e53]
+              - generic [ref=e58]: Members
+          - listitem [ref=e59]:
+            - link "Attendance" [ref=e60] [cursor=pointer]:
+              - /url: /attendance
+              - img [ref=e62]
+              - generic [ref=e70]: Attendance
+          - listitem [ref=e71]:
+            - link "Sessions" [ref=e72] [cursor=pointer]:
+              - /url: /sessions
+              - img [ref=e74]
+              - generic [ref=e76]: Sessions
+          - listitem [ref=e77]:
+            - link "POS" [ref=e78] [cursor=pointer]:
+              - /url: /pos
+              - img [ref=e80]
+              - generic [ref=e84]: POS
+          - listitem [ref=e85]:
+            - link "Payments" [ref=e86] [cursor=pointer]:
+              - /url: /payments
+              - img [ref=e88]
+              - generic [ref=e90]: Payments
+          - listitem [ref=e91]:
+            - link "Inventory" [ref=e92] [cursor=pointer]:
+              - /url: /inventory
+              - img [ref=e94]
+              - generic [ref=e98]: Inventory
+          - listitem [ref=e99]:
+            - link "Expenses" [ref=e100] [cursor=pointer]:
+              - /url: /expenses
+              - img [ref=e102]
+              - generic [ref=e105]: Expenses
+          - listitem [ref=e106]:
+            - link "Reports" [ref=e107] [cursor=pointer]:
+              - /url: /reports
+              - img [ref=e109]
+              - generic [ref=e111]: Reports
+          - listitem [ref=e112]:
+            - link "Settings" [ref=e113] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e115]
+              - generic [ref=e118]: Settings
+      - generic [ref=e119]:
+        - generic [ref=e120]:
+          - generic [ref=e121]: SA
+          - generic [ref=e122]:
+            - paragraph [ref=e123]: System Administrator
+            - paragraph [ref=e124]: Administrator
+          - button "Sign out" [ref=e125] [cursor=pointer]:
+            - img [ref=e126]
+        - button "Collapse sidebar" [ref=e129] [cursor=pointer]:
+          - img [ref=e130]
+          - generic [ref=e132]: Collapse
+    - main [ref=e133]:
+      - generic [ref=e134]:
+        - navigation "Breadcrumb" [ref=e135]:
+          - list [ref=e136]:
+            - listitem [ref=e137]:
+              - link "Home" [ref=e138] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=e139]:
+              - img [ref=e140]
+            - listitem [ref=e142]:
+              - link "Members" [ref=e143] [cursor=pointer]:
+                - /url: /members
+            - listitem [ref=e144]:
+              - img [ref=e145]
+            - listitem [ref=e147]:
+              - link "Refresh Test" [ref=e148] [cursor=pointer]:
+                - /url: /members/bbbbbbbb-1111-2222-3333-444444444444
+            - listitem [ref=e149]:
+              - img [ref=e150]
+            - listitem [ref=e152]: Edit
+        - generic [ref=e154]:
+          - generic [ref=e156]: RT
+          - generic [ref=e157]:
+            - generic [ref=e158]:
+              - heading "Refresh Test" [level=1] [ref=e159]
+              - generic [ref=e160]:
+                - img [ref=e162]
+                - generic [ref=e164]: Active
+              - generic [ref=e165]: Athlete
+            - generic [ref=e166]:
+              - generic [ref=e167]: "ID:"
+              - generic [ref=e168]: bbbbbbbb-1111-2222-3333-444444444444
+              - button "Copy member ID" [ref=e170] [cursor=pointer]:
+                - img [ref=e171]
+          - generic [ref=e174]:
+            - generic [ref=e175]: Editing
+            - button "Delete" [ref=e177] [cursor=pointer]:
+              - img [ref=e179]
+              - generic [ref=e183]: Delete
+        - generic [ref=e184]:
+          - navigation "Edit member tabs" [ref=e185]:
+            - tablist [ref=e186]:
+              - tab "Identity" [selected] [ref=e187] [cursor=pointer]:
+                - img [ref=e189]
+                - generic [ref=e192]: Identity
+              - tab "Photo" [ref=e194] [cursor=pointer]:
+                - img [ref=e196]
+                - generic [ref=e199]: Photo
+              - tab "Contact" [ref=e200] [cursor=pointer]:
+                - img [ref=e202]
+                - generic [ref=e204]: Contact
+              - tab "Disciplines" [ref=e205] [cursor=pointer]:
+                - img [ref=e207]
+                - generic [ref=e215]: Disciplines
+              - tab "Documents" [ref=e216] [cursor=pointer]:
+                - img [ref=e218]
+                - generic [ref=e221]: Documents
+              - tab "Billing" [ref=e222] [cursor=pointer]:
+                - img [ref=e224]
+                - generic [ref=e226]: Billing
+              - tab "Equipment" [ref=e227] [cursor=pointer]:
+                - img [ref=e229]
+                - generic [ref=e233]: Equipment
+              - tab "Schedule" [ref=e234] [cursor=pointer]:
+                - img [ref=e236]
+                - generic [ref=e239]: Schedule
+              - tab "Family" [ref=e240] [cursor=pointer]:
+                - img [ref=e242]
+                - generic [ref=e247]: Family
+              - tab "Notes" [ref=e248] [cursor=pointer]:
+                - img [ref=e250]
+                - generic [ref=e253]: Notes
+              - tab "Audit Log" [ref=e254] [cursor=pointer]:
+                - img [ref=e256]
+                - generic [ref=e259]: Audit Log
+          - tabpanel "Identity" [ref=e260]:
+            - heading "Identity" [level=2] [ref=e262]
+            - generic [ref=e266]:
+              - generic [ref=e267]:
+                - generic [ref=e268]:
+                  - heading "Name (Latin)" [level=3] [ref=e269]
+                  - generic [ref=e270]:
+                    - generic [ref=e271]: First name
+                    - textbox "First name" [ref=e273]: Refresh
+                  - generic [ref=e274]:
+                    - generic [ref=e275]: Last name
+                    - textbox "Last name" [ref=e277]: Test
+                - generic [ref=e278]:
+                  - heading "Name (Arabic)" [level=3] [ref=e279]
+                  - generic [ref=e280]:
+                    - generic [ref=e281]: First name
+                    - textbox "First name" [ref=e283]
+                  - generic [ref=e284]:
+                    - generic [ref=e285]: Last name
+                    - textbox "Last name" [ref=e287]
+              - generic [ref=e288]:
+                - generic [ref=e289]:
+                  - generic [ref=e290]: Gender
+                  - generic [ref=e291]:
+                    - combobox "Gender" [ref=e292]:
+                      - option "Select gender" [disabled] [selected]
+                      - option "Male"
+                      - option "Female"
+                    - img
+                  - paragraph [ref=e293]: Gender is required
+                - generic [ref=e294]:
+                  - generic [ref=e295]:
+                    - generic [ref=e296]: Date of birth
+                    - generic [ref=e297]:
+                      - generic [ref=e298]:
+                        - generic [ref=e299]: Year
+                        - combobox "Year" [ref=e300]:
+                          - option "Year" [disabled]
+                          - option "2026"
+                          - option "2025"
+                          - option "2024"
+                          - option "2023"
+                          - option "2022"
+                          - option "2021"
+                          - option "2020"
+                          - option "2019"
+                          - option "2018"
+                          - option "2017"
+                          - option "2016"
+                          - option "2015"
+                          - option "2014"
+                          - option "2013"
+                          - option "2012"
+                          - option "2011"
+                          - option "2010"
+                          - option "2009"
+                          - option "2008"
+                          - option "2007"
+                          - option "2006"
+                          - option "2005"
+                          - option "2004"
+                          - option "2003"
+                          - option "2002"
+                          - option "2001"
+                          - option "2000" [selected]
+                          - option "1999"
+                          - option "1998"
+                          - option "1997"
+                          - option "1996"
+                          - option "1995"
+                          - option "1994"
+                          - option "1993"
+                          - option "1992"
+                          - option "1991"
+                          - option "1990"
+                          - option "1989"
+                          - option "1988"
+                          - option "1987"
+                          - option "1986"
+                          - option "1985"
+                          - option "1984"
+                          - option "1983"
+                          - option "1982"
+                          - option "1981"
+                          - option "1980"
+                          - option "1979"
+                          - option "1978"
+                          - option "1977"
+                          - option "1976"
+                          - option "1975"
+                          - option "1974"
+                          - option "1973"
+                          - option "1972"
+                          - option "1971"
+                          - option "1970"
+                          - option "1969"
+                          - option "1968"
+                          - option "1967"
+                          - option "1966"
+                          - option "1965"
+                          - option "1964"
+                          - option "1963"
+                          - option "1962"
+                          - option "1961"
+                          - option "1960"
+                          - option "1959"
+                          - option "1958"
+                          - option "1957"
+                          - option "1956"
+                          - option "1955"
+                          - option "1954"
+                          - option "1953"
+                          - option "1952"
+                          - option "1951"
+                          - option "1950"
+                          - option "1949"
+                          - option "1948"
+                          - option "1947"
+                          - option "1946"
+                          - option "1945"
+                          - option "1944"
+                          - option "1943"
+                          - option "1942"
+                          - option "1941"
+                          - option "1940"
+                          - option "1939"
+                          - option "1938"
+                          - option "1937"
+                          - option "1936"
+                          - option "1935"
+                          - option "1934"
+                          - option "1933"
+                          - option "1932"
+                          - option "1931"
+                          - option "1930"
+                        - img
+                      - generic [ref=e301]:
+                        - generic [ref=e302]: Month
+                        - combobox "Month" [ref=e303]:
+                          - option "Month" [disabled]
+                          - option "January" [selected]
+                          - option "February"
+                          - option "March"
+                          - option "April"
+                          - option "May"
+                          - option "June"
+                          - option "July"
+                          - option "August"
+                          - option "September"
+                          - option "October"
+                          - option "November"
+                          - option "December"
+                        - img
+                      - generic [ref=e304]:
+                        - generic [ref=e305]: Day
+                        - combobox "Day" [ref=e306]:
+                          - option "Day" [disabled]
+                          - option "1" [selected]
+                          - option "2"
+                          - option "3"
+                          - option "4"
+                          - option "5"
+                          - option "6"
+                          - option "7"
+                          - option "8"
+                          - option "9"
+                          - option "10"
+                          - option "11"
+                          - option "12"
+                          - option "13"
+                          - option "14"
+                          - option "15"
+                          - option "16"
+                          - option "17"
+                          - option "18"
+                          - option "19"
+                          - option "20"
+                          - option "21"
+                          - option "22"
+                          - option "23"
+                          - option "24"
+                          - option "25"
+                          - option "26"
+                          - option "27"
+                          - option "28"
+                          - option "29"
+                          - option "30"
+                          - option "31"
+                        - img
+                  - generic [ref=e307]:
+                    - generic [ref=e308]: "Age: 26 years"
+                    - generic [ref=e309]: "School level: Adult"
+              - generic [ref=e311]:
+                - generic [ref=e312]: Place of birth (wilaya)
+                - generic [ref=e313]:
+                  - img [ref=e314]
+                  - combobox "Place of birth (wilaya)" [ref=e317]
+                  - img [ref=e318]
+                - paragraph [ref=e320]: Place of birth is required
+              - generic [ref=e321]:
+                - button "Cancel" [disabled] [ref=e322]:
+                  - generic [ref=e323]: Cancel
+                - button "Save changes" [disabled] [ref=e324]:
+                  - generic [ref=e325]: Save changes
+  - region "Notifications"
+  - dialog "Delete member?" [ref=e326]:
+    - button "Close modal" [ref=e327]
+    - generic [ref=e328]:
+      - generic [ref=e329]:
+        - heading "Delete member?" [level=2] [ref=e331]
+        - button "Close" [active] [ref=e332] [cursor=pointer]:
+          - img [ref=e333]
+      - generic [ref=e336]:
+        - paragraph [ref=e337]: This will permanently remove Refresh Test and all related records from active lists. This action cannot be undone.
+        - generic [ref=e338]:
+          - button "Cancel" [ref=e339] [cursor=pointer]:
+            - generic [ref=e340]: Cancel
+          - button "Delete member" [ref=e341] [cursor=pointer]:
+            - generic [ref=e342]: Delete member

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Sport ERP">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#g)"/>
+  <g transform="translate(128 128)">
+    <path d="M48 230c26 22 60 30 90 30 43 0 78-22 78-57 0-30-22-48-61-57l-26-6c-17-4-26-11-26-22 0-13 13-22 30-22 17 0 30 9 39 22l48-22c-17-30-48-48-87-48-43 0-78 22-78 57 0 30 22 48 61 57l26 6c17 4 26 11 26 22 0 13-13 22-30 22-22 0-39-9-52-26z" fill="#fff"/>
+  </g>
+</svg>

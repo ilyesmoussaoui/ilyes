@@ -2,7 +2,9 @@ import { useCallback, useEffect, useMemo, useState, type ReactNode } from 'react
 import { createPortal } from 'react-dom';
 import { cn } from '../../lib/cn';
 import type { ToastItem, ToastType } from '../../types/ui';
-import { ToastContext } from '../../hooks/useToast';
+import { ToastContext, useToast } from '../../hooks/useToast';
+
+export { useToast };
 import { CheckIcon, AlertIcon, InfoIcon, XIcon } from './Icon';
 
 const MAX_STACK = 3;

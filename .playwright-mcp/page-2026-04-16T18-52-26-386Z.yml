@@ -1,0 +1,260 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e33]:
+    - banner [ref=e34]:
+      - link "Sport ERP home" [ref=e35] [cursor=pointer]:
+        - /url: /dashboard
+        - generic [ref=e36]: S
+        - generic [ref=e37]: Sport ERP
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - generic:
+            - img
+          - combobox "Search" [ref=e41]
+          - button "Recherche par visage — désactivé" [ref=e42] [cursor=pointer]:
+            - img [ref=e43]
+        - radiogroup "Search scope" [ref=e46]:
+          - radio "All" [checked] [ref=e47] [cursor=pointer]
+          - radio "Members" [ref=e48] [cursor=pointer]
+          - radio "Payments" [ref=e49] [cursor=pointer]
+          - radio "Products" [ref=e50] [cursor=pointer]
+      - generic [ref=e51]:
+        - 'button "Sync status: Synced. 0 pending." [ref=e53] [cursor=pointer]':
+          - img [ref=e436]
+          - generic [ref=e57]: Synced
+        - button "Notifications" [ref=e58] [cursor=pointer]:
+          - img [ref=e59]
+        - button "Account menu" [ref=e63] [cursor=pointer]:
+          - generic [ref=e64]: SA
+          - generic [ref=e65]:
+            - generic [ref=e66]: System Administrator
+            - generic [ref=e67]: Admin
+    - complementary "Primary" [ref=e68]:
+      - navigation "Main navigation" [ref=e69]:
+        - list [ref=e70]:
+          - listitem [ref=e71]:
+            - link "Dashboard" [ref=e72] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e74]
+              - generic [ref=e79]: Dashboard
+          - listitem [ref=e80]:
+            - link "Members" [ref=e81] [cursor=pointer]:
+              - /url: /members
+              - img [ref=e83]
+              - generic [ref=e88]: Members
+          - listitem [ref=e89]:
+            - link "Attendance" [ref=e90] [cursor=pointer]:
+              - /url: /attendance
+              - img [ref=e92]
+              - generic [ref=e100]: Attendance
+          - listitem [ref=e101]:
+            - link "Sessions" [ref=e102] [cursor=pointer]:
+              - /url: /sessions
+              - img [ref=e104]
+              - generic [ref=e106]: Sessions
+          - listitem [ref=e107]:
+            - link "POS" [ref=e108] [cursor=pointer]:
+              - /url: /pos
+              - img [ref=e110]
+              - generic [ref=e114]: POS
+          - listitem [ref=e115]:
+            - link "Payments" [ref=e116] [cursor=pointer]:
+              - /url: /payments
+              - img [ref=e118]
+              - generic [ref=e120]: Payments
+          - listitem [ref=e121]:
+            - link "Inventory" [ref=e122] [cursor=pointer]:
+              - /url: /inventory
+              - img [ref=e124]
+              - generic [ref=e128]: Inventory
+          - listitem [ref=e129]:
+            - link "Expenses" [ref=e130] [cursor=pointer]:
+              - /url: /expenses
+              - img [ref=e132]
+              - generic [ref=e135]: Expenses
+          - listitem [ref=e136]:
+            - link "Reports" [ref=e137] [cursor=pointer]:
+              - /url: /reports
+              - img [ref=e139]
+              - generic [ref=e141]: Reports
+          - listitem [ref=e142]:
+            - link "Settings" [ref=e143] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e145]
+              - generic [ref=e148]: Settings
+      - generic [ref=e149]:
+        - generic [ref=e150]:
+          - generic [ref=e151]: SA
+          - generic [ref=e152]:
+            - paragraph [ref=e153]: System Administrator
+            - paragraph [ref=e154]: Administrator
+          - button "Sign out" [ref=e155] [cursor=pointer]:
+            - img [ref=e156]
+        - button "Collapse sidebar" [ref=e159] [cursor=pointer]:
+          - img [ref=e160]
+          - generic [ref=e162]: Collapse
+    - main [ref=e163]:
+      - generic [ref=e747]:
+        - navigation "Breadcrumb" [ref=e748]:
+          - list [ref=e749]:
+            - listitem [ref=e750]:
+              - link "Home" [ref=e751] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=e752]:
+              - img [ref=e753]
+            - listitem [ref=e755]:
+              - link "Members" [ref=e756] [cursor=pointer]:
+                - /url: /members
+            - listitem [ref=e757]:
+              - img [ref=e758]
+            - listitem [ref=e760]: Nabil Djebbar
+        - generic [ref=e763]:
+          - generic [ref=e765]: ND
+          - generic [ref=e766]:
+            - generic [ref=e767]:
+              - heading "Nabil Djebbar" [level=1] [ref=e768]
+              - generic [ref=e769]:
+                - img [ref=e771]
+                - generic [ref=e773]: Active
+            - paragraph [ref=e774]: نبيل جبار
+            - generic [ref=e775]:
+              - generic [ref=e776]: Athlete
+              - generic [ref=e777]: Member since 16 Apr 2026
+          - 'button "Outstanding balance: 1500.00 DZD. Click to record payment." [ref=e779] [cursor=pointer]':
+            - generic [ref=e780]: Outstanding balance
+            - generic [ref=e781]: 1500.00 DZD
+            - generic [ref=e782]: Record payment →
+        - button "Edit Member" [ref=e784] [cursor=pointer]:
+          - img [ref=e786]
+          - generic [ref=e789]: Edit Member
+        - generic [ref=e790]:
+          - navigation "Profile sections" [ref=e791]:
+            - list [ref=e792]:
+              - listitem [ref=e793]:
+                - button "Overview" [ref=e794] [cursor=pointer]:
+                  - img [ref=e796]
+                  - generic [ref=e801]: Overview
+              - listitem [ref=e802]:
+                - button "Identity" [ref=e803] [cursor=pointer]:
+                  - img [ref=e805]
+                  - generic [ref=e808]: Identity
+              - listitem [ref=e809]:
+                - button "Contact" [ref=e810] [cursor=pointer]:
+                  - img [ref=e812]
+                  - generic [ref=e814]: Contact
+              - listitem [ref=e815]:
+                - button "Disciplines 1" [ref=e816] [cursor=pointer]:
+                  - img [ref=e818]
+                  - generic [ref=e826]: Disciplines
+                  - generic [ref=e827]: "1"
+              - listitem [ref=e828]:
+                - button "Documents" [ref=e829] [cursor=pointer]:
+                  - img [ref=e831]
+                  - generic [ref=e834]: Documents
+              - listitem [ref=e835]:
+                - button "Attendance" [ref=e836] [cursor=pointer]:
+                  - img [ref=e838]
+                  - generic [ref=e840]: Attendance
+              - listitem [ref=e841]:
+                - button "Payments 1" [ref=e842] [cursor=pointer]:
+                  - img [ref=e844]
+                  - generic [ref=e846]: Payments
+                  - generic [ref=e847]: "1"
+              - listitem [ref=e848]:
+                - button "Equipment" [ref=e849] [cursor=pointer]:
+                  - img [ref=e851]
+                  - generic [ref=e855]: Equipment
+              - listitem [ref=e856]:
+                - button "Schedule" [ref=e857] [cursor=pointer]:
+                  - img [ref=e859]
+                  - generic [ref=e862]: Schedule
+              - listitem [ref=e863]:
+                - button "Family" [ref=e864] [cursor=pointer]:
+                  - img [ref=e866]
+                  - generic [ref=e871]: Family
+              - listitem [ref=e872]:
+                - button "Notes" [ref=e873] [cursor=pointer]:
+                  - img [ref=e875]
+                  - generic [ref=e877]: Notes
+              - listitem [ref=e878]:
+                - button "Audit Log" [ref=e879] [cursor=pointer]:
+                  - img [ref=e881]
+                  - generic [ref=e884]: Audit Log
+          - main "Overview" [ref=e885]:
+            - heading "Overview" [level=2] [ref=e887]
+            - generic [ref=e888]:
+              - generic [ref=e889]:
+                - generic [ref=e890]:
+                  - heading "Disciplines" [level=3] [ref=e891]
+                  - button "View all" [ref=e893] [cursor=pointer]
+                - list [ref=e895]:
+                  - listitem [ref=e896]:
+                    - generic [ref=e897]:
+                      - paragraph [ref=e898]: Taekwondo
+                      - paragraph [ref=e899]: "Belt: White"
+                    - generic [ref=e900]:
+                      - img [ref=e902]
+                      - generic [ref=e904]: active
+              - generic [ref=e905]:
+                - generic [ref=e906]:
+                  - heading "Attendance (last 30 days)" [level=3] [ref=e907]
+                  - button "View all" [ref=e909] [cursor=pointer]
+                - 'img "Attendance heatmap: 0 sessions attended" [ref=e911]':
+                  - generic [ref=e912]:
+                    - 'generic "18/03/2026: No session" [ref=e913]'
+                    - 'generic "19/03/2026: No session" [ref=e914]'
+                    - 'generic "20/03/2026: No session" [ref=e915]'
+                    - 'generic "21/03/2026: No session" [ref=e916]'
+                    - 'generic "22/03/2026: No session" [ref=e917]'
+                    - 'generic "23/03/2026: No session" [ref=e918]'
+                  - generic [ref=e919]:
+                    - 'generic "24/03/2026: No session" [ref=e920]'
+                    - 'generic "25/03/2026: No session" [ref=e921]'
+                    - 'generic "26/03/2026: No session" [ref=e922]'
+                    - 'generic "27/03/2026: No session" [ref=e923]'
+                    - 'generic "28/03/2026: No session" [ref=e924]'
+                    - 'generic "29/03/2026: No session" [ref=e925]'
+                  - generic [ref=e926]:
+                    - 'generic "30/03/2026: No session" [ref=e927]'
+                    - 'generic "31/03/2026: No session" [ref=e928]'
+                    - 'generic "01/04/2026: No session" [ref=e929]'
+                    - 'generic "02/04/2026: No session" [ref=e930]'
+                    - 'generic "03/04/2026: No session" [ref=e931]'
+                    - 'generic "04/04/2026: No session" [ref=e932]'
+                  - generic [ref=e933]:
+                    - 'generic "05/04/2026: No session" [ref=e934]'
+                    - 'generic "06/04/2026: No session" [ref=e935]'
+                    - 'generic "07/04/2026: No session" [ref=e936]'
+                    - 'generic "08/04/2026: No session" [ref=e937]'
+                    - 'generic "09/04/2026: No session" [ref=e938]'
+                    - 'generic "10/04/2026: No session" [ref=e939]'
+                  - generic [ref=e940]:
+                    - 'generic "11/04/2026: No session" [ref=e941]'
+                    - 'generic "12/04/2026: No session" [ref=e942]'
+                    - 'generic "13/04/2026: No session" [ref=e943]'
+                    - 'generic "14/04/2026: No session" [ref=e944]'
+                    - 'generic "15/04/2026: No session" [ref=e945]'
+                    - 'generic "16/04/2026: No session" [ref=e946]'
+                  - paragraph [ref=e947]: "Total sessions: 0"
+              - generic [ref=e948]:
+                - generic [ref=e949]:
+                  - heading "Billing" [level=3] [ref=e950]
+                  - button "View all" [ref=e952] [cursor=pointer]
+                - generic [ref=e954]:
+                  - generic [ref=e955]:
+                    - term [ref=e956]: Balance
+                    - definition [ref=e957]: 1500.00 DZD
+                  - generic [ref=e958]:
+                    - term [ref=e959]: Last payment
+                    - definition [ref=e960]: 16/04/2026
+                  - generic [ref=e961]:
+                    - term [ref=e962]: Subscription
+                    - definition [ref=e963]:
+                      - generic [ref=e964]:
+                        - img [ref=e966]
+                        - generic [ref=e968]: monthly
+              - generic [ref=e969]:
+                - generic [ref=e970]:
+                  - heading "Documents" [level=3] [ref=e971]
+                  - button "View all" [ref=e973] [cursor=pointer]
+                - paragraph [ref=e975]: No documents on file.
+  - region "Notifications"

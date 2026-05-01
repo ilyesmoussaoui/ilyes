@@ -1,0 +1,181 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - link "Sport ERP home" [ref=e5] [cursor=pointer]:
+        - /url: /dashboard
+        - generic [ref=e6]: S
+        - generic [ref=e7]: Sport ERP
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - generic:
+            - img
+          - combobox "Search" [ref=e11]
+          - button "Recherche par visage — désactivé" [ref=e12] [cursor=pointer]:
+            - img [ref=e13]
+        - radiogroup "Search scope" [ref=e16]:
+          - radio "All" [checked] [ref=e17] [cursor=pointer]
+          - radio "Members" [ref=e18] [cursor=pointer]
+          - radio "Payments" [ref=e19] [cursor=pointer]
+          - radio "Products" [ref=e20] [cursor=pointer]
+      - generic [ref=e21]:
+        - 'button "Sync status: Syncing 0. 0 pending." [ref=e23] [cursor=pointer]':
+          - img [ref=e25]
+          - generic [ref=e29]: Syncing 0
+        - button "Notifications" [ref=e30] [cursor=pointer]:
+          - img [ref=e31]
+        - button "Account menu" [ref=e35] [cursor=pointer]:
+          - generic [ref=e36]: SA
+          - generic [ref=e37]:
+            - generic [ref=e38]: System Administrator
+            - generic [ref=e39]: Admin
+    - complementary "Primary" [ref=e40]:
+      - navigation "Main navigation" [ref=e41]:
+        - list [ref=e42]:
+          - listitem [ref=e43]:
+            - link "Dashboard" [ref=e44] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e46]
+              - generic [ref=e51]: Dashboard
+          - listitem [ref=e52]:
+            - link "Members" [ref=e53] [cursor=pointer]:
+              - /url: /members
+              - img [ref=e55]
+              - generic [ref=e60]: Members
+          - listitem [ref=e61]:
+            - link "Attendance" [ref=e62] [cursor=pointer]:
+              - /url: /attendance
+              - img [ref=e64]
+              - generic [ref=e72]: Attendance
+          - listitem [ref=e73]:
+            - link "Sessions" [ref=e74] [cursor=pointer]:
+              - /url: /sessions
+              - img [ref=e76]
+              - generic [ref=e78]: Sessions
+          - listitem [ref=e79]:
+            - link "POS" [ref=e80] [cursor=pointer]:
+              - /url: /pos
+              - img [ref=e82]
+              - generic [ref=e86]: POS
+          - listitem [ref=e87]:
+            - link "Payments" [ref=e88] [cursor=pointer]:
+              - /url: /payments
+              - img [ref=e90]
+              - generic [ref=e92]: Payments
+          - listitem [ref=e93]:
+            - link "Inventory" [ref=e94] [cursor=pointer]:
+              - /url: /inventory
+              - img [ref=e96]
+              - generic [ref=e100]: Inventory
+          - listitem [ref=e101]:
+            - link "Expenses" [ref=e102] [cursor=pointer]:
+              - /url: /expenses
+              - img [ref=e104]
+              - generic [ref=e107]: Expenses
+          - listitem [ref=e108]:
+            - link "Reports" [ref=e109] [cursor=pointer]:
+              - /url: /reports
+              - img [ref=e111]
+              - generic [ref=e113]: Reports
+          - listitem [ref=e114]:
+            - link "Settings" [ref=e115] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e117]
+              - generic [ref=e120]: Settings
+      - generic [ref=e121]:
+        - generic [ref=e122]:
+          - generic [ref=e123]: SA
+          - generic [ref=e124]:
+            - paragraph [ref=e125]: System Administrator
+            - paragraph [ref=e126]: Administrator
+          - button "Sign out" [ref=e127] [cursor=pointer]:
+            - img [ref=e128]
+        - button "Collapse sidebar" [ref=e131] [cursor=pointer]:
+          - img [ref=e132]
+          - generic [ref=e134]: Collapse
+    - main [ref=e135]:
+      - generic [ref=e136]:
+        - navigation "Résumé des alertes" [ref=e137]:
+          - link "Solde impayé 0" [ref=e138] [cursor=pointer]:
+            - /url: "#section-unpaidBalance"
+            - text: Solde impayé
+            - generic [ref=e139]: "0"
+          - link "Rupture de stock 0" [ref=e140] [cursor=pointer]:
+            - /url: "#section-stockOut"
+            - text: Rupture de stock
+            - generic [ref=e141]: "0"
+          - link "Abonnements expirant 0" [ref=e142] [cursor=pointer]:
+            - /url: "#section-subscriptionsExpiring"
+            - text: Abonnements expirant
+            - generic [ref=e143]: "0"
+          - link "Renouvellement requis 0" [ref=e144] [cursor=pointer]:
+            - /url: "#section-renewalNeeded"
+            - text: Renouvellement requis
+            - generic [ref=e145]: "0"
+          - link "Documents manquants 0" [ref=e146] [cursor=pointer]:
+            - /url: "#section-missingDocuments"
+            - text: Documents manquants
+            - generic [ref=e147]: "0"
+          - link "Membres inactifs 0" [ref=e148] [cursor=pointer]:
+            - /url: "#section-inactiveMembers"
+            - text: Membres inactifs
+            - generic [ref=e149]: "0"
+          - link "Membres absents 0" [ref=e150] [cursor=pointer]:
+            - /url: "#section-absentToday"
+            - text: Membres absents
+            - generic [ref=e151]: "0"
+          - generic [ref=e152]: Chargement…
+        - main [ref=e153]:
+          - generic [ref=e154]:
+            - heading "Tableau de bord" [level=1] [ref=e155]
+            - paragraph [ref=e156]: Alertes et notifications en temps réel
+          - generic [ref=e157]:
+            - region "Solde impayé" [ref=e158]:
+              - generic [ref=e159]:
+                - heading "Solde impayé" [level=2] [ref=e161]
+                - link "Voir tout — Solde impayé" [ref=e163] [cursor=pointer]:
+                  - /url: /members
+                  - text: Voir tout
+                  - img [ref=e164]
+            - region "Rupture de stock" [ref=e191]:
+              - generic [ref=e192]:
+                - heading "Rupture de stock" [level=2] [ref=e194]
+                - link "Voir tout — Rupture de stock" [ref=e196] [cursor=pointer]:
+                  - /url: /inventory
+                  - text: Voir tout
+                  - img [ref=e197]
+            - region "Abonnements expirant" [ref=e224]:
+              - generic [ref=e225]:
+                - heading "Abonnements expirant" [level=2] [ref=e227]
+                - link "Voir tout — Abonnements expirant" [ref=e229] [cursor=pointer]:
+                  - /url: /members
+                  - text: Voir tout
+                  - img [ref=e230]
+            - region "Renouvellement requis" [ref=e257]:
+              - generic [ref=e258]:
+                - heading "Renouvellement requis" [level=2] [ref=e260]
+                - link "Voir tout — Renouvellement requis" [ref=e262] [cursor=pointer]:
+                  - /url: /members
+                  - text: Voir tout
+                  - img [ref=e263]
+            - region "Documents manquants" [ref=e290]:
+              - generic [ref=e291]:
+                - heading "Documents manquants" [level=2] [ref=e293]
+                - link "Voir tout — Documents manquants" [ref=e295] [cursor=pointer]:
+                  - /url: /members
+                  - text: Voir tout
+                  - img [ref=e296]
+            - region "Membres inactifs" [ref=e323]:
+              - generic [ref=e324]:
+                - heading "Membres inactifs" [level=2] [ref=e326]
+                - link "Voir tout — Membres inactifs" [ref=e328] [cursor=pointer]:
+                  - /url: /members
+                  - text: Voir tout
+                  - img [ref=e329]
+            - region "Membres absents" [ref=e356]:
+              - generic [ref=e357]:
+                - heading "Membres absents" [level=2] [ref=e359]
+                - link "Voir tout — Membres absents" [ref=e361] [cursor=pointer]:
+                  - /url: /members
+                  - text: Voir tout
+                  - img [ref=e362]
+  - region "Notifications"

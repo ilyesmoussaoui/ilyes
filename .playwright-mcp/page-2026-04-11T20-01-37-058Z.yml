@@ -1,0 +1,32 @@
+- generic [ref=e1]:
+  - main [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]: S
+        - heading "Sign in to Sport ERP" [level=1] [ref=e11]
+        - paragraph [ref=e12]: Welcome back. Please enter your details.
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - generic [ref=e17]: Email
+          - textbox "Email" [ref=e19]:
+            - /placeholder: you@gym.com
+        - generic [ref=e20]:
+          - generic [ref=e21]: Password
+          - generic [ref=e22]:
+            - textbox "Password" [ref=e23]:
+              - /placeholder: Enter your password
+            - button "Show password" [ref=e24] [cursor=pointer]:
+              - img [ref=e25]
+        - generic [ref=e28] [cursor=pointer]:
+          - checkbox "Remember me on this device" [ref=e29]
+          - generic [ref=e30]: Remember me on this device
+        - button "Sign in" [active] [ref=e31] [cursor=pointer]:
+          - generic [ref=e32]: Sign in
+  - region "Notifications":
+    - status [ref=e33]:
+      - img [ref=e35]
+      - generic [ref=e37]:
+        - paragraph [ref=e38]: Sign in failed
+        - paragraph [ref=e39]: Something went wrong. Please try again.
+      - button "Dismiss notification" [ref=e40] [cursor=pointer]:
+        - img [ref=e41]

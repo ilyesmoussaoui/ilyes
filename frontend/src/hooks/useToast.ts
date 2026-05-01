@@ -6,10 +6,15 @@ export interface ToastContextValue {
   dismiss: (id: string) => void;
 }
 
+export interface UseToastReturn extends ToastContextValue {
+  /** Alias of `show`, kept for call sites that use the verbose name. */
+  showToast: (toast: Omit<ToastItem, 'id'>) => void;
+}
+
 export const ToastContext = createContext<ToastContextValue | null>(null);
 
-export function useToast(): ToastContextValue {
+export function useToast(): UseToastReturn {
   const ctx = useContext(ToastContext);
   if (!ctx) throw new Error('useToast must be used within ToastProvider');
-  return ctx;
+  return { ...ctx, showToast: ctx.show };
 }

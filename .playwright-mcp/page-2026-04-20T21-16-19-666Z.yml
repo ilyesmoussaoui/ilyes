@@ -1,0 +1,13 @@
+- generic [ref=e3]:
+  - generic [ref=e4]: "[plugin:vite:oxc] Transform failed with 1 error: [PARSE_ERROR] Error: Expected `,` or `}` but found `Identifier` ╭─[ src/features/attendance/components/CheckActionModal.tsx:102:38 ] │ 99 │ toast.show({ │ ┬ │ ╰── Opened here │ 102 │ description: 'Impossible d'enregistrer le départ. Réessayez.', │ ─────┬───── │ ╰─────── `,` or `}` expected ─────╯"
+  - generic [ref=e5]: /Users/wow/Desktop/sport/frontend/src/features/attendance/components/CheckActionModal.tsx
+  - generic [ref=e6]: at transformWithOxc (file:///Users/wow/Desktop/sport/frontend/node_modules/vite/dist/node/chunks/node.js:3745:19) at TransformPluginContext.transform (file:///Users/wow/Desktop/sport/frontend/node_modules/vite/dist/node/chunks/node.js:3813:26) at EnvironmentPluginContainer.transform (file:///Users/wow/Desktop/sport/frontend/node_modules/vite/dist/node/chunks/node.js:30143:51) at async loadAndTransform (file:///Users/wow/Desktop/sport/frontend/node_modules/vite/dist/node/chunks/node.js:24468:26) at async viteTransformMiddleware (file:///Users/wow/Desktop/sport/frontend/node_modules/vite/dist/node/chunks/node.js:24262:20)
+  - generic [ref=e7]:
+    - text: Click outside, press Esc key, or fix the code to dismiss.
+    - text: You can also disable this overlay by setting
+    - code [ref=e8]: server.hmr.overlay
+    - text: to
+    - code [ref=e9]: "false"
+    - text: in
+    - code [ref=e10]: vite.config.ts
+    - text: .

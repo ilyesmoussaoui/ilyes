@@ -1,0 +1,285 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - link "Sport ERP home" [ref=e5] [cursor=pointer]:
+        - /url: /dashboard
+        - generic [ref=e6]: S
+        - generic [ref=e7]: Sport ERP
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - generic:
+            - img
+          - combobox "Search" [ref=e11]
+          - button "Recherche par visage — désactivé" [ref=e12] [cursor=pointer]:
+            - img [ref=e13]
+        - radiogroup "Search scope" [ref=e16]:
+          - radio "All" [checked] [ref=e17] [cursor=pointer]
+          - radio "Members" [ref=e18] [cursor=pointer]
+          - radio "Payments" [ref=e19] [cursor=pointer]
+          - radio "Products" [ref=e20] [cursor=pointer]
+      - generic [ref=e21]:
+        - 'button "Sync status: Synced. 0 pending." [ref=e23] [cursor=pointer]':
+          - img [ref=e405]
+          - generic [ref=e27]: Synced
+        - button "Notifications" [ref=e28] [cursor=pointer]:
+          - img [ref=e29]
+        - button "Account menu" [ref=e33] [cursor=pointer]:
+          - generic [ref=e34]: SA
+          - generic [ref=e35]:
+            - generic [ref=e36]: System Administrator
+            - generic [ref=e37]: Admin
+    - complementary "Primary" [ref=e38]:
+      - navigation "Main navigation" [ref=e39]:
+        - list [ref=e40]:
+          - listitem [ref=e41]:
+            - link "Dashboard" [ref=e42] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e44]
+              - generic [ref=e49]: Dashboard
+          - listitem [ref=e50]:
+            - link "Members" [ref=e51] [cursor=pointer]:
+              - /url: /members
+              - img [ref=e53]
+              - generic [ref=e58]: Members
+          - listitem [ref=e59]:
+            - link "Attendance" [ref=e60] [cursor=pointer]:
+              - /url: /attendance
+              - img [ref=e62]
+              - generic [ref=e70]: Attendance
+          - listitem [ref=e71]:
+            - link "Sessions" [ref=e72] [cursor=pointer]:
+              - /url: /sessions
+              - img [ref=e74]
+              - generic [ref=e76]: Sessions
+          - listitem [ref=e77]:
+            - link "POS" [ref=e78] [cursor=pointer]:
+              - /url: /pos
+              - img [ref=e80]
+              - generic [ref=e84]: POS
+          - listitem [ref=e85]:
+            - link "Payments" [ref=e86] [cursor=pointer]:
+              - /url: /payments
+              - img [ref=e88]
+              - generic [ref=e90]: Payments
+          - listitem [ref=e91]:
+            - link "Inventory" [ref=e92] [cursor=pointer]:
+              - /url: /inventory
+              - img [ref=e94]
+              - generic [ref=e98]: Inventory
+          - listitem [ref=e99]:
+            - link "Expenses" [ref=e100] [cursor=pointer]:
+              - /url: /expenses
+              - img [ref=e102]
+              - generic [ref=e105]: Expenses
+          - listitem [ref=e106]:
+            - link "Reports" [ref=e107] [cursor=pointer]:
+              - /url: /reports
+              - img [ref=e109]
+              - generic [ref=e111]: Reports
+          - listitem [ref=e112]:
+            - link "Settings" [ref=e113] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e115]
+              - generic [ref=e118]: Settings
+      - generic [ref=e119]:
+        - generic [ref=e120]:
+          - generic [ref=e121]: SA
+          - generic [ref=e122]:
+            - paragraph [ref=e123]: System Administrator
+            - paragraph [ref=e124]: Administrator
+          - button "Sign out" [ref=e125] [cursor=pointer]:
+            - img [ref=e126]
+        - button "Collapse sidebar" [ref=e129] [cursor=pointer]:
+          - img [ref=e130]
+          - generic [ref=e132]: Collapse
+    - main [ref=e133]:
+      - generic [ref=e134]:
+        - navigation "Breadcrumb" [ref=e178]:
+          - list [ref=e179]:
+            - listitem [ref=e180]:
+              - link "Home" [ref=e181] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=e182]:
+              - img [ref=e183]
+            - listitem [ref=e185]:
+              - link "Members" [ref=e186] [cursor=pointer]:
+                - /url: /members
+            - listitem [ref=e187]:
+              - img [ref=e188]
+            - listitem [ref=e190]: Ilyes Moussaoui
+        - generic [ref=e193]:
+          - img "Ilyes Moussaoui photo" [ref=e195]
+          - generic [ref=e196]:
+            - generic [ref=e197]:
+              - heading "Ilyes Moussaoui" [level=1] [ref=e198]
+              - generic [ref=e199]:
+                - img [ref=e201]
+                - generic [ref=e203]: Active
+            - generic [ref=e204]:
+              - generic [ref=e205]: Athlete
+              - generic [ref=e206]: Member since 20 Apr 2026
+          - generic [ref=e208]:
+            - generic [ref=e209]: Balance
+            - generic [ref=e210]: 0.00 DZD
+            - generic [ref=e211]: All paid
+        - button "Edit Member" [ref=e213] [cursor=pointer]:
+          - img [ref=e215]
+          - generic [ref=e218]: Edit Member
+        - generic [ref=e219]:
+          - navigation "Profile sections" [ref=e220]:
+            - list [ref=e221]:
+              - listitem [ref=e222]:
+                - button "Overview" [ref=e223] [cursor=pointer]:
+                  - img [ref=e225]
+                  - generic [ref=e230]: Overview
+              - listitem [ref=e231]:
+                - button "Identity" [ref=e232] [cursor=pointer]:
+                  - img [ref=e234]
+                  - generic [ref=e237]: Identity
+              - listitem [ref=e238]:
+                - button "Contact" [ref=e239] [cursor=pointer]:
+                  - img [ref=e241]
+                  - generic [ref=e243]: Contact
+              - listitem [ref=e244]:
+                - button "Disciplines 1" [ref=e245] [cursor=pointer]:
+                  - img [ref=e247]
+                  - generic [ref=e255]: Disciplines
+                  - generic [ref=e256]: "1"
+              - listitem [ref=e257]:
+                - button "Documents" [ref=e258] [cursor=pointer]:
+                  - img [ref=e260]
+                  - generic [ref=e263]: Documents
+              - listitem [ref=e264]:
+                - button "Attendance" [active] [ref=e265] [cursor=pointer]:
+                  - img [ref=e267]
+                  - generic [ref=e269]: Attendance
+              - listitem [ref=e270]:
+                - button "Payments" [ref=e271] [cursor=pointer]:
+                  - img [ref=e273]
+                  - generic [ref=e275]: Payments
+              - listitem [ref=e276]:
+                - button "Equipment 1" [ref=e277] [cursor=pointer]:
+                  - img [ref=e279]
+                  - generic [ref=e283]: Equipment
+                  - generic [ref=e284]: "1"
+              - listitem [ref=e285]:
+                - button "Schedule" [ref=e286] [cursor=pointer]:
+                  - img [ref=e288]
+                  - generic [ref=e291]: Schedule
+              - listitem [ref=e292]:
+                - button "Family" [ref=e293] [cursor=pointer]:
+                  - img [ref=e295]
+                  - generic [ref=e300]: Family
+              - listitem [ref=e301]:
+                - button "Notes" [ref=e302] [cursor=pointer]:
+                  - img [ref=e304]
+                  - generic [ref=e306]: Notes
+              - listitem [ref=e307]:
+                - button "Audit Log" [ref=e308] [cursor=pointer]:
+                  - img [ref=e310]
+                  - generic [ref=e313]: Audit Log
+          - main "Attendance" [ref=e407]:
+            - heading "Attendance" [level=2] [ref=e408]
+            - region "Attendance" [ref=e409]:
+              - heading "Attendance" [level=2] [ref=e410]
+              - generic [ref=e412]:
+                - generic [ref=e413]:
+                  - heading "April 2026" [level=3] [ref=e414]
+                  - generic [ref=e415]:
+                    - button "Previous month" [ref=e416] [cursor=pointer]:
+                      - img [ref=e418]
+                    - button "Next month" [disabled] [ref=e420]:
+                      - img [ref=e422]
+                - generic [ref=e424]:
+                  - generic [ref=e425]: Sun
+                  - generic [ref=e426]: Mon
+                  - generic [ref=e427]: Tue
+                  - generic [ref=e428]: Wed
+                  - generic [ref=e429]: Thu
+                  - generic [ref=e430]: Fri
+                  - generic [ref=e431]: Sat
+                - grid "Attendance calendar for April 2026" [ref=e432]:
+                  - gridcell [ref=e433]
+                  - gridcell [ref=e434]
+                  - gridcell [ref=e435]
+                  - 'gridcell "01/04/2026: no-session" [ref=e436]': "1"
+                  - 'gridcell "02/04/2026: no-session" [ref=e437]': "2"
+                  - 'gridcell "03/04/2026: no-session" [ref=e438]': "3"
+                  - 'gridcell "04/04/2026: no-session" [ref=e439]': "4"
+                  - 'gridcell "05/04/2026: no-session" [ref=e440]': "5"
+                  - 'gridcell "06/04/2026: no-session" [ref=e441]': "6"
+                  - 'gridcell "07/04/2026: no-session" [ref=e442]': "7"
+                  - 'gridcell "08/04/2026: no-session" [ref=e443]': "8"
+                  - 'gridcell "09/04/2026: no-session" [ref=e444]': "9"
+                  - 'gridcell "10/04/2026: no-session" [ref=e445]': "10"
+                  - 'gridcell "11/04/2026: no-session" [ref=e446]': "11"
+                  - 'gridcell "12/04/2026: no-session" [ref=e447]': "12"
+                  - 'gridcell "13/04/2026: no-session" [ref=e448]': "13"
+                  - 'gridcell "14/04/2026: no-session" [ref=e449]': "14"
+                  - 'gridcell "15/04/2026: no-session" [ref=e450]': "15"
+                  - 'gridcell "16/04/2026: no-session" [ref=e451]': "16"
+                  - 'gridcell "17/04/2026: no-session" [ref=e452]': "17"
+                  - 'gridcell "18/04/2026: no-session" [ref=e453]': "18"
+                  - 'gridcell "19/04/2026: no-session" [ref=e454]': "19"
+                  - 'gridcell "20/04/2026: today" [ref=e455]': "20"
+                  - 'gridcell "21/04/2026: future" [ref=e456]': "21"
+                  - 'gridcell "22/04/2026: future" [ref=e457]': "22"
+                  - 'gridcell "23/04/2026: future" [ref=e458]': "23"
+                  - 'gridcell "24/04/2026: future" [ref=e459]': "24"
+                  - 'gridcell "25/04/2026: future" [ref=e460]': "25"
+                  - 'gridcell "26/04/2026: future" [ref=e461]': "26"
+                  - 'gridcell "27/04/2026: future" [ref=e462]': "27"
+                  - 'gridcell "28/04/2026: future" [ref=e463]': "28"
+                  - 'gridcell "29/04/2026: future" [ref=e464]': "29"
+                  - 'gridcell "30/04/2026: future" [ref=e465]': "30"
+                - generic [ref=e466]:
+                  - generic [ref=e469]: Present
+                  - generic [ref=e472]: Absent
+                  - generic [ref=e475]: No session
+                  - generic [ref=e478]: Today
+              - table [ref=e481]:
+                - rowgroup [ref=e482]:
+                  - row "Date Discipline Time in Time out Method Status" [ref=e483]:
+                    - columnheader "Date" [ref=e484]:
+                      - button "Date" [ref=e485] [cursor=pointer]:
+                        - text: Date
+                        - generic [ref=e486]:
+                          - img [ref=e487]
+                          - img [ref=e489]
+                    - columnheader "Discipline" [ref=e491]
+                    - columnheader "Time in" [ref=e492]
+                    - columnheader "Time out" [ref=e493]
+                    - columnheader "Method" [ref=e494]
+                    - columnheader "Status" [ref=e495]
+                - rowgroup [ref=e496]:
+                  - row "20/04/2026 — 22:19 — face Present" [ref=e497]:
+                    - cell "20/04/2026" [ref=e498]
+                    - cell "—" [ref=e499]
+                    - cell "22:19" [ref=e500]
+                    - cell "—" [ref=e501]
+                    - cell "face" [ref=e502]
+                    - cell "Present" [ref=e503]:
+                      - generic [ref=e504]:
+                        - img [ref=e506]
+                        - generic [ref=e508]: Present
+                  - row "20/04/2026 — 21:41 21:48 face Present" [ref=e509]:
+                    - cell "20/04/2026" [ref=e510]
+                    - cell "—" [ref=e511]
+                    - cell "21:41" [ref=e512]
+                    - cell "21:48" [ref=e513]
+                    - cell "face" [ref=e514]
+                    - cell "Present" [ref=e515]:
+                      - generic [ref=e516]:
+                        - img [ref=e518]
+                        - generic [ref=e520]: Present
+                  - row "20/04/2026 — 21:41 21:41 face Present" [ref=e521]:
+                    - cell "20/04/2026" [ref=e522]
+                    - cell "—" [ref=e523]
+                    - cell "21:41" [ref=e524]
+                    - cell "21:41" [ref=e525]
+                    - cell "face" [ref=e526]
+                    - cell "Present" [ref=e527]:
+                      - generic [ref=e528]:
+                        - img [ref=e530]
+                        - generic [ref=e532]: Present
+  - region "Notifications"

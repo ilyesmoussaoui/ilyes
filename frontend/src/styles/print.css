@@ -1,0 +1,244 @@
+/* ======================================================================
+   Print Stylesheet — Sport ERP
+   ----------------------------------------------------------------------
+   Global rules + two dedicated document modes:
+     - body.print-mode-receipt       thermal 80mm receipt / attendance slip
+     - body.print-mode-document      full-width A4 for invoices, reports
+   Toggle via `setPrintMode('receipt' | 'document' | null)` in
+   `src/lib/print.ts` before calling window.print().
+   ====================================================================== */
+
+@media print {
+  /* Neutralize app chrome by default. Individual printable regions opt-in
+     via the `.print-area` class (or the legacy `.receipt-printable` /
+     `.report-printable` selectors already used by the app). */
+  html,
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+    color: #000 !important;
+    overflow: visible !important;
+  }
+
+  /* Hide non-content UI by role/selector. */
+  header[role='banner'],
+  aside,
+  nav,
+  [role='navigation'],
+  [role='toolbar'],
+  [data-sidebar],
+  .no-print,
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* Buttons that remain in printable regions should disappear. */
+  button,
+  [type='button'],
+  [type='submit'] {
+    display: none !important;
+  }
+
+  /* Expose essential printable content. */
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    height: auto !important;
+  }
+
+  /* Break-inside helpers for tables and cards. */
+  table,
+  .card,
+  .receipt-printable,
+  .report-printable,
+  .print-area {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  a[href]::after {
+    content: '' !important;
+  }
+
+  /* Keep links black so the printed output has no coloured ink. */
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+/* ──────────────────────── A4 / Document mode ──────────────────────── */
+
+@media print {
+  body.print-mode-document {
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    font-size: 11pt;
+  }
+  body.print-mode-document .report-printable,
+  body.print-mode-document .print-area {
+    width: 100% !important;
+    position: static !important;
+    padding: 8mm !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 12mm;
+}
+
+/* ───────────────────── Thermal 80mm Receipt mode ───────────────────── */
+
+@media print {
+  body.print-mode-receipt {
+    /* Everything the app renders is suppressed except the .receipt-printable
+       region, which we blow up to fit the 80mm paper. */
+    font-family: 'Menlo', 'Consolas', 'Courier New', ui-monospace, monospace;
+    font-size: 10pt;
+    line-height: 1.35;
+    color: #000;
+  }
+
+  body.print-mode-receipt * {
+    visibility: hidden;
+  }
+
+  body.print-mode-receipt .receipt-printable,
+  body.print-mode-receipt .receipt-printable * {
+    visibility: visible;
+  }
+
+  body.print-mode-receipt .receipt-printable {
+    position: absolute !important;
+    left: 0;
+    top: 0;
+    width: 72mm !important; /* 80mm paper minus 4mm printer margins each side */
+    margin: 0 !important;
+    padding: 2mm !important;
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    border: none !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+  }
+
+  /* Hard reset of layout styles inside the receipt so Tailwind flex / grid
+     don't fight the thermal format. */
+  body.print-mode-receipt .receipt-printable * {
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #000 !important;
+    border-color: #000 !important;
+  }
+
+  body.print-mode-receipt .receipt-printable hr {
+    border: 0 !important;
+    border-top: 1px dashed #000 !important;
+    margin: 2mm 0 !important;
+  }
+
+  body.print-mode-receipt .receipt-printable table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+  body.print-mode-receipt .receipt-printable th,
+  body.print-mode-receipt .receipt-printable td {
+    padding: 1mm 0 !important;
+    font-size: 9pt !important;
+    border: 0 !important;
+  }
+
+  /* Slip-style rows ("Label ........... value") */
+  .receipt-row {
+    display: flex !important;
+    justify-content: space-between !important;
+    gap: 4mm !important;
+  }
+
+  /* When a receipt is embedded inside a <Modal>, the modal overlay must not
+     cover the print output. Reset every wrapper up the chain so the absolute
+     positioning of .receipt-printable targets the page, not the modal panel. */
+  body.print-mode-receipt [role='dialog'],
+  body.print-mode-receipt [aria-modal='true'] {
+    position: static !important;
+    inset: auto !important;
+    display: block !important;
+    background: #fff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    animation: none !important;
+    transform: none !important;
+  }
+  body.print-mode-receipt [role='dialog'] > *,
+  body.print-mode-receipt [aria-modal='true'] > * {
+    position: static !important;
+    max-width: none !important;
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    animation: none !important;
+    transform: none !important;
+    border: 0 !important;
+  }
+  body.print-mode-receipt [role='dialog'] > * > * {
+    position: static !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  body.print-mode-receipt [data-modal-overlay] {
+    display: none !important;
+  }
+}
+
+/* A dedicated @page for receipts. Most browsers honour this when the body
+   class is set prior to calling window.print(). */
+@page receipt {
+  size: 80mm auto;
+  margin: 0;
+}
+body.print-mode-receipt {
+  page: receipt;
+}
+
+/* Receipts that only need to appear at print time — hidden on screen but still
+   laid out, so the browser renders them during print. */
+.sr-only-print {
+  position: absolute !important;
+  left: -10000px;
+  top: 0;
+  width: 72mm;
+  pointer-events: none;
+  opacity: 0;
+}
+@media print {
+  .sr-only-print {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    opacity: 1 !important;
+    width: 72mm !important;
+  }
+}
+
+/* ─────────── On-screen preview class (optional) ─────────── */
+
+/* Apply .receipt-preview to preview a receipt on-screen in its 80mm skin. */
+.receipt-preview {
+  width: 80mm;
+  max-width: 100%;
+  margin-inline: auto;
+  padding: 4mm;
+  background: #fff;
+  color: #000;
+  font-family: 'Menlo', 'Consolas', 'Courier New', ui-monospace, monospace;
+  font-size: 11px;
+  line-height: 1.35;
+  border: 1px dashed #cbd5e1;
+}

@@ -1,0 +1,1444 @@
+{
+  "app": {
+    "name": "Sport ERP",
+    "home": "Accueil",
+    "breadcrumb": "Fil d'Ariane"
+  },
+  "language": {
+    "title": "Langue",
+    "description": "Choisissez la langue de l'interface. Le changement est immédiat et sauvegardé pour les prochaines sessions.",
+    "french": "Français",
+    "english": "English",
+    "current": "Langue actuelle",
+    "toggleAria": "Changer la langue"
+  },
+  "common": {
+    "actions": {
+      "save": "Enregistrer",
+      "saveChanges": "Enregistrer les modifications",
+      "cancel": "Annuler",
+      "close": "Fermer",
+      "delete": "Supprimer",
+      "deactivate": "Désactiver",
+      "edit": "Modifier",
+      "add": "Ajouter",
+      "create": "Créer",
+      "remove": "Retirer",
+      "confirm": "Confirmer",
+      "apply": "Appliquer",
+      "reset": "Réinitialiser",
+      "refresh": "Rafraîchir",
+      "retry": "Réessayer",
+      "tryAgain": "Réessayer",
+      "export": "Exporter",
+      "import": "Importer",
+      "search": "Rechercher",
+      "filter": "Filtrer",
+      "filters": "Filtres",
+      "clearFilters": "Effacer les filtres",
+      "next": "Suivant",
+      "previous": "Précédent",
+      "back": "Retour",
+      "continue": "Continuer",
+      "submit": "Envoyer",
+      "copy": "Copier",
+      "copied": "Copié",
+      "view": "Voir",
+      "viewAll": "Tout voir",
+      "details": "Détails",
+      "select": "Sélectionner",
+      "selectAll": "Tout sélectionner",
+      "deselectAll": "Tout désélectionner",
+      "open": "Ouvrir",
+      "print": "Imprimer",
+      "download": "Télécharger",
+      "upload": "Téléverser",
+      "loadMore": "Charger plus",
+      "markAllRead": "Tout marquer comme lu",
+      "signOut": "Déconnexion",
+      "signIn": "Connexion",
+      "login": "Connexion",
+      "logout": "Déconnexion",
+      "yes": "Oui",
+      "no": "Non",
+      "done": "Terminé",
+      "ok": "OK",
+      "send": "Envoyer",
+      "change": "Changer",
+      "update": "Mettre à jour",
+      "duplicate": "Dupliquer",
+      "retryAction": "Réessayer"
+    },
+    "status": {
+      "loading": "Chargement…",
+      "loadingData": "Chargement des données…",
+      "saving": "Enregistrement…",
+      "deleting": "Suppression…",
+      "uploading": "Téléversement…",
+      "processing": "Traitement…",
+      "error": "Erreur",
+      "success": "Succès",
+      "warning": "Attention",
+      "info": "Information",
+      "empty": "Aucune donnée",
+      "noResults": "Aucun résultat",
+      "offline": "Hors ligne",
+      "online": "En ligne",
+      "connecting": "Connexion…",
+      "synced": "Synchronisé",
+      "pending": "En attente",
+      "required": "Requis",
+      "optional": "Optionnel",
+      "active": "Actif",
+      "inactive": "Inactif",
+      "suspended": "Suspendu",
+      "expired": "Expiré",
+      "allCaughtUp": "Tout est à jour"
+    },
+    "labels": {
+      "name": "Nom",
+      "firstName": "Prénom",
+      "lastName": "Nom de famille",
+      "email": "Email",
+      "phone": "Téléphone",
+      "address": "Adresse",
+      "city": "Ville",
+      "date": "Date",
+      "time": "Heure",
+      "dateFrom": "Du",
+      "dateTo": "Au",
+      "startDate": "Date de début",
+      "endDate": "Date de fin",
+      "status": "Statut",
+      "type": "Type",
+      "amount": "Montant",
+      "total": "Total",
+      "subtotal": "Sous-total",
+      "quantity": "Quantité",
+      "price": "Prix",
+      "description": "Description",
+      "notes": "Notes",
+      "notesOptional": "Notes (optionnel)",
+      "reason": "Raison",
+      "category": "Catégorie",
+      "role": "Rôle",
+      "actions": "Actions",
+      "details": "Détails",
+      "currency": "DA",
+      "percentage": "%",
+      "age": "Âge",
+      "gender": "Genre",
+      "genderMale": "Masculin",
+      "genderFemale": "Féminin",
+      "male": "Homme",
+      "female": "Femme",
+      "avatar": "Avatar",
+      "photo": "Photo",
+      "discipline": "Discipline",
+      "disciplines": "Disciplines",
+      "member": "Membre",
+      "members": "Membres",
+      "stock": "Stock",
+      "group": "Groupe",
+      "createdAt": "Créé le",
+      "updatedAt": "Modifié le",
+      "receipt": "Reçu",
+      "note": "Note",
+      "balance": "Solde",
+      "paymentMethod": "Moyen de paiement",
+      "invoice": "Facture",
+      "from": "De",
+      "to": "À",
+      "paid": "Payé",
+      "due": "Dû",
+      "groupBy": "Regrouper par",
+      "method": "Méthode"
+    },
+    "time": {
+      "day": "Jour",
+      "week": "Semaine",
+      "month": "Mois",
+      "year": "Année",
+      "byDay": "Par jour",
+      "byWeek": "Par semaine",
+      "byMonth": "Par mois",
+      "byYear": "Par année",
+      "today": "Aujourd'hui",
+      "yesterday": "Hier",
+      "tomorrow": "Demain",
+      "thisWeek": "Cette semaine",
+      "thisMonth": "Ce mois",
+      "thisYear": "Cette année",
+      "last7Days": "7 derniers jours",
+      "last30Days": "30 derniers jours",
+      "last90Days": "90 derniers jours",
+      "justNow": "À l'instant",
+      "minutesAgo": "il y a {{count}}m",
+      "hoursAgo": "il y a {{count}}h",
+      "daysAgo": "il y a {{count}}j",
+      "weeksAgo": "il y a {{count}}sem",
+      "days": "jours",
+      "hours": "heures",
+      "minutes": "minutes",
+      "seconds": "secondes"
+    },
+    "weekdays": {
+      "monday": "Lundi",
+      "tuesday": "Mardi",
+      "wednesday": "Mercredi",
+      "thursday": "Jeudi",
+      "friday": "Vendredi",
+      "saturday": "Samedi",
+      "sunday": "Dimanche",
+      "mon": "Lun",
+      "tue": "Mar",
+      "wed": "Mer",
+      "thu": "Jeu",
+      "fri": "Ven",
+      "sat": "Sam",
+      "sun": "Dim"
+    },
+    "messages": {
+      "somethingWrong": "Une erreur est survenue",
+      "tryAgainLater": "Nous n'avons pas pu charger ce contenu. Veuillez réessayer.",
+      "confirmDelete": "Êtes-vous sûr de vouloir supprimer cet élément ?",
+      "actionIrreversible": "Cette action ne peut pas être annulée.",
+      "unsavedChanges": "Modifications non enregistrées",
+      "unsavedChangesWarning": "Vous avez des modifications non enregistrées. Êtes-vous sûr de vouloir quitter ?",
+      "savedSuccessfully": "Enregistré avec succès",
+      "saveFailed": "Échec de l'enregistrement",
+      "deleteSuccess": "Supprimé avec succès",
+      "deleteFailed": "Échec de la suppression",
+      "networkError": "Erreur réseau. Vérifiez votre connexion.",
+      "permissionDenied": "Accès refusé",
+      "notFound": "Introuvable",
+      "invalidInput": "Entrée invalide",
+      "requiredField": "Ce champ est requis",
+      "invalidEmail": "Adresse e-mail invalide",
+      "invalidPhone": "Numéro de téléphone invalide",
+      "invalidDate": "Date invalide",
+      "mustBeNumber": "Doit être un nombre",
+      "mustBePositive": "Doit être positif"
+    },
+    "pagination": {
+      "page": "Page",
+      "of": "sur",
+      "previous": "Précédent",
+      "next": "Suivant",
+      "first": "Premier",
+      "last": "Dernier",
+      "summary": "Page {{page}} sur {{total}} — {{count}} éléments",
+      "showing": "Affichage de {{from}} à {{to}} sur {{total}}"
+    },
+    "empty": {
+      "noData": "Aucune donnée",
+      "noResults": "Aucun résultat",
+      "noItemsFound": "Aucun élément trouvé",
+      "tryDifferentFilter": "Essayez de modifier vos filtres."
+    },
+    "table": {
+      "emptyTitle": "Aucun résultat",
+      "emptyMessage": "Essayez d'ajuster votre recherche ou vos filtres."
+    },
+    "todo": {
+      "note": "Certaines chaînes des tooltips ECharts (formateurs) sont marquées TODO pour une traduction ultérieure."
+    }
+  },
+  "sidebar": {
+    "menu": {
+      "dashboard": "Tableau de bord",
+      "members": "Membres",
+      "attendance": "Présence",
+      "sessions": "Séances",
+      "pos": "Point de vente",
+      "payments": "Paiements",
+      "inventory": "Inventaire",
+      "expenses": "Dépenses",
+      "reports": "Rapports",
+      "settings": "Paramètres"
+    },
+    "collapse": "Réduire",
+    "expand": "Agrandir",
+    "signOut": "Se déconnecter",
+    "roles": {
+      "admin": "Administrateur",
+      "manager": "Gestionnaire",
+      "receptionist": "Réceptionniste",
+      "coach": "Entraîneur",
+      "accountant": "Comptable"
+    }
+  },
+  "header": {
+    "searchPlaceholder": "Rechercher membres, reçus…",
+    "search": "Rechercher",
+    "searchScope": "Portée de recherche",
+    "scopes": {
+      "all": "Tout",
+      "allShort": "Tout",
+      "members": "Membres",
+      "membersShort": "Membres",
+      "payments": "Paiements",
+      "paymentsShort": "Paiements",
+      "products": "Produits",
+      "productsShort": "Produits"
+    },
+    "faceSearch": {
+      "title": "Recherche par visage",
+      "description": "Pointez la caméra vers un visage pour trouver un membre correspondant.",
+      "active": "Recherche par visage — activé",
+      "inactive": "Recherche par visage — désactivé",
+      "analyzing": "Analyse du visage…",
+      "noMatches": "Aucun membre reconnu.",
+      "searchAgain": "Rechercher à nouveau",
+      "uploadFailed": "Échec du téléversement. Veuillez réessayer.",
+      "imageTooLarge": "Image trop volumineuse (max 5 Mo). Veuillez réessayer."
+    },
+    "notifications": "Notifications",
+    "notificationsWithCount": "Notifications, {{count}} non lus",
+    "accountMenu": "Menu du compte",
+    "profile": "Profil",
+    "logout": "Déconnexion",
+    "signedIn": "Connecté",
+    "results": {
+      "members": "Membres ({{count}})",
+      "payments": "Paiements ({{count}})",
+      "products": "Produits ({{count}})",
+      "receipt": "Reçu #{{number}}",
+      "payment": "Paiement {{id}}",
+      "stockUnits": "Stock : {{count}} unités",
+      "stockEmpty": "Stock : 0 — Rupture",
+      "noResultsFor": "Aucun résultat pour « {{query}} »",
+      "enterToSelect": "Entrée — tous les résultats",
+      "escToClose": "Échap pour fermer",
+      "searchError": "Erreur de recherche. Réessayer."
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Se connecter à Sport ERP",
+      "subtitle": "Bienvenue. Veuillez entrer vos informations.",
+      "emailLabel": "Email",
+      "emailPlaceholder": "vous@salle.com",
+      "passwordLabel": "Mot de passe",
+      "passwordPlaceholder": "Entrez votre mot de passe",
+      "rememberMe": "Se souvenir de moi sur cet appareil",
+      "showPassword": "Afficher le mot de passe",
+      "hidePassword": "Masquer le mot de passe",
+      "submit": "Connexion",
+      "failed": "Échec de la connexion",
+      "invalidCredentials": "Email ou mot de passe incorrect",
+      "somethingWentWrong": "Une erreur est survenue. Veuillez réessayer.",
+      "emailRequired": "L'email est requis",
+      "validEmailRequired": "Entrez une adresse e-mail valide",
+      "passwordRequired": "Le mot de passe est requis"
+    },
+    "lock": {
+      "title": "Écran verrouillé",
+      "description": "Entrez votre mot de passe pour déverrouiller.",
+      "unlock": "Déverrouiller",
+      "logout": "Se déconnecter"
+    }
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "subtitle": "Alertes et notifications en temps réel",
+    "alertSummaryAria": "Résumé des alertes",
+    "loadingShort": "Chargement…",
+    "errorMessage": "Impossible de charger les alertes.",
+    "retry": "Réessayer",
+    "sections": {
+      "unpaidBalance": "Solde impayé",
+      "stockOut": "Rupture de stock",
+      "subscriptionsExpiring": "Abonnements expirant",
+      "renewalNeeded": "Renouvellement requis",
+      "missingDocuments": "Documents manquants",
+      "inactiveMembers": "Membres inactifs",
+      "absentToday": "Membres absents"
+    },
+    "emptyNoAlerts": "Aucune alerte — {{section}}",
+    "stockAllInStock": "Tous les articles sont en stock.",
+    "moreCount": "+{{count}} de plus",
+    "viewAll": "Tout voir"
+  },
+  "members": {
+    "list": {
+      "title": "Membres",
+      "subtitle": "Gérez les athlètes, le personnel et les membres externes.",
+      "total": "({{count}} au total)",
+      "addMember": "Ajouter un membre",
+      "addFirst": "Ajouter votre premier membre",
+      "noName": "Sans nom",
+      "noMembersYet": "Aucun membre pour le moment",
+      "noMembersDescription": "Commencez par ajouter votre premier membre au registre du club.",
+      "noMembersFound": "Aucun membre trouvé",
+      "tryDifferentFilters": "Essayez d'ajuster votre recherche ou vos filtres.",
+      "filterBy": "Filtré par :",
+      "clearFilter": "Effacer le filtre",
+      "failedToLoad": "Impossible de charger les membres",
+      "columns": {
+        "name": "Nom",
+        "type": "Type",
+        "status": "Statut",
+        "disciplines": "Disciplines",
+        "view": "Voir"
+      },
+      "scopes": {
+        "unpaid": "Solde impayé",
+        "renewal": "Renouvellement requis",
+        "expiring": "Abonnements expirant",
+        "docs": "Documents manquants",
+        "inactive": "Membres inactifs",
+        "absent": "Membres absents"
+      }
+    },
+    "status": {
+      "active": "Actif",
+      "inactive": "Inactif",
+      "suspended": "Suspendu",
+      "pending": "En attente"
+    },
+    "type": {
+      "athlete": "Athlète",
+      "staff": "Personnel",
+      "external": "Externe"
+    },
+    "wizard": {
+      "progressAria": "Progression de l'inscription",
+      "stepOf": "Étape {{current}} sur {{total}}",
+      "stepNames": {
+        "classification": "Classification",
+        "photo": "Photo",
+        "identity": "Identité",
+        "contact": "Coordonnées",
+        "disciplines": "Disciplines",
+        "documents": "Documents",
+        "billing": "Facturation",
+        "summary": "Résumé"
+      },
+      "navigation": {
+        "previous": "Précédent",
+        "next": "Suivant",
+        "cancel": "Annuler",
+        "finish": "Terminer",
+        "save": "Enregistrer le brouillon"
+      },
+      "step1": {
+        "heading": "Classification du membre",
+        "description": "Sélectionnez le type d'adhésion pour commencer l'inscription.",
+        "typeLabel": "Type de membre",
+        "athlete": "Athlète",
+        "athleteDesc": "Membre régulier avec disciplines, présences et facturation",
+        "staff": "Personnel",
+        "staffDesc": "Entraîneur, administration ou personnel technique",
+        "external": "Externe",
+        "externalDesc": "Invité, famille ou accès ponctuel"
+      },
+      "step2": {
+        "heading": "Photo du membre",
+        "description": "Une photo aide à identifier rapidement le membre.",
+        "uploadLabel": "Téléverser une photo",
+        "dragDrop": "Glissez-déposez ou cliquez pour téléverser",
+        "fileTypes": "PNG, JPG jusqu'à 5 Mo",
+        "camera": "Caméra",
+        "capture": "Capturer",
+        "retake": "Reprendre",
+        "crop": "Recadrer",
+        "save": "Enregistrer",
+        "skip": "Ignorer",
+        "photoSaved": "Photo enregistrée",
+        "cameraDenied": "Accès à la caméra refusé",
+        "cameraDeniedDescription": "Activez la caméra dans les paramètres du navigateur."
+      },
+      "step3": {
+        "heading": "Identité",
+        "description": "Informations d'identification du membre.",
+        "firstNameLatin": "Prénom (latin)",
+        "lastNameLatin": "Nom (latin)",
+        "firstNameArabic": "Prénom (arabe)",
+        "lastNameArabic": "Nom (arabe)",
+        "dateOfBirth": "Date de naissance",
+        "placeOfBirth": "Lieu de naissance",
+        "gender": "Genre",
+        "nationalId": "Numéro d'identité national",
+        "bloodType": "Groupe sanguin"
+      },
+      "step4": {
+        "heading": "Coordonnées",
+        "description": "Informations pour contacter le membre.",
+        "phone": "Téléphone",
+        "email": "Email",
+        "address": "Adresse",
+        "city": "Ville",
+        "emergencyContact": "Contact d'urgence",
+        "emergencyPhone": "Téléphone d'urgence"
+      },
+      "step5": {
+        "heading": "Disciplines",
+        "description": "Sélectionnez les disciplines pratiquées.",
+        "selectDisciplines": "Sélectionner des disciplines",
+        "noneSelected": "Aucune discipline sélectionnée",
+        "addMore": "Ajouter d'autres"
+      },
+      "step6": {
+        "heading": "Documents",
+        "description": "Téléversez les documents requis.",
+        "upload": "Téléverser",
+        "required": "Requis",
+        "optional": "Optionnel",
+        "expiryDate": "Date d'expiration",
+        "noDocuments": "Aucun document pour le moment"
+      },
+      "step7": {
+        "heading": "Facturation",
+        "description": "Choisissez le plan d'abonnement.",
+        "plan": "Plan",
+        "monthly": "Mensuel",
+        "quarterly": "Trimestriel",
+        "yearly": "Annuel",
+        "custom": "Personnalisé",
+        "amount": "Montant",
+        "startDate": "Date de début",
+        "endDate": "Date de fin",
+        "paymentMethod": "Moyen de paiement",
+        "cash": "Espèces",
+        "card": "Carte",
+        "transfer": "Virement",
+        "other": "Autre",
+        "createInvoice": "Créer la facture",
+        "skipBilling": "Ignorer la facturation"
+      },
+      "step8": {
+        "heading": "Résumé",
+        "description": "Vérifiez les informations avant la confirmation.",
+        "classification": "Classification",
+        "identity": "Identité",
+        "contact": "Contact",
+        "disciplines": "Disciplines",
+        "documents": "Documents",
+        "billing": "Facturation",
+        "edit": "Modifier",
+        "confirm": "Confirmer l'inscription",
+        "saving": "Enregistrement…",
+        "success": "Membre enregistré avec succès",
+        "failed": "Échec de l'enregistrement"
+      }
+    },
+    "edit": {
+      "title": "Modifier le membre",
+      "tabs": {
+        "identity": "Identité",
+        "photo": "Photo",
+        "contact": "Contact",
+        "family": "Famille",
+        "disciplines": "Disciplines",
+        "schedule": "Emploi du temps",
+        "documents": "Documents",
+        "billing": "Facturation",
+        "equipment": "Équipement",
+        "notes": "Notes",
+        "audit": "Journal"
+      },
+      "unsavedChanges": {
+        "title": "Modifications non enregistrées",
+        "message": "Vous avez des modifications non enregistrées. Que voulez-vous faire ?",
+        "discard": "Abandonner",
+        "keepEditing": "Continuer",
+        "saveAndExit": "Enregistrer et quitter"
+      },
+      "addDiscipline": {
+        "title": "Ajouter une discipline",
+        "discipline": "Discipline",
+        "startDate": "Date de début",
+        "endDate": "Date de fin",
+        "price": "Prix",
+        "billingCycle": "Cycle de facturation",
+        "createInvoice": "Créer une facture",
+        "add": "Ajouter",
+        "success": "Discipline ajoutée",
+        "failed": "Échec de l'ajout"
+      }
+    },
+    "profile": {
+      "title": "Profil",
+      "sections": {
+        "overview": "Vue d'ensemble",
+        "identity": "Identité",
+        "contact": "Contact",
+        "family": "Famille",
+        "disciplines": "Disciplines",
+        "schedule": "Emploi du temps",
+        "documents": "Documents",
+        "payments": "Paiements",
+        "equipment": "Équipement",
+        "attendance": "Présence",
+        "notes": "Notes",
+        "audit": "Journal d'audit"
+      },
+      "editProfile": "Modifier le profil",
+      "noDataYet": "Aucune donnée pour l'instant"
+    }
+  },
+  "attendance": {
+    "title": "Tableau de présence",
+    "subtitle": "Suivez les check-ins, la présence et les séances quotidiennes.",
+    "breadcrumb": "Présence",
+    "manualCheckIn": "Check-in manuel",
+    "massCheckout": "Checkout de masse",
+    "checkOut": "Checkout",
+    "currentlyPresent": "Présents actuellement ({{count}})",
+    "massCheckoutConfirm": {
+      "title": "Checkout de masse",
+      "message": "Cela va faire sortir tous les {{count}} membres actuellement présents. Cette action ne peut pas être annulée.",
+      "confirm": "Tout faire sortir",
+      "cancel": "Annuler"
+    },
+    "toast": {
+      "massCheckoutComplete": "Checkout de masse terminé",
+      "massCheckoutCount": "{{count}} membre(s) ont quitté.",
+      "massCheckoutFailed": "Échec du checkout de masse"
+    },
+    "stats": {
+      "title": "Statistiques du jour",
+      "checkIns": "Check-ins",
+      "uniqueMembers": "Membres uniques",
+      "peakHour": "Heure de pointe",
+      "peakHourNone": "Aucune"
+    },
+    "offline": {
+      "banner": "Mode hors ligne — les changements seront synchronisés à la reconnexion"
+    },
+    "log": {
+      "title": "Journal de présence",
+      "empty": "Aucune activité récente",
+      "columns": {
+        "member": "Membre",
+        "checkIn": "Entrée",
+        "checkOut": "Sortie",
+        "duration": "Durée",
+        "method": "Méthode"
+      },
+      "method": {
+        "manual": "Manuel",
+        "kiosk": "Borne",
+        "auto": "Auto"
+      }
+    },
+    "sessions": {
+      "title": "Séances du jour",
+      "empty": "Aucune séance aujourd'hui",
+      "viewSchedule": "Voir l'emploi du temps"
+    },
+    "presenceGrid": {
+      "loading": "Chargement des présents…",
+      "error": "Impossible de charger les présents",
+      "empty": "Aucun membre présent"
+    },
+    "checkIn": {
+      "title": "Enregistrer une arrivée",
+      "searchPlaceholder": "Rechercher un membre…",
+      "confirm": "Enregistrer",
+      "cancel": "Annuler",
+      "success": "Membre enregistré",
+      "failed": "Échec de l'enregistrement"
+    },
+    "checkAction": {
+      "title": "Action",
+      "checkOut": "Faire sortir",
+      "cancel": "Annuler",
+      "success": "Action effectuée",
+      "failed": "Échec de l'action"
+    }
+  },
+  "sessions": {
+    "title": "Séances",
+    "breadcrumb": "Séances",
+    "subtitle": "Planifiez et gérez les sessions hebdomadaires.",
+    "addSession": "Ajouter une séance",
+    "editSession": "Modifier la séance",
+    "deleteSession": "Supprimer la séance",
+    "deleteConfirm": "Supprimer cette séance ?",
+    "form": {
+      "discipline": "Discipline",
+      "coach": "Entraîneur",
+      "room": "Salle",
+      "day": "Jour",
+      "startTime": "Heure de début",
+      "endTime": "Heure de fin",
+      "capacity": "Capacité",
+      "recurring": "Récurrent",
+      "submit": "Enregistrer",
+      "cancel": "Annuler"
+    },
+    "roster": {
+      "title": "Participants",
+      "empty": "Aucun participant",
+      "addMember": "Ajouter un membre",
+      "removeMember": "Retirer"
+    },
+    "capacity": {
+      "full": "Complet",
+      "available": "Disponible",
+      "ofCapacity": "{{current}}/{{max}}"
+    },
+    "status": {
+      "upcoming": "À venir",
+      "ongoing": "En cours",
+      "completed": "Terminé",
+      "cancelled": "Annulé"
+    }
+  },
+  "pos": {
+    "title": "Point de vente",
+    "breadcrumb": "POS",
+    "subtitle": "Enregistrez les ventes de produits et services.",
+    "searchProducts": "Rechercher des produits…",
+    "categories": "Catégories",
+    "allCategories": "Toutes",
+    "cart": {
+      "title": "Panier",
+      "empty": "Panier vide",
+      "addProducts": "Ajoutez des produits pour commencer",
+      "remove": "Retirer",
+      "quantity": "Quantité",
+      "price": "Prix",
+      "subtotal": "Sous-total",
+      "total": "Total",
+      "clear": "Vider le panier"
+    },
+    "member": {
+      "attach": "Associer un membre",
+      "search": "Rechercher…",
+      "detach": "Retirer",
+      "noMember": "Client occasionnel"
+    },
+    "checkout": {
+      "title": "Paiement",
+      "method": "Moyen de paiement",
+      "cash": "Espèces",
+      "card": "Carte",
+      "transfer": "Virement",
+      "amountTendered": "Montant reçu",
+      "change": "Monnaie",
+      "confirm": "Confirmer le paiement",
+      "success": "Vente enregistrée",
+      "failed": "Échec du paiement",
+      "receipt": "Reçu",
+      "printReceipt": "Imprimer le reçu"
+    },
+    "stockError": "Stock insuffisant pour {{name}}"
+  },
+  "payments": {
+    "title": "Paiements",
+    "breadcrumb": "Paiements",
+    "subtitle": "Suivez les reçus, les paiements et les soldes.",
+    "collectPayment": "Encaisser un paiement",
+    "newPayment": "Nouveau paiement",
+    "search": "Rechercher par reçu ou membre…",
+    "columns": {
+      "receipt": "Reçu",
+      "member": "Membre",
+      "date": "Date",
+      "amount": "Montant",
+      "method": "Méthode",
+      "status": "Statut",
+      "actions": "Actions"
+    },
+    "method": {
+      "cash": "Espèces",
+      "card": "Carte",
+      "transfer": "Virement",
+      "other": "Autre"
+    },
+    "status": {
+      "paid": "Payé",
+      "pending": "En attente",
+      "partial": "Partiel",
+      "refunded": "Remboursé",
+      "cancelled": "Annulé"
+    },
+    "filters": {
+      "status": "Statut",
+      "method": "Méthode",
+      "dateRange": "Période",
+      "all": "Tous"
+    },
+    "modal": {
+      "title": "Détails du paiement",
+      "member": "Membre",
+      "amount": "Montant",
+      "method": "Moyen de paiement",
+      "reference": "Référence",
+      "notes": "Notes",
+      "confirm": "Enregistrer",
+      "cancel": "Annuler"
+    },
+    "collect": {
+      "title": "Encaisser un paiement",
+      "selectInvoice": "Sélectionner une facture",
+      "amount": "Montant à encaisser",
+      "method": "Moyen de paiement",
+      "receiptNumber": "Numéro de reçu",
+      "confirm": "Encaisser",
+      "success": "Paiement encaissé",
+      "failed": "Échec de l'encaissement"
+    },
+    "receipt": {
+      "title": "Reçu #{{number}}",
+      "print": "Imprimer",
+      "close": "Fermer",
+      "paidBy": "Payé par",
+      "paidOn": "Payé le",
+      "amount": "Montant",
+      "method": "Méthode",
+      "notes": "Notes"
+    },
+    "empty": "Aucun paiement",
+    "failedToLoad": "Impossible de charger les paiements"
+  },
+  "expenses": {
+    "title": "Dépenses",
+    "breadcrumb": "Dépenses",
+    "subtitle": "Enregistrez et catégorisez les dépenses du club.",
+    "addExpense": "Ajouter une dépense",
+    "editExpense": "Modifier la dépense",
+    "deleteExpense": "Supprimer la dépense",
+    "columns": {
+      "date": "Date",
+      "category": "Catégorie",
+      "description": "Description",
+      "amount": "Montant",
+      "actions": "Actions"
+    },
+    "categories": {
+      "rent": "Loyer",
+      "utilities": "Services publics",
+      "salaries": "Salaires",
+      "equipment": "Équipement",
+      "maintenance": "Entretien",
+      "marketing": "Marketing",
+      "other": "Autre"
+    },
+    "form": {
+      "date": "Date",
+      "category": "Catégorie",
+      "description": "Description",
+      "amount": "Montant",
+      "notes": "Notes",
+      "submit": "Enregistrer",
+      "cancel": "Annuler"
+    },
+    "totals": {
+      "total": "Total des dépenses",
+      "thisMonth": "Ce mois",
+      "thisYear": "Cette année"
+    },
+    "empty": "Aucune dépense enregistrée",
+    "confirmDelete": "Supprimer cette dépense ?",
+    "toast": {
+      "saved": "Dépense enregistrée",
+      "deleted": "Dépense supprimée",
+      "saveFailed": "Échec de l'enregistrement",
+      "deleteFailed": "Échec de la suppression"
+    }
+  },
+  "inventory": {
+    "title": "Inventaire & Équipements",
+    "breadcrumb": "Inventaire",
+    "subtitle": "Gérez vos équipements, stocks et ajustements.",
+    "add": "Ajouter",
+    "edit": "Modifier",
+    "deactivate": "Désactiver",
+    "adjust": "Ajuster",
+    "search": "Rechercher",
+    "searchPlaceholder": "Chercher par nom…",
+    "lowStockOnly": "Stock bas uniquement",
+    "summary": {
+      "totalItems": "Total articles",
+      "lowStock": "Stock bas",
+      "totalValue": "Valeur totale"
+    },
+    "columns": {
+      "name": "Nom",
+      "discipline": "Discipline",
+      "price": "Prix",
+      "stock": "Stock",
+      "status": "Statut",
+      "actions": "Actions"
+    },
+    "badge": {
+      "outOfStock": "Rupture",
+      "lowStock": "Stock bas",
+      "inStock": "En stock"
+    },
+    "pagination": "Page {{page}} sur {{total}} — {{count}} articles",
+    "empty": {
+      "title": "Aucun équipement trouvé",
+      "tryFilters": "Essayez de modifier vos filtres.",
+      "addFirst": "Cliquez sur \"Ajouter\" pour créer votre premier équipement."
+    },
+    "loadFailed": "Impossible de charger l'inventaire.",
+    "form": {
+      "create": "Nouvel équipement",
+      "edit": "Modifier l'équipement",
+      "name": "Nom",
+      "description": "Description",
+      "price": "Prix",
+      "stock": "Stock initial",
+      "discipline": "Discipline",
+      "disciplineNone": "Aucune",
+      "submit": "Enregistrer",
+      "cancel": "Annuler"
+    },
+    "adjustModal": {
+      "title": "Ajuster le stock",
+      "currentStock": "Stock actuel",
+      "change": "Changement",
+      "reason": "Raison",
+      "newStock": "Nouveau stock",
+      "submit": "Ajuster",
+      "cancel": "Annuler",
+      "reasons": {
+        "purchase": "Achat",
+        "sale": "Vente",
+        "loss": "Perte",
+        "damage": "Dommage",
+        "correction": "Correction",
+        "other": "Autre"
+      },
+      "success": "Stock ajusté",
+      "failed": "Échec de l'ajustement"
+    },
+    "history": {
+      "title": "Historique du stock",
+      "empty": "Aucun mouvement",
+      "columns": {
+        "date": "Date",
+        "change": "Changement",
+        "reason": "Raison",
+        "user": "Utilisateur",
+        "balance": "Solde"
+      }
+    },
+    "confirmDeactivate": {
+      "title": "Désactiver l'équipement",
+      "message": "Êtes-vous sûr de vouloir désactiver \"{{name}}\" ? L'équipement ne sera plus disponible à la vente.",
+      "confirm": "Désactiver",
+      "cancel": "Annuler"
+    },
+    "toast": {
+      "deactivated": "Équipement désactivé",
+      "deactivatedDesc": "\"{{name}}\" a été désactivé.",
+      "deactivateFailed": "Désactivation échouée",
+      "deactivateFailedDesc": "Impossible de désactiver l'équipement. Veuillez réessayer.",
+      "created": "Équipement créé",
+      "updated": "Équipement mis à jour",
+      "saveFailed": "Échec de l'enregistrement"
+    }
+  },
+  "kiosk": {
+    "title": "Borne de reconnaissance",
+    "subtitle": "Pointez votre visage vers la caméra pour vous enregistrer.",
+    "cameraDenied": {
+      "title": "Accès à la caméra refusé",
+      "description": "Activez la caméra dans les paramètres du navigateur pour utiliser la borne.",
+      "retry": "Réessayer"
+    },
+    "noFaceDetected": "Aucun visage détecté",
+    "cameraPicker": {
+      "title": "Choisissez une caméra",
+      "select": "Sélectionner"
+    },
+    "manualSearch": {
+      "title": "Recherche manuelle",
+      "placeholder": "Rechercher un membre…",
+      "cancel": "Annuler"
+    },
+    "match": {
+      "welcome": "Bienvenue",
+      "confidence": "Confiance : {{percent}}%",
+      "checkIn": "Check-in",
+      "cancel": "Annuler",
+      "success": "Check-in enregistré",
+      "failed": "Échec du check-in"
+    },
+    "serviceOffline": {
+      "title": "Service indisponible",
+      "description": "La reconnaissance faciale est temporairement hors service.",
+      "retry": "Réessayer"
+    },
+    "alerts": {
+      "multipleFaces": "Plusieurs visages détectés",
+      "unknownFace": "Membre inconnu",
+      "suspended": "Membre suspendu",
+      "expired": "Abonnement expiré"
+    },
+    "receptionist": {
+      "manualCheckIn": "Check-in manuel",
+      "stopKiosk": "Arrêter la borne",
+      "settings": "Paramètres"
+    }
+  },
+  "reports": {
+    "title": "Rapports & Analytics",
+    "subtitle": "Données opérationnelles en temps réel pour piloter votre salle.",
+    "breadcrumb": "Rapports",
+    "filters": {
+      "aria": "Filtres globaux",
+      "label": "Filtres",
+      "from": "Du",
+      "to": "Au",
+      "groupBy": "Regrouper par",
+      "byDay": "Par jour",
+      "byWeek": "Par semaine",
+      "byMonth": "Par mois",
+      "apply": "Appliquer"
+    },
+    "navigation": {
+      "backToCatalog": "Retour au catalogue",
+      "catalog": "Catalogue des rapports"
+    },
+    "export": {
+      "label": "Exporter",
+      "csv": "Exporter en CSV",
+      "pdf": "Exporter en PDF",
+      "print": "Imprimer"
+    },
+    "categories": {
+      "presence": "Présence",
+      "finance": "Finance",
+      "adherents": "Adhérents",
+      "inventaire": "Inventaire",
+      "conformite": "Conformité documents",
+      "custom": "Personnalisé"
+    },
+    "cards": {
+      "attendance_total": {
+        "title": "Total arrivées",
+        "description": "Volume de check-ins, disciplines et heures de pointe."
+      },
+      "attendance_absences": {
+        "title": "Absences",
+        "description": "Membres sans check-in depuis un nombre de jours configurable."
+      },
+      "attendance_late": {
+        "title": "Retards",
+        "description": "Arrivées après l'heure seuil définie."
+      },
+      "financial_revenue": {
+        "title": "Revenus",
+        "description": "Revenus, dépenses, bénéfice net et membres les plus actifs."
+      },
+      "financial_outstanding": {
+        "title": "Soldes impayés",
+        "description": "Membres avec des paiements en attente, classés par ancienneté."
+      },
+      "financial_daily_cash": {
+        "title": "Caisse journalière",
+        "description": "Toutes les transactions d'une journée, heure par heure."
+      },
+      "inventory_sales": {
+        "title": "Ventes & Stock",
+        "description": "Valeur du stock, articles vendus et mouvements."
+      },
+      "membership_overview": {
+        "title": "Vue d'ensemble",
+        "description": "Statuts, types d'abonnements et taux de rétention."
+      },
+      "membership_growth": {
+        "title": "Croissance",
+        "description": "Nouveaux membres et évolution de la base active."
+      },
+      "membership_demographics": {
+        "title": "Démographie",
+        "description": "Répartition par âge et par genre."
+      },
+      "inventory_stock": {
+        "title": "Valeur du stock",
+        "description": "Niveaux de stock, articles en faible quantité et valeur totale."
+      },
+      "documents_missing": {
+        "title": "Documents manquants",
+        "description": "Membres sans tous les documents requis."
+      },
+      "documents_expired": {
+        "title": "Documents expirés",
+        "description": "Documents dont la date de validité est dépassée."
+      },
+      "documents_expiring": {
+        "title": "Documents expirant bientôt",
+        "description": "Documents qui arrivent à expiration prochainement."
+      },
+      "custom": {
+        "title": "Rapport personnalisé",
+        "description": "Créez un rapport sur mesure en sélectionnant vos métriques."
+      }
+    },
+    "attendance": {
+      "title": "Rapport de présence",
+      "kpis": {
+        "totalCheckins": "Total check-ins",
+        "uniqueMembers": "Membres uniques",
+        "avgPerDay": "Moyenne par jour",
+        "peakHour": "Heure de pointe"
+      },
+      "charts": {
+        "dailyTrend": "Tendance quotidienne",
+        "byDiscipline": "Par discipline",
+        "hourlyHeatmap": "Heatmap horaire"
+      },
+      "empty": "Aucune présence dans cette période",
+      "rangeSummary": "{{count}} check-ins · {{unique}} membres uniques"
+    },
+    "financial": {
+      "title": "Rapport financier",
+      "kpis": {
+        "revenue": "Revenus",
+        "expenses": "Dépenses",
+        "netProfit": "Bénéfice net",
+        "margin": "Marge"
+      },
+      "charts": {
+        "revenueByMonth": "Revenus par mois",
+        "expensesByCategory": "Dépenses par catégorie",
+        "netProfit": "Bénéfice net"
+      },
+      "topMembers": "Meilleurs membres",
+      "topMembersByRevenue": "Par revenus",
+      "empty": "Aucune donnée financière"
+    },
+    "membership": {
+      "title": "Rapport d'adhésion",
+      "kpis": {
+        "active": "Membres actifs",
+        "newMembers": "Nouveaux membres",
+        "churn": "Taux d'attrition",
+        "retention": "Rétention"
+      },
+      "charts": {
+        "growth": "Croissance",
+        "byStatus": "Par statut",
+        "byType": "Par type",
+        "demographics": "Démographie",
+        "ageDistribution": "Répartition par âge",
+        "genderDistribution": "Répartition par genre"
+      },
+      "empty": "Aucune donnée"
+    },
+    "inventory": {
+      "title": "Rapport d'inventaire",
+      "kpis": {
+        "totalValue": "Valeur totale",
+        "itemsInStock": "Articles en stock",
+        "lowStock": "Stock bas",
+        "totalSales": "Ventes totales"
+      },
+      "charts": {
+        "stockByCategory": "Stock par catégorie",
+        "topSelling": "Produits les plus vendus"
+      },
+      "columns": {
+        "product": "Produit",
+        "stock": "Stock",
+        "price": "Prix",
+        "value": "Valeur"
+      },
+      "empty": "Aucun produit"
+    },
+    "documents": {
+      "title": "Rapport de documents",
+      "kpis": {
+        "missing": "Manquants",
+        "expired": "Expirés",
+        "expiring": "Expirant bientôt",
+        "valid": "Valides"
+      },
+      "columns": {
+        "member": "Membre",
+        "document": "Document",
+        "status": "Statut",
+        "expiryDate": "Date d'expiration"
+      },
+      "empty": "Aucun document"
+    },
+    "absences": {
+      "title": "Rapport d'absences",
+      "daysLabel": "Jours sans présence",
+      "threshold": "Seuil (jours)",
+      "columns": {
+        "member": "Membre",
+        "lastVisit": "Dernière visite",
+        "daysAgo": "Jours",
+        "status": "Statut"
+      },
+      "empty": "Aucune absence au-delà du seuil"
+    },
+    "lateArrivals": {
+      "title": "Rapport de retards",
+      "threshold": "Heure seuil",
+      "columns": {
+        "member": "Membre",
+        "date": "Date",
+        "time": "Heure",
+        "late": "Retard"
+      },
+      "empty": "Aucun retard"
+    },
+    "outstandingBalances": {
+      "title": "Soldes impayés",
+      "totalOutstanding": "Total dû",
+      "columns": {
+        "member": "Membre",
+        "amount": "Montant",
+        "age": "Ancienneté",
+        "lastPayment": "Dernier paiement"
+      },
+      "empty": "Aucun solde impayé"
+    },
+    "dailyCash": {
+      "title": "Caisse journalière",
+      "date": "Date",
+      "totalIn": "Total entrées",
+      "totalOut": "Total sorties",
+      "net": "Net",
+      "columns": {
+        "time": "Heure",
+        "type": "Type",
+        "description": "Description",
+        "amount": "Montant",
+        "method": "Méthode"
+      },
+      "empty": "Aucune transaction ce jour"
+    },
+    "missingDocuments": {
+      "title": "Documents manquants",
+      "columns": {
+        "member": "Membre",
+        "missing": "Documents manquants"
+      },
+      "empty": "Tous les documents sont à jour"
+    },
+    "custom": {
+      "title": "Rapport personnalisé",
+      "selectMetrics": "Sélectionnez les métriques",
+      "preview": "Prévisualiser",
+      "generate": "Générer",
+      "empty": "Sélectionnez des métriques pour générer un rapport"
+    },
+    "metric": {
+      "vsPreviousPeriod": "vs. période précédente",
+      "noChange": "Aucun changement"
+    }
+  },
+  "settings": {
+    "title": "Paramètres",
+    "breadcrumb": "Paramètres",
+    "subtitle": "Gérez la configuration de votre club, les utilisateurs, les rôles et les préférences système.",
+    "tabsAria": "Sections des paramètres",
+    "tabs": {
+      "general": "Général",
+      "users": "Utilisateurs",
+      "roles": "Rôles",
+      "disciplines": "Disciplines",
+      "pricing": "Tarification",
+      "documents": "Documents",
+      "notifications": "Notifications",
+      "language": "Langue"
+    },
+    "general": {
+      "clubInfo": "Informations du club",
+      "clubName": "Nom du club",
+      "clubNamePlaceholder": "Entrez le nom du club",
+      "phone": "Téléphone",
+      "phonePlaceholder": "+213 …",
+      "email": "Email",
+      "emailPlaceholder": "club@exemple.com",
+      "city": "Ville",
+      "cityPlaceholder": "Ville",
+      "address": "Adresse",
+      "addressPlaceholder": "Adresse complète",
+      "logo": "Logo du club",
+      "uploadLogo": "Téléverser un logo",
+      "dragDropUpload": "Glissez-déposez ou cliquez pour téléverser",
+      "fileTypes": "PNG, JPG, SVG jusqu'à 2 Mo",
+      "removeLogo": "Retirer le logo",
+      "logoPreviewAlt": "Aperçu du logo du club",
+      "receiptTemplates": "Modèles de reçu",
+      "receiptHeader": "En-tête du reçu",
+      "receiptHeaderPlaceholder": "Texte qui apparaît en haut des reçus",
+      "receiptFooter": "Pied du reçu",
+      "receiptFooterPlaceholder": "Texte qui apparaît en bas des reçus",
+      "save": "Enregistrer les modifications",
+      "loadFailed": "Échec du chargement des paramètres",
+      "saveFailed": "Échec de l'enregistrement",
+      "invalidFile": "Fichier invalide",
+      "invalidFileDesc": "Veuillez sélectionner un fichier image.",
+      "saved": "Paramètres enregistrés",
+      "savedDesc": "Les informations du club ont été mises à jour."
+    },
+    "users": {
+      "title": "Utilisateurs",
+      "addUser": "Ajouter un utilisateur",
+      "editUser": "Modifier l'utilisateur",
+      "columns": {
+        "name": "Nom",
+        "email": "Email",
+        "role": "Rôle",
+        "status": "Statut",
+        "lastLogin": "Dernière connexion",
+        "actions": "Actions"
+      },
+      "form": {
+        "firstName": "Prénom",
+        "lastName": "Nom",
+        "email": "Email",
+        "password": "Mot de passe",
+        "passwordConfirm": "Confirmer le mot de passe",
+        "role": "Rôle",
+        "active": "Actif",
+        "submit": "Enregistrer",
+        "cancel": "Annuler"
+      },
+      "deactivate": {
+        "title": "Désactiver l'utilisateur",
+        "message": "Voulez-vous vraiment désactiver cet utilisateur ?",
+        "confirm": "Désactiver",
+        "cancel": "Annuler"
+      }
+    },
+    "roles": {
+      "title": "Rôles",
+      "addRole": "Ajouter un rôle",
+      "editRole": "Modifier le rôle",
+      "permissions": "Permissions",
+      "members": "Membres",
+      "save": "Enregistrer",
+      "cancel": "Annuler"
+    },
+    "disciplines": {
+      "title": "Disciplines",
+      "addDiscipline": "Ajouter une discipline",
+      "editDiscipline": "Modifier la discipline",
+      "name": "Nom",
+      "price": "Prix",
+      "cycle": "Cycle",
+      "active": "Actif",
+      "columns": {
+        "name": "Nom",
+        "price": "Prix",
+        "cycle": "Cycle",
+        "members": "Membres",
+        "actions": "Actions"
+      },
+      "cycles": {
+        "monthly": "Mensuel",
+        "quarterly": "Trimestriel",
+        "yearly": "Annuel"
+      }
+    },
+    "pricing": {
+      "title": "Tarification",
+      "subtitle": "Gérez les plans d'abonnement et les frais.",
+      "addPlan": "Ajouter un plan",
+      "editPlan": "Modifier le plan",
+      "fees": "Frais",
+      "plans": "Plans",
+      "columns": {
+        "name": "Nom",
+        "price": "Prix",
+        "cycle": "Cycle",
+        "active": "Actif",
+        "actions": "Actions"
+      },
+      "form": {
+        "name": "Nom",
+        "price": "Prix",
+        "cycle": "Cycle",
+        "description": "Description",
+        "active": "Actif"
+      }
+    },
+    "documents": {
+      "title": "Types de documents",
+      "subtitle": "Définissez les documents requis pour les membres.",
+      "addType": "Ajouter un type",
+      "editType": "Modifier le type",
+      "required": "Requis",
+      "hasExpiry": "Avec date d'expiration",
+      "columns": {
+        "name": "Nom",
+        "required": "Requis",
+        "hasExpiry": "Expiration",
+        "actions": "Actions"
+      }
+    },
+    "notifications": {
+      "title": "Notifications",
+      "subtitle": "Configurez les alertes et notifications automatiques.",
+      "channels": "Canaux",
+      "email": "Email",
+      "sms": "SMS",
+      "inApp": "Dans l'application",
+      "events": "Événements",
+      "save": "Enregistrer",
+      "saved": "Paramètres enregistrés"
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "unreadCount": "{{count}} non lus",
+    "allCaughtUp": "Tout est à jour",
+    "markAllRead": "Tout marquer comme lu",
+    "loadFailed": "Échec du chargement des notifications",
+    "markAllFailed": "Impossible de tout marquer comme lu",
+    "empty": {
+      "title": "Aucune notification pour l'instant",
+      "description": "Nous vous préviendrons lorsqu'il y aura du nouveau."
+    },
+    "retry": "Réessayer",
+    "open": "Ouvrir",
+    "unread": "Non lu",
+    "types": {
+      "subscription_expiring": "Abonnement",
+      "payment_due": "Paiement",
+      "document_expiring": "Document",
+      "birthday": "Anniversaire",
+      "general": "Général"
+    }
+  },
+  "tasks": {
+    "title": "Tâches",
+    "subtitle": "Suivez les actions à effectuer.",
+    "addTask": "Ajouter une tâche",
+    "empty": "Aucune tâche",
+    "columns": {
+      "title": "Titre",
+      "priority": "Priorité",
+      "dueDate": "Échéance",
+      "assignee": "Assigné",
+      "status": "Statut"
+    },
+    "priority": {
+      "low": "Faible",
+      "medium": "Moyenne",
+      "high": "Haute",
+      "urgent": "Urgente"
+    },
+    "status": {
+      "todo": "À faire",
+      "inProgress": "En cours",
+      "done": "Terminée",
+      "cancelled": "Annulée"
+    }
+  },
+  "modal": {
+    "close": "Fermer"
+  },
+  "toast": {
+    "saved": "Enregistré",
+    "updated": "Mis à jour",
+    "deleted": "Supprimé",
+    "created": "Créé",
+    "failed": "Échec",
+    "copied": "Copié dans le presse-papier"
+  }
+}

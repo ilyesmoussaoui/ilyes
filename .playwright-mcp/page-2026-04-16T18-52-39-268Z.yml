@@ -1,0 +1,376 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - link "Sport ERP home" [ref=e5] [cursor=pointer]:
+        - /url: /dashboard
+        - generic [ref=e6]: S
+        - generic [ref=e7]: Sport ERP
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - generic:
+            - img
+          - combobox "Search" [ref=e11]
+          - button "Recherche par visage — désactivé" [ref=e12] [cursor=pointer]:
+            - img [ref=e13]
+        - radiogroup "Search scope" [ref=e16]:
+          - radio "All" [checked] [ref=e17] [cursor=pointer]
+          - radio "Members" [ref=e18] [cursor=pointer]
+          - radio "Payments" [ref=e19] [cursor=pointer]
+          - radio "Products" [ref=e20] [cursor=pointer]
+      - generic [ref=e21]:
+        - 'button "Sync status: Synced. 0 pending." [ref=e23] [cursor=pointer]':
+          - img [ref=e25]
+          - generic [ref=e27]: Synced
+        - button "Notifications" [ref=e28] [cursor=pointer]:
+          - img [ref=e29]
+        - button "Account menu" [ref=e33] [cursor=pointer]:
+          - generic [ref=e34]: SA
+          - generic [ref=e35]:
+            - generic [ref=e36]: System Administrator
+            - generic [ref=e37]: Admin
+    - complementary "Primary" [ref=e38]:
+      - navigation "Main navigation" [ref=e39]:
+        - list [ref=e40]:
+          - listitem [ref=e41]:
+            - link "Dashboard" [ref=e42] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e44]
+              - generic [ref=e49]: Dashboard
+          - listitem [ref=e50]:
+            - link "Members" [ref=e51] [cursor=pointer]:
+              - /url: /members
+              - img [ref=e53]
+              - generic [ref=e58]: Members
+          - listitem [ref=e59]:
+            - link "Attendance" [ref=e60] [cursor=pointer]:
+              - /url: /attendance
+              - img [ref=e62]
+              - generic [ref=e70]: Attendance
+          - listitem [ref=e71]:
+            - link "Sessions" [ref=e72] [cursor=pointer]:
+              - /url: /sessions
+              - img [ref=e74]
+              - generic [ref=e76]: Sessions
+          - listitem [ref=e77]:
+            - link "POS" [ref=e78] [cursor=pointer]:
+              - /url: /pos
+              - img [ref=e80]
+              - generic [ref=e84]: POS
+          - listitem [ref=e85]:
+            - link "Payments" [ref=e86] [cursor=pointer]:
+              - /url: /payments
+              - img [ref=e88]
+              - generic [ref=e90]: Payments
+          - listitem [ref=e91]:
+            - link "Inventory" [ref=e92] [cursor=pointer]:
+              - /url: /inventory
+              - img [ref=e94]
+              - generic [ref=e98]: Inventory
+          - listitem [ref=e99]:
+            - link "Expenses" [ref=e100] [cursor=pointer]:
+              - /url: /expenses
+              - img [ref=e102]
+              - generic [ref=e105]: Expenses
+          - listitem [ref=e106]:
+            - link "Reports" [ref=e107] [cursor=pointer]:
+              - /url: /reports
+              - img [ref=e109]
+              - generic [ref=e111]: Reports
+          - listitem [ref=e112]:
+            - link "Settings" [ref=e113] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e115]
+              - generic [ref=e118]: Settings
+      - generic [ref=e119]:
+        - generic [ref=e120]:
+          - generic [ref=e121]: SA
+          - generic [ref=e122]:
+            - paragraph [ref=e123]: System Administrator
+            - paragraph [ref=e124]: Administrator
+          - button "Sign out" [ref=e125] [cursor=pointer]:
+            - img [ref=e126]
+        - button "Collapse sidebar" [ref=e129] [cursor=pointer]:
+          - img [ref=e130]
+          - generic [ref=e132]: Collapse
+    - main [ref=e133]:
+      - generic [ref=e134]:
+        - navigation "Breadcrumb" [ref=e135]:
+          - list [ref=e136]:
+            - listitem [ref=e137]:
+              - link "Home" [ref=e138] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=e139]:
+              - img [ref=e140]
+            - listitem [ref=e142]: Members
+        - generic [ref=e144]:
+          - generic [ref=e145]:
+            - generic [ref=e146]:
+              - heading "Members" [level=1] [ref=e147]
+              - paragraph [ref=e148]:
+                - text: Manage athletes, staff, and external members.
+                - generic [ref=e149]: (22 total)
+            - button "Add member" [ref=e150] [cursor=pointer]:
+              - img [ref=e152]
+              - generic [ref=e153]: Add member
+          - table [ref=e157]:
+            - rowgroup [ref=e158]:
+              - row "Name Type Status Disciplines" [ref=e159]:
+                - columnheader "Name" [ref=e160]:
+                  - button "Name" [ref=e161] [cursor=pointer]:
+                    - text: Name
+                    - generic [ref=e162]:
+                      - img [ref=e163]
+                      - img [ref=e165]
+                - columnheader "Type" [ref=e167]:
+                  - button "Type" [ref=e168] [cursor=pointer]:
+                    - text: Type
+                    - generic [ref=e169]:
+                      - img [ref=e170]
+                      - img [ref=e172]
+                - columnheader "Status" [ref=e174]
+                - columnheader "Disciplines" [ref=e175]
+                - columnheader [ref=e176]
+            - rowgroup [ref=e177]:
+              - row "Test Later athlete Pending Taekwondo View" [ref=e178] [cursor=pointer]:
+                - cell "Test Later" [ref=e179]
+                - cell "athlete" [ref=e180]
+                - cell "Pending" [ref=e181]:
+                  - generic [ref=e182]:
+                    - img [ref=e184]
+                    - generic [ref=e187]: Pending
+                - cell "Taekwondo" [ref=e188]
+                - cell "View" [ref=e189]:
+                  - link "View" [ref=e190]:
+                    - /url: /members/c7e27a3a-9e2f-47a5-9983-90265476df88
+              - row "Karim Benali athlete Active Taekwondo View" [ref=e191] [cursor=pointer]:
+                - cell "Karim Benali" [ref=e192]
+                - cell "athlete" [ref=e193]
+                - cell "Active" [ref=e194]:
+                  - generic [ref=e195]:
+                    - img [ref=e197]
+                    - generic [ref=e199]: Active
+                - cell "Taekwondo" [ref=e200]
+                - cell "View" [ref=e201]:
+                  - link "View" [ref=e202]:
+                    - /url: /members/4a248d94-e896-47c8-9b31-0ec34ff7e059
+              - row "Dounia Oukaci athlete Active Swimming View" [ref=e203] [cursor=pointer]:
+                - cell "Dounia Oukaci" [ref=e204]
+                - cell "athlete" [ref=e205]
+                - cell "Active" [ref=e206]:
+                  - generic [ref=e207]:
+                    - img [ref=e209]
+                    - generic [ref=e211]: Active
+                - cell "Swimming" [ref=e212]
+                - cell "View" [ref=e213]:
+                  - link "View" [ref=e214]:
+                    - /url: /members/0da7575c-64be-4fd4-a763-e9e6ae96c8fe
+              - row "Nabil Djebbar athlete Active Taekwondo View" [ref=e215] [cursor=pointer]:
+                - cell "Nabil Djebbar" [ref=e216]
+                - cell "athlete" [ref=e217]
+                - cell "Active" [ref=e218]:
+                  - generic [ref=e219]:
+                    - img [ref=e221]
+                    - generic [ref=e223]: Active
+                - cell "Taekwondo" [ref=e224]
+                - cell "View" [ref=e225]:
+                  - link "View" [ref=e226]:
+                    - /url: /members/8e64a7a2-8d9e-4f02-bd4b-2a2187c32e57
+              - row "Imane Zerouali athlete Active Equestrian View" [ref=e227] [cursor=pointer]:
+                - cell "Imane Zerouali" [ref=e228]
+                - cell "athlete" [ref=e229]
+                - cell "Active" [ref=e230]:
+                  - generic [ref=e231]:
+                    - img [ref=e233]
+                    - generic [ref=e235]: Active
+                - cell "Equestrian" [ref=e236]
+                - cell "View" [ref=e237]:
+                  - link "View" [ref=e238]:
+                    - /url: /members/53a994e1-5eb7-448a-bb8c-99221c3f89a6
+              - row "Walid Rahmani athlete Active Swimming View" [ref=e239] [cursor=pointer]:
+                - cell "Walid Rahmani" [ref=e240]
+                - cell "athlete" [ref=e241]
+                - cell "Active" [ref=e242]:
+                  - generic [ref=e243]:
+                    - img [ref=e245]
+                    - generic [ref=e247]: Active
+                - cell "Swimming" [ref=e248]
+                - cell "View" [ref=e249]:
+                  - link "View" [ref=e250]:
+                    - /url: /members/b14fabf0-8855-4499-8955-19b884712beb
+              - row "Rania Khelifi athlete Active Taekwondo View" [ref=e251] [cursor=pointer]:
+                - cell "Rania Khelifi" [ref=e252]
+                - cell "athlete" [ref=e253]
+                - cell "Active" [ref=e254]:
+                  - generic [ref=e255]:
+                    - img [ref=e257]
+                    - generic [ref=e259]: Active
+                - cell "Taekwondo" [ref=e260]
+                - cell "View" [ref=e261]:
+                  - link "View" [ref=e262]:
+                    - /url: /members/bb359d22-c927-4bbd-8b44-32c88e7d5820
+              - row "Anis Tahri athlete Active Equestrian View" [ref=e263] [cursor=pointer]:
+                - cell "Anis Tahri" [ref=e264]
+                - cell "athlete" [ref=e265]
+                - cell "Active" [ref=e266]:
+                  - generic [ref=e267]:
+                    - img [ref=e269]
+                    - generic [ref=e271]: Active
+                - cell "Equestrian" [ref=e272]
+                - cell "View" [ref=e273]:
+                  - link "View" [ref=e274]:
+                    - /url: /members/376dfbc5-7532-4b91-94a1-de926a353561
+              - row "Meriem Boumediene athlete Active Swimming View" [ref=e275] [cursor=pointer]:
+                - cell "Meriem Boumediene" [ref=e276]
+                - cell "athlete" [ref=e277]
+                - cell "Active" [ref=e278]:
+                  - generic [ref=e279]:
+                    - img [ref=e281]
+                    - generic [ref=e283]: Active
+                - cell "Swimming" [ref=e284]
+                - cell "View" [ref=e285]:
+                  - link "View" [ref=e286]:
+                    - /url: /members/e4a6baa2-cb51-4a5d-bd2e-8e820627c0af
+              - row "Youcef Nait athlete Active Taekwondo View" [ref=e287] [cursor=pointer]:
+                - cell "Youcef Nait" [ref=e288]
+                - cell "athlete" [ref=e289]
+                - cell "Active" [ref=e290]:
+                  - generic [ref=e291]:
+                    - img [ref=e293]
+                    - generic [ref=e295]: Active
+                - cell "Taekwondo" [ref=e296]
+                - cell "View" [ref=e297]:
+                  - link "View" [ref=e298]:
+                    - /url: /members/68abce0b-81af-4b3e-bb19-f6017e16f90e
+              - row "Samira Brahimi athlete Active Equestrian View" [ref=e299] [cursor=pointer]:
+                - cell "Samira Brahimi" [ref=e300]
+                - cell "athlete" [ref=e301]
+                - cell "Active" [ref=e302]:
+                  - generic [ref=e303]:
+                    - img [ref=e305]
+                    - generic [ref=e307]: Active
+                - cell "Equestrian" [ref=e308]
+                - cell "View" [ref=e309]:
+                  - link "View" [ref=e310]:
+                    - /url: /members/e7788acb-c61a-46bc-8740-cca5cc5b9d2f
+              - row "Bilal Saidi athlete Active Swimming View" [ref=e311] [cursor=pointer]:
+                - cell "Bilal Saidi" [ref=e312]
+                - cell "athlete" [ref=e313]
+                - cell "Active" [ref=e314]:
+                  - generic [ref=e315]:
+                    - img [ref=e317]
+                    - generic [ref=e319]: Active
+                - cell "Swimming" [ref=e320]
+                - cell "View" [ref=e321]:
+                  - link "View" [ref=e322]:
+                    - /url: /members/4dcf1b62-d8bd-4ede-84bd-e05855f32723
+              - row "Hana Mansouri athlete Active Taekwondo View" [ref=e323] [cursor=pointer]:
+                - cell "Hana Mansouri" [ref=e324]
+                - cell "athlete" [ref=e325]
+                - cell "Active" [ref=e326]:
+                  - generic [ref=e327]:
+                    - img [ref=e329]
+                    - generic [ref=e331]: Active
+                - cell "Taekwondo" [ref=e332]
+                - cell "View" [ref=e333]:
+                  - link "View" [ref=e334]:
+                    - /url: /members/68506639-d0e9-45dd-ad53-1a4caa411012
+              - row "Riad Belaid athlete Active Equestrian View" [ref=e335] [cursor=pointer]:
+                - cell "Riad Belaid" [ref=e336]
+                - cell "athlete" [ref=e337]
+                - cell "Active" [ref=e338]:
+                  - generic [ref=e339]:
+                    - img [ref=e341]
+                    - generic [ref=e343]: Active
+                - cell "Equestrian" [ref=e344]
+                - cell "View" [ref=e345]:
+                  - link "View" [ref=e346]:
+                    - /url: /members/44dc5f25-252f-44b4-a690-8a8e597f9b80
+              - row "Nadia Sebti athlete Active Swimming View" [ref=e347] [cursor=pointer]:
+                - cell "Nadia Sebti" [ref=e348]
+                - cell "athlete" [ref=e349]
+                - cell "Active" [ref=e350]:
+                  - generic [ref=e351]:
+                    - img [ref=e353]
+                    - generic [ref=e355]: Active
+                - cell "Swimming" [ref=e356]
+                - cell "View" [ref=e357]:
+                  - link "View" [ref=e358]:
+                    - /url: /members/ef013744-3431-4771-95f1-e2f51e4b7d35
+              - row "Karim Cherif athlete Active Taekwondo View" [ref=e359] [cursor=pointer]:
+                - cell "Karim Cherif" [ref=e360]
+                - cell "athlete" [ref=e361]
+                - cell "Active" [ref=e362]:
+                  - generic [ref=e363]:
+                    - img [ref=e365]
+                    - generic [ref=e367]: Active
+                - cell "Taekwondo" [ref=e368]
+                - cell "View" [ref=e369]:
+                  - link "View" [ref=e370]:
+                    - /url: /members/9e23c34f-c9e4-4ad0-be96-8534cb89d3da
+              - row "Lina Zidane athlete Active Equestrian View" [ref=e371] [cursor=pointer]:
+                - cell "Lina Zidane" [ref=e372]
+                - cell "athlete" [ref=e373]
+                - cell "Active" [ref=e374]:
+                  - generic [ref=e375]:
+                    - img [ref=e377]
+                    - generic [ref=e379]: Active
+                - cell "Equestrian" [ref=e380]
+                - cell "View" [ref=e381]:
+                  - link "View" [ref=e382]:
+                    - /url: /members/5a88413a-6b73-4f31-8b4e-ce1ec36c10a9
+              - row "Mohamed Hadj athlete Active Swimming View" [ref=e383] [cursor=pointer]:
+                - cell "Mohamed Hadj" [ref=e384]
+                - cell "athlete" [ref=e385]
+                - cell "Active" [ref=e386]:
+                  - generic [ref=e387]:
+                    - img [ref=e389]
+                    - generic [ref=e391]: Active
+                - cell "Swimming" [ref=e392]
+                - cell "View" [ref=e393]:
+                  - link "View" [ref=e394]:
+                    - /url: /members/61f1fe87-79e2-45d0-8a10-0f713535ea04
+              - row "Amina Belkacem athlete Active Taekwondo View" [ref=e395] [cursor=pointer]:
+                - cell "Amina Belkacem" [ref=e396]
+                - cell "athlete" [ref=e397]
+                - cell "Active" [ref=e398]:
+                  - generic [ref=e399]:
+                    - img [ref=e401]
+                    - generic [ref=e403]: Active
+                - cell "Taekwondo" [ref=e404]
+                - cell "View" [ref=e405]:
+                  - link "View" [ref=e406]:
+                    - /url: /members/9913c937-f5fe-40c3-9f12-54bfe433bcc0
+              - row "Sara Messaoudi athlete Active Equestrian View" [ref=e407] [cursor=pointer]:
+                - cell "Sara Messaoudi" [ref=e408]
+                - cell "athlete" [ref=e409]
+                - cell "Active" [ref=e410]:
+                  - generic [ref=e411]:
+                    - img [ref=e413]
+                    - generic [ref=e415]: Active
+                - cell "Equestrian" [ref=e416]
+                - cell "View" [ref=e417]:
+                  - link "View" [ref=e418]:
+                    - /url: /members/bb2229da-4ecf-4f3c-8242-2da872e7c6ba
+              - row "Yacine Kaddour athlete Active Swimming View" [ref=e419] [cursor=pointer]:
+                - cell "Yacine Kaddour" [ref=e420]
+                - cell "athlete" [ref=e421]
+                - cell "Active" [ref=e422]:
+                  - generic [ref=e423]:
+                    - img [ref=e425]
+                    - generic [ref=e427]: Active
+                - cell "Swimming" [ref=e428]
+                - cell "View" [ref=e429]:
+                  - link "View" [ref=e430]:
+                    - /url: /members/3dc21e97-a26f-44d3-bc1f-45fd3c664dc3
+              - row "Ahmed Benali athlete Active Taekwondo View" [ref=e431] [cursor=pointer]:
+                - cell "Ahmed Benali" [ref=e432]
+                - cell "athlete" [ref=e433]
+                - cell "Active" [ref=e434]:
+                  - generic [ref=e435]:
+                    - img [ref=e437]
+                    - generic [ref=e439]: Active
+                - cell "Taekwondo" [ref=e440]
+                - cell "View" [ref=e441]:
+                  - link "View" [ref=e442]:
+                    - /url: /members/96ad2cb3-ead0-45ff-87a9-6cae21da0892
+  - region "Notifications"

@@ -1,5 +1,6 @@
 import { buildApp } from './app.js';
 import { getEnv } from './config/env.js';
+import { initSocketIO } from './lib/socket.js';
 
 async function start(): Promise<void> {
   const env = getEnv();
@@ -21,7 +22,8 @@ async function start(): Promise<void> {
 
   try {
     await app.listen({ port: env.PORT, host: env.HOST });
-    app.log.info(`gym-saas backend listening on http://${env.HOST}:${env.PORT}`);
+    initSocketIO(app.server);
+    app.log.info(`gym-saas backend listening on http://${env.HOST}:${env.PORT} (Socket.IO attached)`);
   } catch (err) {
     app.log.error({ err }, 'failed to start server');
     process.exit(1);

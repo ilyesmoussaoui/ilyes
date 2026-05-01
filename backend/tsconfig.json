@@ -23,5 +23,5 @@
     "types": ["node"]
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "dist", "prisma/seed.ts"]
+  "exclude": ["node_modules", "dist", "prisma/seed.ts", "src/**/*.test.ts", "vitest.config.ts"]
 }

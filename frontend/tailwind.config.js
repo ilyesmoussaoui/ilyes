@@ -11,6 +11,9 @@ export default {
     {
       pattern: /shadow-elevation-(0|1|2|3)/,
     },
+    'section-highlight',
+    'animate-highlight-pulse',
+    'animate-icon-glow',
   ],
   theme: {
     extend: {
@@ -109,12 +112,24 @@ export default {
           from: { opacity: '0', transform: 'translateX(24px)' },
           to: { opacity: '1', transform: 'translateX(0)' },
         },
+        'highlight-pulse': {
+          '0%':   { backgroundColor: 'transparent' },
+          '15%':  { backgroundColor: 'var(--color-primary-50)' },
+          '75%':  { backgroundColor: 'var(--color-primary-50)' },
+          '100%': { backgroundColor: 'transparent' },
+        },
+        'icon-glow': {
+          '0%, 100%': { boxShadow: '0 0 0 0 rgba(37, 99, 235, 0)' },
+          '50%':       { boxShadow: '0 0 0 6px rgba(37, 99, 235, 0.18)' },
+        },
       },
       animation: {
         shimmer: 'shimmer 1.4s linear infinite',
         'fade-in': 'fade-in 150ms ease-out',
         'slide-up': 'slide-up 180ms ease-out',
         'toast-in': 'toast-in 200ms ease-out',
+        'highlight-pulse': 'highlight-pulse 2000ms ease-in-out forwards',
+        'icon-glow': 'icon-glow 1.6s ease-in-out infinite',
       },
     },
   },

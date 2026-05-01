@@ -1,0 +1,95 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - link "Sport ERP home" [ref=e5] [cursor=pointer]:
+        - /url: /dashboard
+        - generic [ref=e6]: S
+        - generic [ref=e7]: Sport ERP
+      - generic [ref=e9]:
+        - generic:
+          - img
+        - searchbox "Search" [ref=e10]
+        - button "Face search coming soon" [disabled] [ref=e11]:
+          - img [ref=e12]
+      - generic [ref=e15]:
+        - button "Notifications, 3 unread" [ref=e16] [cursor=pointer]:
+          - img [ref=e17]
+          - generic [ref=e20]: "3"
+        - button "Account menu" [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]: SA
+          - generic [ref=e24]:
+            - generic [ref=e25]: System Administrator
+            - generic [ref=e26]: Admin
+    - complementary "Primary" [ref=e27]:
+      - navigation "Main navigation" [ref=e28]:
+        - list [ref=e29]:
+          - listitem [ref=e30]:
+            - link "Dashboard" [ref=e31] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e33]
+              - generic [ref=e38]: Dashboard
+          - listitem [ref=e39]:
+            - link "Members" [ref=e40] [cursor=pointer]:
+              - /url: /members
+              - img [ref=e42]
+              - generic [ref=e47]: Members
+          - listitem [ref=e48]:
+            - link "Attendance" [ref=e49] [cursor=pointer]:
+              - /url: /attendance
+              - img [ref=e51]
+              - generic [ref=e59]: Attendance
+          - listitem [ref=e60]:
+            - link "Sessions" [ref=e61] [cursor=pointer]:
+              - /url: /sessions
+              - img [ref=e63]
+              - generic [ref=e65]: Sessions
+          - listitem [ref=e66]:
+            - link "POS" [ref=e67] [cursor=pointer]:
+              - /url: /pos
+              - img [ref=e69]
+              - generic [ref=e73]: POS
+          - listitem [ref=e74]:
+            - link "Payments" [ref=e75] [cursor=pointer]:
+              - /url: /payments
+              - img [ref=e77]
+              - generic [ref=e79]: Payments
+          - listitem [ref=e80]:
+            - link "Inventory" [ref=e81] [cursor=pointer]:
+              - /url: /inventory
+              - img [ref=e83]
+              - generic [ref=e87]: Inventory
+          - listitem [ref=e88]:
+            - link "Reports" [ref=e89] [cursor=pointer]:
+              - /url: /reports
+              - img [ref=e91]
+              - generic [ref=e93]: Reports
+          - listitem [ref=e94]:
+            - link "Settings" [ref=e95] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e97]
+              - generic [ref=e100]: Settings
+      - generic [ref=e101]:
+        - generic [ref=e102]:
+          - generic [ref=e103]: SA
+          - generic [ref=e104]:
+            - paragraph [ref=e105]: System Administrator
+            - paragraph [ref=e106]: Administrator
+          - button "Sign out" [ref=e107] [cursor=pointer]:
+            - img [ref=e108]
+        - button "Collapse sidebar" [ref=e111] [cursor=pointer]:
+          - img [ref=e112]
+          - generic [ref=e114]: Collapse
+    - main [ref=e115]:
+      - generic [ref=e116]:
+        - navigation "Breadcrumb" [ref=e117]:
+          - list [ref=e118]:
+            - listitem [ref=e119]:
+              - link "Home" [ref=e120] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=e121]:
+              - img [ref=e122]
+            - listitem [ref=e124]: Dashboard
+        - generic [ref=e126]:
+          - heading "Dashboard" [level=1] [ref=e127]
+          - paragraph [ref=e128]: Coming in a later part
+  - region "Notifications"

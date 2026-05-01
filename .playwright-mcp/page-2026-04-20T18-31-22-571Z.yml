@@ -1,0 +1,378 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - link "Sport ERP home" [ref=e5] [cursor=pointer]:
+        - /url: /dashboard
+        - generic [ref=e6]: S
+        - generic [ref=e7]: Sport ERP
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - generic:
+            - img
+          - combobox "Search" [ref=e11]
+          - button "Recherche par visage — désactivé" [ref=e12] [cursor=pointer]:
+            - img [ref=e13]
+        - radiogroup "Search scope" [ref=e16]:
+          - radio "All" [checked] [ref=e17] [cursor=pointer]
+          - radio "Members" [ref=e18] [cursor=pointer]
+          - radio "Payments" [ref=e19] [cursor=pointer]
+          - radio "Products" [ref=e20] [cursor=pointer]
+      - generic [ref=e21]:
+        - 'button "Sync status: Synced. 0 pending." [ref=e23] [cursor=pointer]':
+          - img [ref=e25]
+          - generic [ref=e27]: Synced
+        - button "Notifications" [ref=e28] [cursor=pointer]:
+          - img [ref=e29]
+        - button "Account menu" [ref=e33] [cursor=pointer]:
+          - generic [ref=e34]: SA
+          - generic [ref=e35]:
+            - generic [ref=e36]: System Administrator
+            - generic [ref=e37]: Admin
+    - complementary "Primary" [ref=e38]:
+      - navigation "Main navigation" [ref=e39]:
+        - list [ref=e40]:
+          - listitem [ref=e41]:
+            - link "Dashboard" [ref=e42] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e44]
+              - generic [ref=e49]: Dashboard
+          - listitem [ref=e50]:
+            - link "Members" [ref=e51] [cursor=pointer]:
+              - /url: /members
+              - img [ref=e53]
+              - generic [ref=e58]: Members
+          - listitem [ref=e59]:
+            - link "Attendance" [ref=e60] [cursor=pointer]:
+              - /url: /attendance
+              - img [ref=e62]
+              - generic [ref=e70]: Attendance
+          - listitem [ref=e71]:
+            - link "Sessions" [ref=e72] [cursor=pointer]:
+              - /url: /sessions
+              - img [ref=e74]
+              - generic [ref=e76]: Sessions
+          - listitem [ref=e77]:
+            - link "POS" [ref=e78] [cursor=pointer]:
+              - /url: /pos
+              - img [ref=e80]
+              - generic [ref=e84]: POS
+          - listitem [ref=e85]:
+            - link "Payments" [ref=e86] [cursor=pointer]:
+              - /url: /payments
+              - img [ref=e88]
+              - generic [ref=e90]: Payments
+          - listitem [ref=e91]:
+            - link "Inventory" [ref=e92] [cursor=pointer]:
+              - /url: /inventory
+              - img [ref=e94]
+              - generic [ref=e98]: Inventory
+          - listitem [ref=e99]:
+            - link "Expenses" [ref=e100] [cursor=pointer]:
+              - /url: /expenses
+              - img [ref=e102]
+              - generic [ref=e105]: Expenses
+          - listitem [ref=e106]:
+            - link "Reports" [ref=e107] [cursor=pointer]:
+              - /url: /reports
+              - img [ref=e109]
+              - generic [ref=e111]: Reports
+          - listitem [ref=e112]:
+            - link "Settings" [ref=e113] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e115]
+              - generic [ref=e118]: Settings
+      - generic [ref=e119]:
+        - generic [ref=e120]:
+          - generic [ref=e121]: SA
+          - generic [ref=e122]:
+            - paragraph [ref=e123]: System Administrator
+            - paragraph [ref=e124]: Administrator
+          - button "Sign out" [ref=e125] [cursor=pointer]:
+            - img [ref=e126]
+        - button "Collapse sidebar" [ref=e129] [cursor=pointer]:
+          - img [ref=e130]
+          - generic [ref=e132]: Collapse
+    - main [ref=e133]:
+      - generic [ref=e134]:
+        - navigation "Résumé des alertes" [ref=e135]:
+          - link "Solde impayé 7" [ref=e136] [cursor=pointer]:
+            - /url: "#section-unpaidBalance"
+            - text: Solde impayé
+            - generic [ref=e137]: "7"
+          - link "Renouvellement requis 20" [ref=e138] [cursor=pointer]:
+            - /url: "#section-renewalNeeded"
+            - text: Renouvellement requis
+            - generic [ref=e139]: "20"
+          - link "Membres inactifs 19" [ref=e140] [cursor=pointer]:
+            - /url: "#section-inactiveMembers"
+            - text: Membres inactifs
+            - generic [ref=e141]: "19"
+          - link "Membres absents 20" [ref=e142] [cursor=pointer]:
+            - /url: "#section-absentToday"
+            - text: Membres absents
+            - generic [ref=e143]: "20"
+        - main [ref=e144]:
+          - generic [ref=e145]:
+            - heading "Tableau de bord" [level=1] [ref=e146]
+            - paragraph [ref=e147]: Alertes et notifications en temps réel
+          - generic [ref=e148]:
+            - region "Solde impayé" [ref=e149]:
+              - generic [ref=e150]:
+                - heading "Solde impayé" [level=2] [ref=e152]
+                - generic [ref=e153]: "7"
+                - link "Voir tout — Solde impayé" [ref=e154] [cursor=pointer]:
+                  - /url: /members
+                  - text: Voir tout
+                  - img [ref=e155]
+              - generic [ref=e157]:
+                - 'link "Initiales: YN Youcef Nait Taekwondo يوسف ناث 1 500 DZD" [ref=e158] [cursor=pointer]':
+                  - /url: /members/cb2bbac2-39d7-4740-9985-ce8af9671c6f?highlight=balance
+                  - 'generic "Initiales: YN" [ref=e160]': YN
+                  - generic [ref=e161]:
+                    - generic [ref=e162]:
+                      - generic [ref=e163]: Youcef Nait
+                      - generic [ref=e164]: Taekwondo
+                    - generic [ref=e165]: يوسف ناث
+                    - generic [ref=e166]: 1 500 DZD
+                - 'link "Initiales: AB Ahmed Benali Taekwondo أحمد بن علي 1 500 DZD" [ref=e167] [cursor=pointer]':
+                  - /url: /members/31742376-44ce-4278-a45f-7e4f21d0ff02?highlight=balance
+                  - 'generic "Initiales: AB" [ref=e169]': AB
+                  - generic [ref=e170]:
+                    - generic [ref=e171]:
+                      - generic [ref=e172]: Ahmed Benali
+                      - generic [ref=e173]: Taekwondo
+                    - generic [ref=e174]: أحمد بن علي
+                    - generic [ref=e175]: 1 500 DZD
+                - 'link "Initiales: HM Hana Mansouri Taekwondo هناء منصوري 1 500 DZD" [ref=e176] [cursor=pointer]':
+                  - /url: /members/76bab934-3a24-4785-8741-60d698be23b9?highlight=balance
+                  - 'generic "Initiales: HM" [ref=e178]': HM
+                  - generic [ref=e179]:
+                    - generic [ref=e180]:
+                      - generic [ref=e181]: Hana Mansouri
+                      - generic [ref=e182]: Taekwondo
+                    - generic [ref=e183]: هناء منصوري
+                    - generic [ref=e184]: 1 500 DZD
+                - 'link "Initiales: KC Karim Cherif Taekwondo كريم شريف 1 500 DZD" [ref=e185] [cursor=pointer]':
+                  - /url: /members/76e0fc30-f171-4ef5-8c30-284b64ff5726?highlight=balance
+                  - 'generic "Initiales: KC" [ref=e187]': KC
+                  - generic [ref=e188]:
+                    - generic [ref=e189]:
+                      - generic [ref=e190]: Karim Cherif
+                      - generic [ref=e191]: Taekwondo
+                    - generic [ref=e192]: كريم شريف
+                    - generic [ref=e193]: 1 500 DZD
+                - 'link "Initiales: AB Amina Belkacem Taekwondo أمينة بلقاسم 1 500 DZD" [ref=e194] [cursor=pointer]':
+                  - /url: /members/24842923-92de-4463-b769-d16912a43bd7?highlight=balance
+                  - 'generic "Initiales: AB" [ref=e196]': AB
+                  - generic [ref=e197]:
+                    - generic [ref=e198]:
+                      - generic [ref=e199]: Amina Belkacem
+                      - generic [ref=e200]: Taekwondo
+                    - generic [ref=e201]: أمينة بلقاسم
+                    - generic [ref=e202]: 1 500 DZD
+                - link "Voir 2 de plus" [ref=e203] [cursor=pointer]:
+                  - /url: /members
+            - region "Rupture de stock" [ref=e204]:
+              - generic [ref=e205]:
+                - heading "Rupture de stock" [level=2] [ref=e207]
+                - generic [ref=e208]: "0"
+                - link "Voir tout — Rupture de stock" [ref=e209] [cursor=pointer]:
+                  - /url: /inventory
+                  - text: Voir tout
+                  - img [ref=e210]
+              - generic [ref=e213]:
+                - img [ref=e214]
+                - generic [ref=e217]: Tous les articles sont en stock.
+            - region "Abonnements expirant" [ref=e218]:
+              - generic [ref=e219]:
+                - heading "Abonnements expirant" [level=2] [ref=e221]
+                - generic [ref=e222]: "0"
+                - link "Voir tout — Abonnements expirant" [ref=e223] [cursor=pointer]:
+                  - /url: /members
+                  - text: Voir tout
+                  - img [ref=e224]
+              - generic [ref=e227]:
+                - img [ref=e228]
+                - generic [ref=e231]: Aucune alerte — abonnements expirant
+            - region "Renouvellement requis" [ref=e232]:
+              - generic [ref=e233]:
+                - heading "Renouvellement requis" [level=2] [ref=e235]
+                - generic [ref=e236]: "20"
+                - link "Voir tout — Renouvellement requis" [ref=e237] [cursor=pointer]:
+                  - /url: /members
+                  - text: Voir tout
+                  - img [ref=e238]
+              - generic [ref=e240]:
+                - 'link "Initiales: AB Ahmed Benali Taekwondo أحمد بن علي 16 avr. 2026 · il y a 4 jours" [ref=e241] [cursor=pointer]':
+                  - /url: /members/31742376-44ce-4278-a45f-7e4f21d0ff02?highlight=subscriptions
+                  - 'generic "Initiales: AB" [ref=e243]': AB
+                  - generic [ref=e244]:
+                    - generic [ref=e245]:
+                      - generic [ref=e246]: Ahmed Benali
+                      - generic [ref=e247]: Taekwondo
+                    - generic [ref=e248]: أحمد بن علي
+                    - generic [ref=e249]:
+                      - generic [ref=e250]: 16 avr. 2026
+                      - generic [ref=e251]: · il y a 4 jours
+                - 'link "Initiales: YK Yacine Kaddour Swimming ياسين قدور 16 avr. 2026 · il y a 4 jours" [ref=e252] [cursor=pointer]':
+                  - /url: /members/3e426913-0df4-4de0-9b73-8e828b338aeb?highlight=subscriptions
+                  - 'generic "Initiales: YK" [ref=e254]': YK
+                  - generic [ref=e255]:
+                    - generic [ref=e256]:
+                      - generic [ref=e257]: Yacine Kaddour
+                      - generic [ref=e258]: Swimming
+                    - generic [ref=e259]: ياسين قدور
+                    - generic [ref=e260]:
+                      - generic [ref=e261]: 16 avr. 2026
+                      - generic [ref=e262]: · il y a 4 jours
+                - 'link "Initiales: SM Sara Messaoudi Equestrian سارة مسعودي 16 avr. 2026 · il y a 4 jours" [ref=e263] [cursor=pointer]':
+                  - /url: /members/3ce7b6c1-9ccc-487e-9675-4ae24378da8f?highlight=subscriptions
+                  - 'generic "Initiales: SM" [ref=e265]': SM
+                  - generic [ref=e266]:
+                    - generic [ref=e267]:
+                      - generic [ref=e268]: Sara Messaoudi
+                      - generic [ref=e269]: Equestrian
+                    - generic [ref=e270]: سارة مسعودي
+                    - generic [ref=e271]:
+                      - generic [ref=e272]: 16 avr. 2026
+                      - generic [ref=e273]: · il y a 4 jours
+                - 'link "Initiales: AB Amina Belkacem Taekwondo أمينة بلقاسم 16 avr. 2026 · il y a 4 jours" [ref=e274] [cursor=pointer]':
+                  - /url: /members/24842923-92de-4463-b769-d16912a43bd7?highlight=subscriptions
+                  - 'generic "Initiales: AB" [ref=e276]': AB
+                  - generic [ref=e277]:
+                    - generic [ref=e278]:
+                      - generic [ref=e279]: Amina Belkacem
+                      - generic [ref=e280]: Taekwondo
+                    - generic [ref=e281]: أمينة بلقاسم
+                    - generic [ref=e282]:
+                      - generic [ref=e283]: 16 avr. 2026
+                      - generic [ref=e284]: · il y a 4 jours
+                - 'link "Initiales: MH Mohamed Hadj Swimming محمد حاج 16 avr. 2026 · il y a 4 jours" [ref=e285] [cursor=pointer]':
+                  - /url: /members/be0396e8-21cb-4d5d-b5fd-070e3ba59c37?highlight=subscriptions
+                  - 'generic "Initiales: MH" [ref=e287]': MH
+                  - generic [ref=e288]:
+                    - generic [ref=e289]:
+                      - generic [ref=e290]: Mohamed Hadj
+                      - generic [ref=e291]: Swimming
+                    - generic [ref=e292]: محمد حاج
+                    - generic [ref=e293]:
+                      - generic [ref=e294]: 16 avr. 2026
+                      - generic [ref=e295]: · il y a 4 jours
+                - link "Voir 15 de plus" [ref=e296] [cursor=pointer]:
+                  - /url: /members
+            - region "Documents manquants" [ref=e297]:
+              - generic [ref=e298]:
+                - heading "Documents manquants" [level=2] [ref=e300]
+                - generic [ref=e301]: "0"
+                - link "Voir tout — Documents manquants" [ref=e302] [cursor=pointer]:
+                  - /url: /members
+                  - text: Voir tout
+                  - img [ref=e303]
+              - generic [ref=e306]:
+                - img [ref=e307]
+                - generic [ref=e310]: Aucune alerte — documents manquants
+            - region "Membres inactifs" [ref=e311]:
+              - generic [ref=e312]:
+                - heading "Membres inactifs" [level=2] [ref=e314]
+                - generic [ref=e315]: "19"
+                - link "Voir tout — Membres inactifs" [ref=e316] [cursor=pointer]:
+                  - /url: /members
+                  - text: Voir tout
+                  - img [ref=e317]
+              - generic [ref=e319]:
+                - 'link "Initiales: RB Riad Belaid Equestrian رياض بلعيد Jamais venu" [ref=e320] [cursor=pointer]':
+                  - /url: /members/1bb1515a-8af5-4e61-83e0-9debdde2a2bd?highlight=attendance
+                  - 'generic "Initiales: RB" [ref=e322]': RB
+                  - generic [ref=e323]:
+                    - generic [ref=e324]:
+                      - generic [ref=e325]: Riad Belaid
+                      - generic [ref=e326]: Equestrian
+                    - generic [ref=e327]: رياض بلعيد
+                    - generic [ref=e328]: Jamais venu
+                - 'link "Initiales: AB Amina Belkacem Taekwondo أمينة بلقاسم Jamais venu" [ref=e329] [cursor=pointer]':
+                  - /url: /members/24842923-92de-4463-b769-d16912a43bd7?highlight=attendance
+                  - 'generic "Initiales: AB" [ref=e331]': AB
+                  - generic [ref=e332]:
+                    - generic [ref=e333]:
+                      - generic [ref=e334]: Amina Belkacem
+                      - generic [ref=e335]: Taekwondo
+                    - generic [ref=e336]: أمينة بلقاسم
+                    - generic [ref=e337]: Jamais venu
+                - 'link "Initiales: IM Ilyes Moussaoui Jamais venu" [ref=e338] [cursor=pointer]':
+                  - /url: /members/27787688-4066-4097-802e-524edbd82ce0?highlight=attendance
+                  - 'generic "Initiales: IM" [ref=e340]': IM
+                  - generic [ref=e341]:
+                    - generic [ref=e343]: Ilyes Moussaoui
+                    - generic [ref=e344]: Jamais venu
+                - 'link "Initiales: IZ Imane Zerouali Equestrian إيمان زروالي Jamais venu" [ref=e345] [cursor=pointer]':
+                  - /url: /members/45fb6d03-dcfb-440c-9b77-093a4194a86d?highlight=attendance
+                  - 'generic "Initiales: IZ" [ref=e347]': IZ
+                  - generic [ref=e348]:
+                    - generic [ref=e349]:
+                      - generic [ref=e350]: Imane Zerouali
+                      - generic [ref=e351]: Equestrian
+                    - generic [ref=e352]: إيمان زروالي
+                    - generic [ref=e353]: Jamais venu
+                - 'link "Initiales: ND Nabil Djebbar Taekwondo نبيل جبار Jamais venu" [ref=e354] [cursor=pointer]':
+                  - /url: /members/48e8064f-47d2-49ad-8ff8-9593aabe37c1?highlight=attendance
+                  - 'generic "Initiales: ND" [ref=e356]': ND
+                  - generic [ref=e357]:
+                    - generic [ref=e358]:
+                      - generic [ref=e359]: Nabil Djebbar
+                      - generic [ref=e360]: Taekwondo
+                    - generic [ref=e361]: نبيل جبار
+                    - generic [ref=e362]: Jamais venu
+                - link "Voir 14 de plus" [ref=e363] [cursor=pointer]:
+                  - /url: /members
+            - region "Membres absents" [ref=e364]:
+              - generic [ref=e365]:
+                - heading "Membres absents" [level=2] [ref=e367]
+                - generic [ref=e368]: "20"
+                - link "Voir tout — Membres absents" [ref=e369] [cursor=pointer]:
+                  - /url: /members
+                  - text: Voir tout
+                  - img [ref=e370]
+              - generic [ref=e372]:
+                - 'link "Initiales: RB Riad Belaid Equestrian رياض بلعيد" [ref=e373] [cursor=pointer]':
+                  - /url: /members/1bb1515a-8af5-4e61-83e0-9debdde2a2bd?highlight=attendance
+                  - 'generic "Initiales: RB" [ref=e375]': RB
+                  - generic [ref=e376]:
+                    - generic [ref=e377]:
+                      - generic [ref=e378]: Riad Belaid
+                      - generic [ref=e379]: Equestrian
+                    - generic [ref=e380]: رياض بلعيد
+                - 'link "Initiales: AB Amina Belkacem Taekwondo أمينة بلقاسم" [ref=e381] [cursor=pointer]':
+                  - /url: /members/24842923-92de-4463-b769-d16912a43bd7?highlight=attendance
+                  - 'generic "Initiales: AB" [ref=e383]': AB
+                  - generic [ref=e384]:
+                    - generic [ref=e385]:
+                      - generic [ref=e386]: Amina Belkacem
+                      - generic [ref=e387]: Taekwondo
+                    - generic [ref=e388]: أمينة بلقاسم
+                - 'link "Initiales: AB Ahmed Benali Taekwondo أحمد بن علي" [ref=e389] [cursor=pointer]':
+                  - /url: /members/31742376-44ce-4278-a45f-7e4f21d0ff02?highlight=attendance
+                  - 'generic "Initiales: AB" [ref=e391]': AB
+                  - generic [ref=e392]:
+                    - generic [ref=e393]:
+                      - generic [ref=e394]: Ahmed Benali
+                      - generic [ref=e395]: Taekwondo
+                    - generic [ref=e396]: أحمد بن علي
+                - 'link "Initiales: MB Meriem Boumediene Swimming مريم بومدين" [ref=e397] [cursor=pointer]':
+                  - /url: /members/9ed540ac-83a8-4113-837e-d1d491059169?highlight=attendance
+                  - 'generic "Initiales: MB" [ref=e399]': MB
+                  - generic [ref=e400]:
+                    - generic [ref=e401]:
+                      - generic [ref=e402]: Meriem Boumediene
+                      - generic [ref=e403]: Swimming
+                    - generic [ref=e404]: مريم بومدين
+                - 'link "Initiales: SB Samira Brahimi Equestrian سميرة براهيمي" [ref=e405] [cursor=pointer]':
+                  - /url: /members/fa2e50fc-9b8f-4a00-800d-609d4c5002b7?highlight=attendance
+                  - 'generic "Initiales: SB" [ref=e407]': SB
+                  - generic [ref=e408]:
+                    - generic [ref=e409]:
+                      - generic [ref=e410]: Samira Brahimi
+                      - generic [ref=e411]: Equestrian
+                    - generic [ref=e412]: سميرة براهيمي
+                - link "Voir 15 de plus" [ref=e413] [cursor=pointer]:
+                  - /url: /members
+  - region "Notifications"

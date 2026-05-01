@@ -1,0 +1,26 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - heading "Unexpected Application Error!" [level=2] [ref=e3]
+    - 'heading "Failed to fetch dynamically imported module: http://localhost:5173/src/features/kiosk/KioskPage.tsx?t=1776719406357" [level=3] [ref=e4]'
+    - generic [ref=e5]: "TypeError: Failed to fetch dynamically imported module: http://localhost:5173/src/features/kiosk/KioskPage.tsx?t=1776719406357"
+    - paragraph [ref=e6]: 💿 Hey developer 👋
+    - paragraph [ref=e7]:
+      - text: You can provide a way better UX than this when your app throws errors by providing your own
+      - code [ref=e8]: ErrorBoundary
+      - text: or
+      - code [ref=e9]: errorElement
+      - text: prop on your route.
+  - region "Notifications"
+  - generic [ref=e12]:
+    - generic [ref=e13]: "[plugin:vite:oxc] Transform failed with 1 error: [PARSE_ERROR] Error: Expected `,` or `)` but found `Identifier` ╭─[ src/features/kiosk/KioskPage.tsx:294:61 ] │ 293 │ setError( │ ┬ │ ╰── Opened here 294 │ err instanceof ApiError ? err.message : 'Échec de l'enregistrement. Veuillez réessayer.', │ ───────┬────── │ ╰──────── `,` or `)` expected ─────╯"
+    - generic [ref=e14]: /Users/wow/Desktop/sport/frontend/src/features/kiosk/KioskPage.tsx
+    - generic [ref=e15]: at transformWithOxc (file:///Users/wow/Desktop/sport/frontend/node_modules/vite/dist/node/chunks/node.js:3745:19) at TransformPluginContext.transform (file:///Users/wow/Desktop/sport/frontend/node_modules/vite/dist/node/chunks/node.js:3813:26) at EnvironmentPluginContainer.transform (file:///Users/wow/Desktop/sport/frontend/node_modules/vite/dist/node/chunks/node.js:30143:51) at async loadAndTransform (file:///Users/wow/Desktop/sport/frontend/node_modules/vite/dist/node/chunks/node.js:24468:26)
+    - generic [ref=e16]:
+      - text: Click outside, press Esc key, or fix the code to dismiss.
+      - text: You can also disable this overlay by setting
+      - code [ref=e17]: server.hmr.overlay
+      - text: to
+      - code [ref=e18]: "false"
+      - text: in
+      - code [ref=e19]: vite.config.ts
+      - text: .

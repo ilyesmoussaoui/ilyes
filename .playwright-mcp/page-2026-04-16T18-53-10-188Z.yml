@@ -1,0 +1,172 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - link "Sport ERP home" [ref=e5] [cursor=pointer]:
+        - /url: /dashboard
+        - generic [ref=e6]: S
+        - generic [ref=e7]: Sport ERP
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - generic:
+            - img
+          - combobox "Search" [ref=e11]
+          - button "Recherche par visage — désactivé" [ref=e12] [cursor=pointer]:
+            - img [ref=e13]
+        - radiogroup "Search scope" [ref=e16]:
+          - radio "All" [checked] [ref=e17] [cursor=pointer]
+          - radio "Members" [ref=e18] [cursor=pointer]
+          - radio "Payments" [ref=e19] [cursor=pointer]
+          - radio "Products" [ref=e20] [cursor=pointer]
+      - generic [ref=e21]:
+        - 'button "Sync status: Synced. 0 pending." [ref=e23] [cursor=pointer]':
+          - img [ref=e25]
+          - generic [ref=e27]: Synced
+        - button "Notifications" [ref=e28] [cursor=pointer]:
+          - img [ref=e29]
+        - button "Account menu" [ref=e33] [cursor=pointer]:
+          - generic [ref=e34]: SA
+          - generic [ref=e35]:
+            - generic [ref=e36]: System Administrator
+            - generic [ref=e37]: Admin
+    - complementary "Primary" [ref=e38]:
+      - navigation "Main navigation" [ref=e39]:
+        - list [ref=e40]:
+          - listitem [ref=e41]:
+            - link "Dashboard" [ref=e42] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e44]
+              - generic [ref=e49]: Dashboard
+          - listitem [ref=e50]:
+            - link "Members" [ref=e51] [cursor=pointer]:
+              - /url: /members
+              - img [ref=e53]
+              - generic [ref=e58]: Members
+          - listitem [ref=e59]:
+            - link "Attendance" [ref=e60] [cursor=pointer]:
+              - /url: /attendance
+              - img [ref=e62]
+              - generic [ref=e70]: Attendance
+          - listitem [ref=e71]:
+            - link "Sessions" [ref=e72] [cursor=pointer]:
+              - /url: /sessions
+              - img [ref=e74]
+              - generic [ref=e76]: Sessions
+          - listitem [ref=e77]:
+            - link "POS" [ref=e78] [cursor=pointer]:
+              - /url: /pos
+              - img [ref=e80]
+              - generic [ref=e84]: POS
+          - listitem [ref=e85]:
+            - link "Payments" [ref=e86] [cursor=pointer]:
+              - /url: /payments
+              - img [ref=e88]
+              - generic [ref=e90]: Payments
+          - listitem [ref=e91]:
+            - link "Inventory" [ref=e92] [cursor=pointer]:
+              - /url: /inventory
+              - img [ref=e94]
+              - generic [ref=e98]: Inventory
+          - listitem [ref=e99]:
+            - link "Expenses" [ref=e100] [cursor=pointer]:
+              - /url: /expenses
+              - img [ref=e102]
+              - generic [ref=e105]: Expenses
+          - listitem [ref=e106]:
+            - link "Reports" [ref=e107] [cursor=pointer]:
+              - /url: /reports
+              - img [ref=e109]
+              - generic [ref=e111]: Reports
+          - listitem [ref=e112]:
+            - link "Settings" [ref=e113] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e115]
+              - generic [ref=e118]: Settings
+      - generic [ref=e119]:
+        - generic [ref=e120]:
+          - generic [ref=e121]: SA
+          - generic [ref=e122]:
+            - paragraph [ref=e123]: System Administrator
+            - paragraph [ref=e124]: Administrator
+          - button "Sign out" [ref=e125] [cursor=pointer]:
+            - img [ref=e126]
+        - button "Collapse sidebar" [ref=e129] [cursor=pointer]:
+          - img [ref=e130]
+          - generic [ref=e132]: Collapse
+    - main [ref=e133]:
+      - generic [ref=e443]:
+        - navigation "Breadcrumb" [ref=e444]:
+          - list [ref=e445]:
+            - listitem [ref=e446]:
+              - link "Home" [ref=e447] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=e448]:
+              - img [ref=e449]
+            - listitem [ref=e451]:
+              - link "Members" [ref=e452] [cursor=pointer]:
+                - /url: /members
+            - listitem [ref=e453]:
+              - img [ref=e454]
+            - listitem [ref=e456]: Add
+        - generic [ref=e458]:
+          - generic [ref=e459]:
+            - generic [ref=e460]:
+              - heading "Add member" [level=1] [ref=e461]
+              - paragraph [ref=e462]: Step 1 of 8
+            - button "Discard draft" [ref=e463] [cursor=pointer]
+          - navigation "Wizard progress" [ref=e464]:
+            - list [ref=e465]:
+              - listitem [ref=e466]:
+                - 'button "Step 1: Classification" [disabled] [ref=e469]':
+                  - generic [ref=e470]: "1"
+                - generic [ref=e472]: Classification
+              - listitem [ref=e473]:
+                - 'button "Step 2: Photo" [disabled] [ref=e476]':
+                  - generic [ref=e477]: "2"
+                - generic [ref=e479]: Photo
+              - listitem [ref=e480]:
+                - 'button "Step 3: Identity" [disabled] [ref=e483]':
+                  - generic [ref=e484]: "3"
+                - generic [ref=e486]: Identity
+              - listitem [ref=e487]:
+                - 'button "Step 4: Contact" [disabled] [ref=e490]':
+                  - generic [ref=e491]: "4"
+                - generic [ref=e493]: Contact
+              - listitem [ref=e494]:
+                - 'button "Step 5: Disciplines" [disabled] [ref=e497]':
+                  - generic [ref=e498]: "5"
+                - generic [ref=e500]: Disciplines
+              - listitem [ref=e501]:
+                - 'button "Step 6: Documents" [disabled] [ref=e504]':
+                  - generic [ref=e505]: "6"
+                - generic [ref=e507]: Documents
+              - listitem [ref=e508]:
+                - 'button "Step 7: Billing" [disabled] [ref=e511]':
+                  - generic [ref=e512]: "7"
+                - generic [ref=e514]: Billing
+              - listitem [ref=e515]:
+                - 'button "Step 8: Review" [disabled] [ref=e518]':
+                  - generic [ref=e519]: "8"
+                - generic [ref=e521]: Review
+          - generic [ref=e523]:
+            - generic [ref=e524]:
+              - heading "Member classification" [level=2] [ref=e525]
+              - paragraph [ref=e526]: Choose the type of member you are registering. You can change this later.
+            - generic [ref=e527]:
+              - button "Athlete Members training on disciplines and schedules." [ref=e528] [cursor=pointer]:
+                - img [ref=e530]
+                - generic [ref=e531]:
+                  - heading "Athlete" [level=3] [ref=e532]
+                  - paragraph [ref=e533]: Members training on disciplines and schedules.
+              - button "Staff Managers, receptionists, coaches, accountants." [ref=e534] [cursor=pointer]:
+                - img [ref=e536]
+                - generic [ref=e539]:
+                  - heading "Staff" [level=3] [ref=e540]
+                  - paragraph [ref=e541]: Managers, receptionists, coaches, accountants.
+              - button "External Visitors or consultants with limited access." [ref=e542] [cursor=pointer]:
+                - img [ref=e544]
+                - generic [ref=e547]:
+                  - heading "External" [level=3] [ref=e548]
+                  - paragraph [ref=e549]: Visitors or consultants with limited access.
+          - button "Next" [disabled] [ref=e554]:
+            - generic [ref=e555]: Next
+  - region "Notifications"

@@ -1,0 +1,337 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - link "Sport ERP home" [ref=e5] [cursor=pointer]:
+        - /url: /dashboard
+        - generic [ref=e6]: S
+        - generic [ref=e7]: Sport ERP
+      - generic [ref=e9]:
+        - generic:
+          - img
+        - searchbox "Search" [ref=e10]
+        - button "Face search coming soon" [disabled] [ref=e11]:
+          - img [ref=e12]
+      - generic [ref=e15]:
+        - 'button "Sync status: Synced. 0 pending." [ref=e17] [cursor=pointer]':
+          - img [ref=e19]
+          - generic [ref=e21]: Synced
+        - button "Notifications, 3 unread" [ref=e22] [cursor=pointer]:
+          - img [ref=e23]
+          - generic [ref=e26]: "3"
+        - button "Account menu" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29]: SA
+          - generic [ref=e30]:
+            - generic [ref=e31]: System Administrator
+            - generic [ref=e32]: Admin
+    - complementary "Primary" [ref=e33]:
+      - navigation "Main navigation" [ref=e34]:
+        - list [ref=e35]:
+          - listitem [ref=e36]:
+            - link "Dashboard" [ref=e37] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e39]
+              - generic [ref=e44]: Dashboard
+          - listitem [ref=e45]:
+            - link "Members" [ref=e46] [cursor=pointer]:
+              - /url: /members
+              - img [ref=e48]
+              - generic [ref=e53]: Members
+          - listitem [ref=e54]:
+            - link "Attendance" [ref=e55] [cursor=pointer]:
+              - /url: /attendance
+              - img [ref=e57]
+              - generic [ref=e65]: Attendance
+          - listitem [ref=e66]:
+            - link "Sessions" [ref=e67] [cursor=pointer]:
+              - /url: /sessions
+              - img [ref=e69]
+              - generic [ref=e71]: Sessions
+          - listitem [ref=e72]:
+            - link "POS" [ref=e73] [cursor=pointer]:
+              - /url: /pos
+              - img [ref=e75]
+              - generic [ref=e79]: POS
+          - listitem [ref=e80]:
+            - link "Payments" [ref=e81] [cursor=pointer]:
+              - /url: /payments
+              - img [ref=e83]
+              - generic [ref=e85]: Payments
+          - listitem [ref=e86]:
+            - link "Inventory" [ref=e87] [cursor=pointer]:
+              - /url: /inventory
+              - img [ref=e89]
+              - generic [ref=e93]: Inventory
+          - listitem [ref=e94]:
+            - link "Expenses" [ref=e95] [cursor=pointer]:
+              - /url: /expenses
+              - img [ref=e97]
+              - generic [ref=e100]: Expenses
+          - listitem [ref=e101]:
+            - link "Reports" [ref=e102] [cursor=pointer]:
+              - /url: /reports
+              - img [ref=e104]
+              - generic [ref=e106]: Reports
+          - listitem [ref=e107]:
+            - link "Settings" [ref=e108] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e110]
+              - generic [ref=e113]: Settings
+      - generic [ref=e114]:
+        - generic [ref=e115]:
+          - generic [ref=e116]: SA
+          - generic [ref=e117]:
+            - paragraph [ref=e118]: System Administrator
+            - paragraph [ref=e119]: Administrator
+          - button "Sign out" [ref=e120] [cursor=pointer]:
+            - img [ref=e121]
+        - button "Collapse sidebar" [ref=e124] [cursor=pointer]:
+          - img [ref=e125]
+          - generic [ref=e127]: Collapse
+    - main [ref=e128]:
+      - generic [ref=e129]:
+        - navigation "Breadcrumb" [ref=e130]:
+          - list [ref=e131]:
+            - listitem [ref=e132]:
+              - link "Home" [ref=e133] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=e134]:
+              - img [ref=e135]
+            - listitem [ref=e137]:
+              - link "Members" [ref=e138] [cursor=pointer]:
+                - /url: /members
+            - listitem [ref=e139]:
+              - img [ref=e140]
+            - listitem [ref=e142]: Add
+        - generic [ref=e144]:
+          - generic [ref=e145]:
+            - generic [ref=e146]:
+              - heading "Add member" [level=1] [ref=e147]
+              - paragraph [ref=e148]: Step 3 of 6
+            - button "Discard draft" [ref=e149] [cursor=pointer]
+          - navigation "Wizard progress" [ref=e150]:
+            - list [ref=e151]:
+              - listitem [ref=e152]:
+                - 'button "Step 1: Classification" [ref=e155] [cursor=pointer]':
+                  - img [ref=e156]
+                - generic [ref=e159]: Classification
+              - listitem [ref=e160]:
+                - 'button "Step 2: Photo" [ref=e163] [cursor=pointer]':
+                  - img [ref=e164]
+                - generic [ref=e167]: Photo
+              - listitem [ref=e168]:
+                - 'button "Step 3: Identity" [disabled] [ref=e171]':
+                  - generic [ref=e172]: "3"
+                - generic [ref=e174]: Identity
+              - listitem [ref=e175]:
+                - 'button "Step 4: Contact" [disabled] [ref=e178]':
+                  - generic [ref=e179]: "4"
+                - generic [ref=e181]: Contact
+              - listitem [ref=e182]:
+                - 'button "Step 5: Documents" [disabled] [ref=e185]':
+                  - generic [ref=e186]: "5"
+                - generic [ref=e188]: Documents
+              - listitem [ref=e189]:
+                - 'button "Step 6: Review" [disabled] [ref=e192]':
+                  - generic [ref=e193]: "6"
+                - generic [ref=e195]: Review
+          - generic [ref=e197]:
+            - generic [ref=e198]:
+              - heading "Identity" [level=2] [ref=e199]
+              - paragraph [ref=e200]: Name (Latin) is required. Arabic name is optional but recommended.
+            - generic [ref=e201]:
+              - generic [ref=e202]:
+                - heading "Name (Latin)" [level=3] [ref=e203]
+                - generic [ref=e204]:
+                  - generic [ref=e205]: First name
+                  - textbox "First name" [ref=e207]: Fh
+                - generic [ref=e208]:
+                  - generic [ref=e209]: Last name
+                  - textbox "Last name" [ref=e211]: Vcvccv
+              - generic [ref=e212]:
+                - heading "Name (Arabic)" [level=3] [ref=e213]
+                - generic [ref=e214]:
+                  - generic [ref=e215]: First name
+                  - textbox "First name" [ref=e217]
+                - generic [ref=e218]:
+                  - generic [ref=e219]: Last name
+                  - textbox "Last name" [ref=e221]
+            - generic [ref=e222]:
+              - generic [ref=e224]:
+                - generic [ref=e225]: Gender
+                - generic [ref=e226]:
+                  - combobox "Gender" [ref=e227]:
+                    - option "Select gender" [disabled]
+                    - option "Male" [selected]
+                    - option "Female"
+                  - img
+              - generic [ref=e229]:
+                - generic [ref=e230]: Date of birth
+                - generic [ref=e231]:
+                  - generic [ref=e232]:
+                    - generic [ref=e233]: Year
+                    - combobox "Year" [ref=e234]:
+                      - option "Year" [disabled] [selected]
+                      - option "2026"
+                      - option "2025"
+                      - option "2024"
+                      - option "2023"
+                      - option "2022"
+                      - option "2021"
+                      - option "2020"
+                      - option "2019"
+                      - option "2018"
+                      - option "2017"
+                      - option "2016"
+                      - option "2015"
+                      - option "2014"
+                      - option "2013"
+                      - option "2012"
+                      - option "2011"
+                      - option "2010"
+                      - option "2009"
+                      - option "2008"
+                      - option "2007"
+                      - option "2006"
+                      - option "2005"
+                      - option "2004"
+                      - option "2003"
+                      - option "2002"
+                      - option "2001"
+                      - option "2000"
+                      - option "1999"
+                      - option "1998"
+                      - option "1997"
+                      - option "1996"
+                      - option "1995"
+                      - option "1994"
+                      - option "1993"
+                      - option "1992"
+                      - option "1991"
+                      - option "1990"
+                      - option "1989"
+                      - option "1988"
+                      - option "1987"
+                      - option "1986"
+                      - option "1985"
+                      - option "1984"
+                      - option "1983"
+                      - option "1982"
+                      - option "1981"
+                      - option "1980"
+                      - option "1979"
+                      - option "1978"
+                      - option "1977"
+                      - option "1976"
+                      - option "1975"
+                      - option "1974"
+                      - option "1973"
+                      - option "1972"
+                      - option "1971"
+                      - option "1970"
+                      - option "1969"
+                      - option "1968"
+                      - option "1967"
+                      - option "1966"
+                      - option "1965"
+                      - option "1964"
+                      - option "1963"
+                      - option "1962"
+                      - option "1961"
+                      - option "1960"
+                      - option "1959"
+                      - option "1958"
+                      - option "1957"
+                      - option "1956"
+                      - option "1955"
+                      - option "1954"
+                      - option "1953"
+                      - option "1952"
+                      - option "1951"
+                      - option "1950"
+                      - option "1949"
+                      - option "1948"
+                      - option "1947"
+                      - option "1946"
+                      - option "1945"
+                      - option "1944"
+                      - option "1943"
+                      - option "1942"
+                      - option "1941"
+                      - option "1940"
+                      - option "1939"
+                      - option "1938"
+                      - option "1937"
+                      - option "1936"
+                      - option "1935"
+                      - option "1934"
+                      - option "1933"
+                      - option "1932"
+                      - option "1931"
+                      - option "1930"
+                    - img
+                  - generic [ref=e235]:
+                    - generic [ref=e236]: Month
+                    - combobox "Month" [disabled] [ref=e237]:
+                      - option "Month" [disabled] [selected]
+                      - option "January"
+                      - option "February"
+                      - option "March"
+                      - option "April"
+                      - option "May"
+                      - option "June"
+                      - option "July"
+                      - option "August"
+                      - option "September"
+                      - option "October"
+                      - option "November"
+                      - option "December"
+                    - img
+                  - generic [ref=e238]:
+                    - generic [ref=e239]: Day
+                    - combobox "Day" [disabled] [ref=e240]:
+                      - option "Day" [disabled] [selected]
+                      - option "1"
+                      - option "2"
+                      - option "3"
+                      - option "4"
+                      - option "5"
+                      - option "6"
+                      - option "7"
+                      - option "8"
+                      - option "9"
+                      - option "10"
+                      - option "11"
+                      - option "12"
+                      - option "13"
+                      - option "14"
+                      - option "15"
+                      - option "16"
+                      - option "17"
+                      - option "18"
+                      - option "19"
+                      - option "20"
+                      - option "21"
+                      - option "22"
+                      - option "23"
+                      - option "24"
+                      - option "25"
+                      - option "26"
+                      - option "27"
+                      - option "28"
+                      - option "29"
+                      - option "30"
+                      - option "31"
+                    - img
+                - paragraph [ref=e241]: Date of birth is required
+            - generic [ref=e243]:
+              - generic [ref=e244]: Place of birth
+              - generic [ref=e245]:
+                - img [ref=e246]
+                - combobox "Place of birth" [ref=e249]
+                - img [ref=e250]
+          - generic [ref=e254]:
+            - button "Previous" [ref=e256] [cursor=pointer]:
+              - generic [ref=e257]: Previous
+            - button "Next" [disabled] [ref=e259]:
+              - generic [ref=e260]: Next
+  - region "Notifications"

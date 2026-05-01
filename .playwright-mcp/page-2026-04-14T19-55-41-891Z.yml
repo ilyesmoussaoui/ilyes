@@ -1,0 +1,570 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - link "Sport ERP home" [ref=e5] [cursor=pointer]:
+        - /url: /dashboard
+        - generic [ref=e6]: S
+        - generic [ref=e7]: Sport ERP
+      - generic [ref=e9]:
+        - generic:
+          - img
+        - searchbox "Search" [ref=e10]
+        - button "Face search coming soon" [disabled] [ref=e11]:
+          - img [ref=e12]
+      - generic [ref=e15]:
+        - 'button "Sync status: Synced. 0 pending." [ref=e17] [cursor=pointer]':
+          - img [ref=e19]
+          - generic [ref=e21]: Synced
+        - button "Notifications, 3 unread" [ref=e22] [cursor=pointer]:
+          - img [ref=e23]
+          - generic [ref=e26]: "3"
+        - button "Account menu" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29]: SA
+          - generic [ref=e30]:
+            - generic [ref=e31]: System Administrator
+            - generic [ref=e32]: Admin
+    - complementary "Primary" [ref=e33]:
+      - navigation "Main navigation" [ref=e34]:
+        - list [ref=e35]:
+          - listitem [ref=e36]:
+            - link "Dashboard" [ref=e37] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e39]
+              - generic [ref=e44]: Dashboard
+          - listitem [ref=e45]:
+            - link "Members" [ref=e46] [cursor=pointer]:
+              - /url: /members
+              - img [ref=e48]
+              - generic [ref=e53]: Members
+          - listitem [ref=e54]:
+            - link "Attendance" [ref=e55] [cursor=pointer]:
+              - /url: /attendance
+              - img [ref=e57]
+              - generic [ref=e65]: Attendance
+          - listitem [ref=e66]:
+            - link "Sessions" [ref=e67] [cursor=pointer]:
+              - /url: /sessions
+              - img [ref=e69]
+              - generic [ref=e71]: Sessions
+          - listitem [ref=e72]:
+            - link "POS" [ref=e73] [cursor=pointer]:
+              - /url: /pos
+              - img [ref=e75]
+              - generic [ref=e79]: POS
+          - listitem [ref=e80]:
+            - link "Payments" [ref=e81] [cursor=pointer]:
+              - /url: /payments
+              - img [ref=e83]
+              - generic [ref=e85]: Payments
+          - listitem [ref=e86]:
+            - link "Inventory" [ref=e87] [cursor=pointer]:
+              - /url: /inventory
+              - img [ref=e89]
+              - generic [ref=e93]: Inventory
+          - listitem [ref=e94]:
+            - link "Expenses" [ref=e95] [cursor=pointer]:
+              - /url: /expenses
+              - img [ref=e97]
+              - generic [ref=e100]: Expenses
+          - listitem [ref=e101]:
+            - link "Reports" [ref=e102] [cursor=pointer]:
+              - /url: /reports
+              - img [ref=e104]
+              - generic [ref=e106]: Reports
+          - listitem [ref=e107]:
+            - link "Settings" [ref=e108] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e110]
+              - generic [ref=e113]: Settings
+      - generic [ref=e114]:
+        - generic [ref=e115]:
+          - generic [ref=e116]: SA
+          - generic [ref=e117]:
+            - paragraph [ref=e118]: System Administrator
+            - paragraph [ref=e119]: Administrator
+          - button "Sign out" [ref=e120] [cursor=pointer]:
+            - img [ref=e121]
+        - button "Collapse sidebar" [ref=e124] [cursor=pointer]:
+          - img [ref=e125]
+          - generic [ref=e127]: Collapse
+    - main [ref=e128]:
+      - generic [ref=e129]:
+        - navigation "Breadcrumb" [ref=e130]:
+          - list [ref=e131]:
+            - listitem [ref=e132]:
+              - link "Home" [ref=e133] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=e134]:
+              - img [ref=e135]
+            - listitem [ref=e137]: Attendance
+        - generic [ref=e140]:
+          - generic [ref=e141]:
+            - heading "Attendance Dashboard" [level=1] [ref=e142]
+            - paragraph [ref=e143]: Track check-ins, monitor presence, and manage daily sessions.
+          - generic [ref=e144]:
+            - button "Manual Check-in" [ref=e145] [cursor=pointer]:
+              - img [ref=e147]
+              - generic [ref=e148]: Manual Check-in
+            - button "Mass Checkout" [disabled] [ref=e149]:
+              - img [ref=e151]
+              - generic [ref=e154]: Mass Checkout
+        - generic [ref=e155]:
+          - complementary "Statistics and sessions" [ref=e156]:
+            - generic [ref=e157]:
+              - generic [ref=e158]:
+                - generic [ref=e160]:
+                  - paragraph [ref=e161]: Today's Check-ins
+                  - paragraph [ref=e162]: "1"
+                - generic [ref=e164]:
+                  - paragraph [ref=e165]: Currently Present
+                  - paragraph [ref=e166]: "0"
+                - generic [ref=e168]:
+                  - paragraph [ref=e169]: Check-outs
+                  - paragraph [ref=e170]: "1"
+              - region "Today's Sessions" [ref=e171]:
+                - heading "Today's Sessions" [level=3] [ref=e172]
+                - generic [ref=e173]:
+                  - generic [ref=e174]:
+                    - generic [ref=e175]:
+                      - img [ref=e176]
+                      - generic [ref=e178]: 07:00 - 08:30
+                    - paragraph [ref=e179]: Equestrian
+                    - generic [ref=e180]:
+                      - img [ref=e181]
+                      - generic [ref=e186]: 0 enrolled
+                  - generic [ref=e187]:
+                    - generic [ref=e188]:
+                      - img [ref=e189]
+                      - generic [ref=e191]: 09:00 - 10:30
+                    - paragraph [ref=e192]: Taekwondo
+                    - generic [ref=e193]:
+                      - img [ref=e194]
+                      - generic [ref=e199]: 0 enrolled
+                  - generic [ref=e200]:
+                    - generic [ref=e201]:
+                      - img [ref=e202]
+                      - generic [ref=e204]: 14:00 - 15:30
+                    - paragraph [ref=e205]: Equestrian
+                    - generic [ref=e206]:
+                      - img [ref=e207]
+                      - generic [ref=e212]: 0 enrolled
+                  - generic [ref=e213]:
+                    - generic [ref=e214]:
+                      - img [ref=e215]
+                      - generic [ref=e217]: 16:00 - 17:30
+                    - paragraph [ref=e218]: Taekwondo
+                    - generic [ref=e219]:
+                      - img [ref=e220]
+                      - generic [ref=e225]: 0 enrolled
+          - main "Presence grid" [ref=e226]:
+            - heading "Currently Present (0)" [level=2] [ref=e227]
+            - generic [ref=e228]:
+              - img [ref=e230]
+              - paragraph [ref=e233]: No one is checked in
+              - paragraph [ref=e234]: Members will appear here once they check in.
+        - region "Attendance Log" [ref=e236]:
+          - heading "Attendance Log" [level=2] [ref=e237]
+          - generic [ref=e240]:
+            - generic [ref=e242]:
+              - generic [ref=e243]: Search
+              - generic [ref=e244]:
+                - generic:
+                  - img
+                - textbox "Search" [ref=e245]:
+                  - /placeholder: Member name...
+            - generic [ref=e246]:
+              - generic [ref=e247]: From
+              - textbox "From" [ref=e248]
+            - generic [ref=e249]:
+              - generic [ref=e250]: To
+              - textbox "To" [ref=e251]
+            - generic [ref=e253]:
+              - generic [ref=e254]: Discipline
+              - generic [ref=e255]:
+                - combobox "Discipline" [ref=e256]:
+                  - option "Select..." [disabled] [selected]
+                  - option "All Disciplines"
+                  - option "Equestrian"
+                  - option "Swimming"
+                  - option "Taekwondo"
+                - img
+            - generic [ref=e258]:
+              - generic [ref=e259]: Method
+              - generic [ref=e260]:
+                - combobox "Method" [ref=e261]:
+                  - option "Select..." [disabled] [selected]
+                  - option "All Methods"
+                  - option "Face"
+                  - option "Manual"
+                  - option "Barcode"
+                - img
+            - generic [ref=e263]:
+              - generic [ref=e264]: Status
+              - generic [ref=e265]:
+                - combobox "Status" [ref=e266]:
+                  - option "Select..." [disabled] [selected]
+                  - option "All Status"
+                  - option "Present"
+                  - option "Left"
+                - img
+          - table [ref=e269]:
+            - rowgroup [ref=e270]:
+              - row "Date Member Discipline In Out Duration Method Status" [ref=e271]:
+                - columnheader "Date" [ref=e272]:
+                  - button "Date" [ref=e273] [cursor=pointer]:
+                    - text: Date
+                    - generic [ref=e274]:
+                      - img [ref=e275]
+                      - img [ref=e277]
+                - columnheader "Member" [ref=e279]:
+                  - button "Member" [ref=e280] [cursor=pointer]:
+                    - text: Member
+                    - generic [ref=e281]:
+                      - img [ref=e282]
+                      - img [ref=e284]
+                - columnheader "Discipline" [ref=e286]
+                - columnheader "In" [ref=e287]
+                - columnheader "Out" [ref=e288]
+                - columnheader "Duration" [ref=e289]
+                - columnheader "Method" [ref=e290]
+                - columnheader "Status" [ref=e291]
+                - columnheader [ref=e292]
+            - rowgroup [ref=e293]:
+              - row "14 Apr 2026 Sara Messaoudi Equestrian 10:00 11:30 1h 30m face Left Edit record for Sara Delete record for Sara" [ref=e294]:
+                - cell "14 Apr 2026" [ref=e295]
+                - cell "Sara Messaoudi" [ref=e296]:
+                  - generic [ref=e297]: Sara Messaoudi
+                - cell "Equestrian" [ref=e298]
+                - cell "10:00" [ref=e299]
+                - cell "11:30" [ref=e300]
+                - cell "1h 30m" [ref=e301]
+                - cell "face" [ref=e302]:
+                  - generic [ref=e303]:
+                    - img [ref=e305]
+                    - generic [ref=e307]: face
+                - cell "Left" [ref=e308]:
+                  - generic [ref=e309]:
+                    - img [ref=e311]
+                    - generic [ref=e314]: Left
+                - cell "Edit record for Sara Delete record for Sara" [ref=e315]:
+                  - generic [ref=e316]:
+                    - button "Edit record for Sara" [ref=e317] [cursor=pointer]:
+                      - img [ref=e318]
+                    - button "Delete record for Sara" [ref=e321] [cursor=pointer]:
+                      - img [ref=e322]
+              - row "13 Apr 2026 Yacine Kaddour Swimming 10:00 11:30 1h 30m face Left Edit record for Yacine Delete record for Yacine" [ref=e326]:
+                - cell "13 Apr 2026" [ref=e327]
+                - cell "Yacine Kaddour" [ref=e328]:
+                  - generic [ref=e329]: Yacine Kaddour
+                - cell "Swimming" [ref=e330]
+                - cell "10:00" [ref=e331]
+                - cell "11:30" [ref=e332]
+                - cell "1h 30m" [ref=e333]
+                - cell "face" [ref=e334]:
+                  - generic [ref=e335]:
+                    - img [ref=e337]
+                    - generic [ref=e339]: face
+                - cell "Left" [ref=e340]:
+                  - generic [ref=e341]:
+                    - img [ref=e343]
+                    - generic [ref=e346]: Left
+                - cell "Edit record for Yacine Delete record for Yacine" [ref=e347]:
+                  - generic [ref=e348]:
+                    - button "Edit record for Yacine" [ref=e349] [cursor=pointer]:
+                      - img [ref=e350]
+                    - button "Delete record for Yacine" [ref=e353] [cursor=pointer]:
+                      - img [ref=e354]
+              - row "13 Apr 2026 Ahmed Benali Taekwondo 10:00 11:30 1h 30m face Left Edit record for Ahmed Delete record for Ahmed" [ref=e358]:
+                - cell "13 Apr 2026" [ref=e359]
+                - cell "Ahmed Benali" [ref=e360]:
+                  - generic [ref=e361]: Ahmed Benali
+                - cell "Taekwondo" [ref=e362]
+                - cell "10:00" [ref=e363]
+                - cell "11:30" [ref=e364]
+                - cell "1h 30m" [ref=e365]
+                - cell "face" [ref=e366]:
+                  - generic [ref=e367]:
+                    - img [ref=e369]
+                    - generic [ref=e371]: face
+                - cell "Left" [ref=e372]:
+                  - generic [ref=e373]:
+                    - img [ref=e375]
+                    - generic [ref=e378]: Left
+                - cell "Edit record for Ahmed Delete record for Ahmed" [ref=e379]:
+                  - generic [ref=e380]:
+                    - button "Edit record for Ahmed" [ref=e381] [cursor=pointer]:
+                      - img [ref=e382]
+                    - button "Delete record for Ahmed" [ref=e385] [cursor=pointer]:
+                      - img [ref=e386]
+              - row "11 Apr 2026 Ahmed Benali Taekwondo 11:15 12:45 1h 30m manual Left Edit record for Ahmed Delete record for Ahmed" [ref=e390]:
+                - cell "11 Apr 2026" [ref=e391]
+                - cell "Ahmed Benali" [ref=e392]:
+                  - generic [ref=e393]: Ahmed Benali
+                - cell "Taekwondo" [ref=e394]
+                - cell "11:15" [ref=e395]
+                - cell "12:45" [ref=e396]
+                - cell "1h 30m" [ref=e397]
+                - cell "manual" [ref=e398]:
+                  - generic [ref=e399]:
+                    - img [ref=e401]
+                    - generic [ref=e404]: manual
+                - cell "Left" [ref=e405]:
+                  - generic [ref=e406]:
+                    - img [ref=e408]
+                    - generic [ref=e411]: Left
+                - cell "Edit record for Ahmed Delete record for Ahmed" [ref=e412]:
+                  - generic [ref=e413]:
+                    - button "Edit record for Ahmed" [ref=e414] [cursor=pointer]:
+                      - img [ref=e415]
+                    - button "Delete record for Ahmed" [ref=e418] [cursor=pointer]:
+                      - img [ref=e419]
+              - row "10 Apr 2026 Sara Messaoudi Equestrian 11:15 12:45 1h 30m manual Left Edit record for Sara Delete record for Sara" [ref=e423]:
+                - cell "10 Apr 2026" [ref=e424]
+                - cell "Sara Messaoudi" [ref=e425]:
+                  - generic [ref=e426]: Sara Messaoudi
+                - cell "Equestrian" [ref=e427]
+                - cell "11:15" [ref=e428]
+                - cell "12:45" [ref=e429]
+                - cell "1h 30m" [ref=e430]
+                - cell "manual" [ref=e431]:
+                  - generic [ref=e432]:
+                    - img [ref=e434]
+                    - generic [ref=e437]: manual
+                - cell "Left" [ref=e438]:
+                  - generic [ref=e439]:
+                    - img [ref=e441]
+                    - generic [ref=e444]: Left
+                - cell "Edit record for Sara Delete record for Sara" [ref=e445]:
+                  - generic [ref=e446]:
+                    - button "Edit record for Sara" [ref=e447] [cursor=pointer]:
+                      - img [ref=e448]
+                    - button "Delete record for Sara" [ref=e451] [cursor=pointer]:
+                      - img [ref=e452]
+              - row "10 Apr 2026 Yacine Kaddour Swimming 11:15 12:45 1h 30m manual Left Edit record for Yacine Delete record for Yacine" [ref=e456]:
+                - cell "10 Apr 2026" [ref=e457]
+                - cell "Yacine Kaddour" [ref=e458]:
+                  - generic [ref=e459]: Yacine Kaddour
+                - cell "Swimming" [ref=e460]
+                - cell "11:15" [ref=e461]
+                - cell "12:45" [ref=e462]
+                - cell "1h 30m" [ref=e463]
+                - cell "manual" [ref=e464]:
+                  - generic [ref=e465]:
+                    - img [ref=e467]
+                    - generic [ref=e470]: manual
+                - cell "Left" [ref=e471]:
+                  - generic [ref=e472]:
+                    - img [ref=e474]
+                    - generic [ref=e477]: Left
+                - cell "Edit record for Yacine Delete record for Yacine" [ref=e478]:
+                  - generic [ref=e479]:
+                    - button "Edit record for Yacine" [ref=e480] [cursor=pointer]:
+                      - img [ref=e481]
+                    - button "Delete record for Yacine" [ref=e484] [cursor=pointer]:
+                      - img [ref=e485]
+              - row "07 Apr 2026 Ahmed Benali Taekwondo 12:30 14:00 1h 30m manual Left Edit record for Ahmed Delete record for Ahmed" [ref=e489]:
+                - cell "07 Apr 2026" [ref=e490]
+                - cell "Ahmed Benali" [ref=e491]:
+                  - generic [ref=e492]: Ahmed Benali
+                - cell "Taekwondo" [ref=e493]
+                - cell "12:30" [ref=e494]
+                - cell "14:00" [ref=e495]
+                - cell "1h 30m" [ref=e496]
+                - cell "manual" [ref=e497]:
+                  - generic [ref=e498]:
+                    - img [ref=e500]
+                    - generic [ref=e503]: manual
+                - cell "Left" [ref=e504]:
+                  - generic [ref=e505]:
+                    - img [ref=e507]
+                    - generic [ref=e510]: Left
+                - cell "Edit record for Ahmed Delete record for Ahmed" [ref=e511]:
+                  - generic [ref=e512]:
+                    - button "Edit record for Ahmed" [ref=e513] [cursor=pointer]:
+                      - img [ref=e514]
+                    - button "Delete record for Ahmed" [ref=e517] [cursor=pointer]:
+                      - img [ref=e518]
+              - row "06 Apr 2026 Sara Messaoudi Equestrian 12:30 14:00 1h 30m manual Left Edit record for Sara Delete record for Sara" [ref=e522]:
+                - cell "06 Apr 2026" [ref=e523]
+                - cell "Sara Messaoudi" [ref=e524]:
+                  - generic [ref=e525]: Sara Messaoudi
+                - cell "Equestrian" [ref=e526]
+                - cell "12:30" [ref=e527]
+                - cell "14:00" [ref=e528]
+                - cell "1h 30m" [ref=e529]
+                - cell "manual" [ref=e530]:
+                  - generic [ref=e531]:
+                    - img [ref=e533]
+                    - generic [ref=e536]: manual
+                - cell "Left" [ref=e537]:
+                  - generic [ref=e538]:
+                    - img [ref=e540]
+                    - generic [ref=e543]: Left
+                - cell "Edit record for Sara Delete record for Sara" [ref=e544]:
+                  - generic [ref=e545]:
+                    - button "Edit record for Sara" [ref=e546] [cursor=pointer]:
+                      - img [ref=e547]
+                    - button "Delete record for Sara" [ref=e550] [cursor=pointer]:
+                      - img [ref=e551]
+              - row "06 Apr 2026 Yacine Kaddour Swimming 12:30 14:00 1h 30m manual Left Edit record for Yacine Delete record for Yacine" [ref=e555]:
+                - cell "06 Apr 2026" [ref=e556]
+                - cell "Yacine Kaddour" [ref=e557]:
+                  - generic [ref=e558]: Yacine Kaddour
+                - cell "Swimming" [ref=e559]
+                - cell "12:30" [ref=e560]
+                - cell "14:00" [ref=e561]
+                - cell "1h 30m" [ref=e562]
+                - cell "manual" [ref=e563]:
+                  - generic [ref=e564]:
+                    - img [ref=e566]
+                    - generic [ref=e569]: manual
+                - cell "Left" [ref=e570]:
+                  - generic [ref=e571]:
+                    - img [ref=e573]
+                    - generic [ref=e576]: Left
+                - cell "Edit record for Yacine Delete record for Yacine" [ref=e577]:
+                  - generic [ref=e578]:
+                    - button "Edit record for Yacine" [ref=e579] [cursor=pointer]:
+                      - img [ref=e580]
+                    - button "Delete record for Yacine" [ref=e583] [cursor=pointer]:
+                      - img [ref=e584]
+              - row "04 Apr 2026 Sara Messaoudi Equestrian 10:45 12:15 1h 30m barcode Left Edit record for Sara Delete record for Sara" [ref=e588]:
+                - cell "04 Apr 2026" [ref=e589]
+                - cell "Sara Messaoudi" [ref=e590]:
+                  - generic [ref=e591]: Sara Messaoudi
+                - cell "Equestrian" [ref=e592]
+                - cell "10:45" [ref=e593]
+                - cell "12:15" [ref=e594]
+                - cell "1h 30m" [ref=e595]
+                - cell "barcode" [ref=e596]:
+                  - generic [ref=e597]:
+                    - img [ref=e599]
+                    - generic [ref=e602]: barcode
+                - cell "Left" [ref=e603]:
+                  - generic [ref=e604]:
+                    - img [ref=e606]
+                    - generic [ref=e609]: Left
+                - cell "Edit record for Sara Delete record for Sara" [ref=e610]:
+                  - generic [ref=e611]:
+                    - button "Edit record for Sara" [ref=e612] [cursor=pointer]:
+                      - img [ref=e613]
+                    - button "Delete record for Sara" [ref=e616] [cursor=pointer]:
+                      - img [ref=e617]
+              - row "03 Apr 2026 Yacine Kaddour Swimming 10:45 12:15 1h 30m barcode Left Edit record for Yacine Delete record for Yacine" [ref=e621]:
+                - cell "03 Apr 2026" [ref=e622]
+                - cell "Yacine Kaddour" [ref=e623]:
+                  - generic [ref=e624]: Yacine Kaddour
+                - cell "Swimming" [ref=e625]
+                - cell "10:45" [ref=e626]
+                - cell "12:15" [ref=e627]
+                - cell "1h 30m" [ref=e628]
+                - cell "barcode" [ref=e629]:
+                  - generic [ref=e630]:
+                    - img [ref=e632]
+                    - generic [ref=e635]: barcode
+                - cell "Left" [ref=e636]:
+                  - generic [ref=e637]:
+                    - img [ref=e639]
+                    - generic [ref=e642]: Left
+                - cell "Edit record for Yacine Delete record for Yacine" [ref=e643]:
+                  - generic [ref=e644]:
+                    - button "Edit record for Yacine" [ref=e645] [cursor=pointer]:
+                      - img [ref=e646]
+                    - button "Delete record for Yacine" [ref=e649] [cursor=pointer]:
+                      - img [ref=e650]
+              - row "03 Apr 2026 Ahmed Benali Taekwondo 10:45 12:15 1h 30m barcode Left Edit record for Ahmed Delete record for Ahmed" [ref=e654]:
+                - cell "03 Apr 2026" [ref=e655]
+                - cell "Ahmed Benali" [ref=e656]:
+                  - generic [ref=e657]: Ahmed Benali
+                - cell "Taekwondo" [ref=e658]
+                - cell "10:45" [ref=e659]
+                - cell "12:15" [ref=e660]
+                - cell "1h 30m" [ref=e661]
+                - cell "barcode" [ref=e662]:
+                  - generic [ref=e663]:
+                    - img [ref=e665]
+                    - generic [ref=e668]: barcode
+                - cell "Left" [ref=e669]:
+                  - generic [ref=e670]:
+                    - img [ref=e672]
+                    - generic [ref=e675]: Left
+                - cell "Edit record for Ahmed Delete record for Ahmed" [ref=e676]:
+                  - generic [ref=e677]:
+                    - button "Edit record for Ahmed" [ref=e678] [cursor=pointer]:
+                      - img [ref=e679]
+                    - button "Delete record for Ahmed" [ref=e682] [cursor=pointer]:
+                      - img [ref=e683]
+              - row "31 Mar 2026 Yacine Kaddour Swimming 11:00 12:30 1h 30m manual Left Edit record for Yacine Delete record for Yacine" [ref=e687]:
+                - cell "31 Mar 2026" [ref=e688]
+                - cell "Yacine Kaddour" [ref=e689]:
+                  - generic [ref=e690]: Yacine Kaddour
+                - cell "Swimming" [ref=e691]
+                - cell "11:00" [ref=e692]
+                - cell "12:30" [ref=e693]
+                - cell "1h 30m" [ref=e694]
+                - cell "manual" [ref=e695]:
+                  - generic [ref=e696]:
+                    - img [ref=e698]
+                    - generic [ref=e701]: manual
+                - cell "Left" [ref=e702]:
+                  - generic [ref=e703]:
+                    - img [ref=e705]
+                    - generic [ref=e708]: Left
+                - cell "Edit record for Yacine Delete record for Yacine" [ref=e709]:
+                  - generic [ref=e710]:
+                    - button "Edit record for Yacine" [ref=e711] [cursor=pointer]:
+                      - img [ref=e712]
+                    - button "Delete record for Yacine" [ref=e715] [cursor=pointer]:
+                      - img [ref=e716]
+              - row "31 Mar 2026 Ahmed Benali Taekwondo 11:00 12:30 1h 30m manual Left Edit record for Ahmed Delete record for Ahmed" [ref=e720]:
+                - cell "31 Mar 2026" [ref=e721]
+                - cell "Ahmed Benali" [ref=e722]:
+                  - generic [ref=e723]: Ahmed Benali
+                - cell "Taekwondo" [ref=e724]
+                - cell "11:00" [ref=e725]
+                - cell "12:30" [ref=e726]
+                - cell "1h 30m" [ref=e727]
+                - cell "manual" [ref=e728]:
+                  - generic [ref=e729]:
+                    - img [ref=e731]
+                    - generic [ref=e734]: manual
+                - cell "Left" [ref=e735]:
+                  - generic [ref=e736]:
+                    - img [ref=e738]
+                    - generic [ref=e741]: Left
+                - cell "Edit record for Ahmed Delete record for Ahmed" [ref=e742]:
+                  - generic [ref=e743]:
+                    - button "Edit record for Ahmed" [ref=e744] [cursor=pointer]:
+                      - img [ref=e745]
+                    - button "Delete record for Ahmed" [ref=e748] [cursor=pointer]:
+                      - img [ref=e749]
+              - row "30 Mar 2026 Sara Messaoudi Equestrian 11:00 12:30 1h 30m manual Left Edit record for Sara Delete record for Sara" [ref=e753]:
+                - cell "30 Mar 2026" [ref=e754]
+                - cell "Sara Messaoudi" [ref=e755]:
+                  - generic [ref=e756]: Sara Messaoudi
+                - cell "Equestrian" [ref=e757]
+                - cell "11:00" [ref=e758]
+                - cell "12:30" [ref=e759]
+                - cell "1h 30m" [ref=e760]
+                - cell "manual" [ref=e761]:
+                  - generic [ref=e762]:
+                    - img [ref=e764]
+                    - generic [ref=e767]: manual
+                - cell "Left" [ref=e768]:
+                  - generic [ref=e769]:
+                    - img [ref=e771]
+                    - generic [ref=e774]: Left
+                - cell "Edit record for Sara Delete record for Sara" [ref=e775]:
+                  - generic [ref=e776]:
+                    - button "Edit record for Sara" [ref=e777] [cursor=pointer]:
+                      - img [ref=e778]
+                    - button "Delete record for Sara" [ref=e781] [cursor=pointer]:
+                      - img [ref=e782]
+          - generic [ref=e786]:
+            - generic [ref=e787]: Page 1 of 5 — 75 records
+            - generic [ref=e788]:
+              - button "Previous" [disabled] [ref=e789]:
+                - generic [ref=e790]: Previous
+              - button "Next" [ref=e791] [cursor=pointer]:
+                - generic [ref=e792]: Next
+  - region "Notifications"

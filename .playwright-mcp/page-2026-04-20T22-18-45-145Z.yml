@@ -1,0 +1,28 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic "Zone de caméra" [ref=e4]:
+        - generic [ref=e6]:
+          - status [ref=e7]:
+            - img [ref=e8]
+            - generic [ref=e10]: Starting camera...
+          - generic "Live camera feed for face recognition" [ref=e11]
+      - generic "Zone de résultat" [ref=e12]:
+        - generic [ref=e14]:
+          - img [ref=e16]
+          - generic [ref=e19]:
+            - heading "Stand in Front of the Camera" [level=2] [ref=e20]
+            - paragraph [ref=e21]: Face recognition will identify you automatically
+    - navigation "Contrôles du kiosque" [ref=e22]:
+      - generic [ref=e23]:
+        - img [ref=e24]
+        - time [ref=e27]: 23:18:44|lundi 20 avril 2026
+      - generic [ref=e28]:
+        - button "Passer en recherche manuelle" [ref=e29] [cursor=pointer]:
+          - img [ref=e30]
+          - generic [ref=e33]: Recherche manuelle
+        - link "Quitter le kiosque" [ref=e34] [cursor=pointer]:
+          - /url: /attendance
+          - img [ref=e35]
+          - generic [ref=e38]: Quitter
+  - region "Notifications"

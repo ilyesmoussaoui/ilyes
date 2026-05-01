@@ -1,0 +1,174 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - link "Sport ERP home" [ref=e5] [cursor=pointer]:
+        - /url: /dashboard
+        - generic [ref=e6]: S
+        - generic [ref=e7]: Sport ERP
+      - generic [ref=e9]:
+        - generic:
+          - img
+        - searchbox "Search" [ref=e10]
+        - button "Face search coming soon" [disabled] [ref=e11]:
+          - img [ref=e12]
+      - generic [ref=e15]:
+        - 'button "Sync status: Synced. 0 pending." [ref=e17] [cursor=pointer]':
+          - img [ref=e19]
+          - generic [ref=e21]: Synced
+        - button "Notifications, 3 unread" [ref=e22] [cursor=pointer]:
+          - img [ref=e23]
+          - generic [ref=e26]: "3"
+        - button "Account menu" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29]: SA
+          - generic [ref=e30]:
+            - generic [ref=e31]: System Administrator
+            - generic [ref=e32]: Admin
+    - complementary "Primary" [ref=e33]:
+      - navigation "Main navigation" [ref=e34]:
+        - list [ref=e35]:
+          - listitem [ref=e36]:
+            - link "Dashboard" [ref=e37] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e39]
+              - generic [ref=e44]: Dashboard
+          - listitem [ref=e45]:
+            - link "Members" [ref=e46] [cursor=pointer]:
+              - /url: /members
+              - img [ref=e48]
+              - generic [ref=e53]: Members
+          - listitem [ref=e54]:
+            - link "Attendance" [ref=e55] [cursor=pointer]:
+              - /url: /attendance
+              - img [ref=e57]
+              - generic [ref=e65]: Attendance
+          - listitem [ref=e66]:
+            - link "Sessions" [ref=e67] [cursor=pointer]:
+              - /url: /sessions
+              - img [ref=e69]
+              - generic [ref=e71]: Sessions
+          - listitem [ref=e72]:
+            - link "POS" [ref=e73] [cursor=pointer]:
+              - /url: /pos
+              - img [ref=e75]
+              - generic [ref=e79]: POS
+          - listitem [ref=e80]:
+            - link "Payments" [ref=e81] [cursor=pointer]:
+              - /url: /payments
+              - img [ref=e83]
+              - generic [ref=e85]: Payments
+          - listitem [ref=e86]:
+            - link "Inventory" [ref=e87] [cursor=pointer]:
+              - /url: /inventory
+              - img [ref=e89]
+              - generic [ref=e93]: Inventory
+          - listitem [ref=e94]:
+            - link "Expenses" [ref=e95] [cursor=pointer]:
+              - /url: /expenses
+              - img [ref=e97]
+              - generic [ref=e100]: Expenses
+          - listitem [ref=e101]:
+            - link "Reports" [ref=e102] [cursor=pointer]:
+              - /url: /reports
+              - img [ref=e104]
+              - generic [ref=e106]: Reports
+          - listitem [ref=e107]:
+            - link "Settings" [ref=e108] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e110]
+              - generic [ref=e113]: Settings
+      - generic [ref=e114]:
+        - generic [ref=e115]:
+          - generic [ref=e116]: SA
+          - generic [ref=e117]:
+            - paragraph [ref=e118]: System Administrator
+            - paragraph [ref=e119]: Administrator
+          - button "Sign out" [ref=e120] [cursor=pointer]:
+            - img [ref=e121]
+        - button "Collapse sidebar" [ref=e124] [cursor=pointer]:
+          - img [ref=e125]
+          - generic [ref=e127]: Collapse
+    - main [ref=e128]:
+      - generic [ref=e129]:
+        - navigation "Breadcrumb" [ref=e130]:
+          - list [ref=e131]:
+            - listitem [ref=e132]:
+              - link "Home" [ref=e133] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=e134]:
+              - img [ref=e135]
+            - listitem [ref=e137]: Point of Sale
+        - generic [ref=e138]:
+          - region "Product selection" [ref=e139]:
+            - generic [ref=e142]:
+              - generic [ref=e144]:
+                - generic [ref=e145]: Barcode / SKU
+                - generic [ref=e146]:
+                  - generic:
+                    - img
+                  - textbox "Barcode / SKU" [active] [ref=e147]:
+                    - /placeholder: Scan or type barcode...
+              - button "Add" [disabled] [ref=e148]:
+                - generic [ref=e149]: Add
+            - generic [ref=e150]:
+              - heading "Products" [level=3] [ref=e152]
+              - generic [ref=e154]:
+                - button "Add Chest Protector - 5 000 DZD" [disabled] [ref=e155]:
+                  - img [ref=e157]
+                  - generic [ref=e161]: Chest Protector
+                  - generic [ref=e162]: 5 000 DZD
+                  - generic [ref=e163]: Rupture de stock
+                - button "Add Dobok (Uniform) - 3 500 DZD" [disabled] [ref=e164]:
+                  - img [ref=e166]
+                  - generic [ref=e170]: Dobok (Uniform)
+                  - generic [ref=e171]: 3 500 DZD
+                  - generic [ref=e172]: Rupture de stock
+                - button "Add Headgear - 2 800 DZD" [disabled] [ref=e173]:
+                  - img [ref=e175]
+                  - generic [ref=e179]: Headgear
+                  - generic [ref=e180]: 2 800 DZD
+                  - generic [ref=e181]: Rupture de stock
+                - button "Add Kickboard - 1 200 DZD" [disabled] [ref=e182]:
+                  - img [ref=e184]
+                  - generic [ref=e188]: Kickboard
+                  - generic [ref=e189]: 1 200 DZD
+                  - generic [ref=e190]: Rupture de stock
+                - button "Add Riding Boots - 6 500 DZD" [disabled] [ref=e191]:
+                  - img [ref=e193]
+                  - generic [ref=e197]: Riding Boots
+                  - generic [ref=e198]: 6 500 DZD
+                  - generic [ref=e199]: Rupture de stock
+                - button "Add Riding Gloves - 1 800 DZD" [disabled] [ref=e200]:
+                  - img [ref=e202]
+                  - generic [ref=e206]: Riding Gloves
+                  - generic [ref=e207]: 1 800 DZD
+                  - generic [ref=e208]: Rupture de stock
+                - button "Add Riding Helmet - 8 000 DZD" [disabled] [ref=e209]:
+                  - img [ref=e211]
+                  - generic [ref=e215]: Riding Helmet
+                  - generic [ref=e216]: 8 000 DZD
+                  - generic [ref=e217]: Rupture de stock
+                - button "Add Shin Guards - 1 800 DZD" [disabled] [ref=e218]:
+                  - img [ref=e220]
+                  - generic [ref=e224]: Shin Guards
+                  - generic [ref=e225]: 1 800 DZD
+                  - generic [ref=e226]: Rupture de stock
+                - button "Add Swim Cap - 500 DZD" [disabled] [ref=e227]:
+                  - img [ref=e229]
+                  - generic [ref=e233]: Swim Cap
+                  - generic [ref=e234]: 500 DZD
+                  - generic [ref=e235]: Rupture de stock
+                - button "Add Swimming Goggles - 1 500 DZD" [disabled] [ref=e236]:
+                  - img [ref=e238]
+                  - generic [ref=e242]: Swimming Goggles
+                  - generic [ref=e243]: 1 500 DZD
+                  - generic [ref=e244]: Rupture de stock
+          - complementary "Shopping cart and checkout" [ref=e245]:
+            - generic [ref=e247]:
+              - heading "Cart" [level=2] [ref=e249]:
+                - img [ref=e250]
+                - text: Cart
+              - generic [ref=e254]:
+                - img [ref=e255]
+                - paragraph [ref=e259]: Your cart is empty
+                - paragraph [ref=e260]: Add products from the left panel
+  - region "Notifications"

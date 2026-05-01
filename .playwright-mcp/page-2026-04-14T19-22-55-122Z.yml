@@ -1,0 +1,235 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - link "Sport ERP home" [ref=e5] [cursor=pointer]:
+        - /url: /dashboard
+        - generic [ref=e6]: S
+        - generic [ref=e7]: Sport ERP
+      - generic [ref=e9]:
+        - generic:
+          - img
+        - searchbox "Search" [ref=e10]
+        - button "Face search coming soon" [disabled] [ref=e11]:
+          - img [ref=e12]
+      - generic [ref=e15]:
+        - 'button "Sync status: Synced. 0 pending." [ref=e17] [cursor=pointer]':
+          - img [ref=e19]
+          - generic [ref=e21]: Synced
+        - button "Notifications, 3 unread" [ref=e22] [cursor=pointer]:
+          - img [ref=e23]
+          - generic [ref=e26]: "3"
+        - button "Account menu" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29]: SA
+          - generic [ref=e30]:
+            - generic [ref=e31]: System Administrator
+            - generic [ref=e32]: Admin
+    - complementary "Primary" [ref=e33]:
+      - navigation "Main navigation" [ref=e34]:
+        - list [ref=e35]:
+          - listitem [ref=e36]:
+            - link "Dashboard" [ref=e37] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e39]
+              - generic [ref=e44]: Dashboard
+          - listitem [ref=e45]:
+            - link "Members" [ref=e46] [cursor=pointer]:
+              - /url: /members
+              - img [ref=e48]
+              - generic [ref=e53]: Members
+          - listitem [ref=e54]:
+            - link "Attendance" [ref=e55] [cursor=pointer]:
+              - /url: /attendance
+              - img [ref=e57]
+              - generic [ref=e65]: Attendance
+          - listitem [ref=e66]:
+            - link "Sessions" [ref=e67] [cursor=pointer]:
+              - /url: /sessions
+              - img [ref=e69]
+              - generic [ref=e71]: Sessions
+          - listitem [ref=e72]:
+            - link "POS" [ref=e73] [cursor=pointer]:
+              - /url: /pos
+              - img [ref=e75]
+              - generic [ref=e79]: POS
+          - listitem [ref=e80]:
+            - link "Payments" [ref=e81] [cursor=pointer]:
+              - /url: /payments
+              - img [ref=e83]
+              - generic [ref=e85]: Payments
+          - listitem [ref=e86]:
+            - link "Inventory" [ref=e87] [cursor=pointer]:
+              - /url: /inventory
+              - img [ref=e89]
+              - generic [ref=e93]: Inventory
+          - listitem [ref=e94]:
+            - link "Expenses" [ref=e95] [cursor=pointer]:
+              - /url: /expenses
+              - img [ref=e97]
+              - generic [ref=e100]: Expenses
+          - listitem [ref=e101]:
+            - link "Reports" [ref=e102] [cursor=pointer]:
+              - /url: /reports
+              - img [ref=e104]
+              - generic [ref=e106]: Reports
+          - listitem [ref=e107]:
+            - link "Settings" [ref=e108] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e110]
+              - generic [ref=e113]: Settings
+      - generic [ref=e114]:
+        - generic [ref=e115]:
+          - generic [ref=e116]: SA
+          - generic [ref=e117]:
+            - paragraph [ref=e118]: System Administrator
+            - paragraph [ref=e119]: Administrator
+          - button "Sign out" [ref=e120] [cursor=pointer]:
+            - img [ref=e121]
+        - button "Collapse sidebar" [ref=e124] [cursor=pointer]:
+          - img [ref=e125]
+          - generic [ref=e127]: Collapse
+    - main [ref=e128]:
+      - generic [ref=e129]:
+        - alert [ref=e130]:
+          - img [ref=e131]
+          - generic [ref=e133]: Live updates paused — connection lost. Data may be outdated.
+        - navigation "Breadcrumb" [ref=e134]:
+          - list [ref=e135]:
+            - listitem [ref=e136]:
+              - link "Home" [ref=e137] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=e138]:
+              - img [ref=e139]
+            - listitem [ref=e141]: Attendance
+        - generic [ref=e144]:
+          - generic [ref=e145]:
+            - heading "Attendance Dashboard" [level=1] [ref=e146]
+            - paragraph [ref=e147]: Track check-ins, monitor presence, and manage daily sessions.
+          - generic [ref=e148]:
+            - button "Manual Check-in" [ref=e149] [cursor=pointer]:
+              - img [ref=e151]
+              - generic [ref=e152]: Manual Check-in
+            - button "Mass Checkout" [disabled] [ref=e153]:
+              - img [ref=e155]
+              - generic [ref=e158]: Mass Checkout
+        - generic [ref=e159]:
+          - complementary "Statistics and sessions" [ref=e160]:
+            - region "Today's Sessions" [ref=e184]:
+              - heading "Today's Sessions" [level=3] [ref=e185]
+          - main "Presence grid" [ref=e202]:
+            - heading "Currently Present (0)" [level=2] [ref=e203]
+        - region "Attendance Log" [ref=e286]:
+          - heading "Attendance Log" [level=2] [ref=e287]
+          - generic [ref=e290]:
+            - generic [ref=e292]:
+              - generic [ref=e293]: Search
+              - generic [ref=e294]:
+                - generic:
+                  - img
+                - textbox "Search" [ref=e295]:
+                  - /placeholder: Member name...
+            - generic [ref=e296]:
+              - generic [ref=e297]: From
+              - textbox "From" [ref=e298]
+            - generic [ref=e299]:
+              - generic [ref=e300]: To
+              - textbox "To" [ref=e301]
+            - generic [ref=e303]:
+              - generic [ref=e304]: Discipline
+              - generic [ref=e305]:
+                - combobox "Discipline" [ref=e306]:
+                  - option "Select..." [disabled] [selected]
+                  - option "All Disciplines"
+                - img
+            - generic [ref=e308]:
+              - generic [ref=e309]: Method
+              - generic [ref=e310]:
+                - combobox "Method" [ref=e311]:
+                  - option "Select..." [disabled] [selected]
+                  - option "All Methods"
+                  - option "Face"
+                  - option "Manual"
+                  - option "Barcode"
+                - img
+            - generic [ref=e313]:
+              - generic [ref=e314]: Status
+              - generic [ref=e315]:
+                - combobox "Status" [ref=e316]:
+                  - option "Select..." [disabled] [selected]
+                  - option "All Status"
+                  - option "Present"
+                  - option "Left"
+                - img
+          - table [ref=e319]:
+            - rowgroup [ref=e320]:
+              - row "Date Member Discipline In Out Duration Method Status" [ref=e321]:
+                - columnheader "Date" [ref=e322]:
+                  - button "Date" [ref=e323] [cursor=pointer]:
+                    - text: Date
+                    - generic [ref=e324]:
+                      - img [ref=e325]
+                      - img [ref=e327]
+                - columnheader "Member" [ref=e329]:
+                  - button "Member" [ref=e330] [cursor=pointer]:
+                    - text: Member
+                    - generic [ref=e331]:
+                      - img [ref=e332]
+                      - img [ref=e334]
+                - columnheader "Discipline" [ref=e336]
+                - columnheader "In" [ref=e337]
+                - columnheader "Out" [ref=e338]
+                - columnheader "Duration" [ref=e339]
+                - columnheader "Method" [ref=e340]
+                - columnheader "Status" [ref=e341]
+                - columnheader [ref=e342]
+            - rowgroup [ref=e343]:
+              - row [ref=e344]:
+                - cell [ref=e345]
+                - cell [ref=e348]
+                - cell [ref=e351]
+                - cell [ref=e354]
+                - cell [ref=e357]
+                - cell [ref=e360]
+                - cell [ref=e363]
+                - cell [ref=e366]
+                - cell [ref=e369]
+              - row [ref=e372]:
+                - cell [ref=e373]
+                - cell [ref=e376]
+                - cell [ref=e379]
+                - cell [ref=e382]
+                - cell [ref=e385]
+                - cell [ref=e388]
+                - cell [ref=e391]
+                - cell [ref=e394]
+                - cell [ref=e397]
+              - row [ref=e400]:
+                - cell [ref=e401]
+                - cell [ref=e404]
+                - cell [ref=e407]
+                - cell [ref=e410]
+                - cell [ref=e413]
+                - cell [ref=e416]
+                - cell [ref=e419]
+                - cell [ref=e422]
+                - cell [ref=e425]
+              - row [ref=e428]:
+                - cell [ref=e429]
+                - cell [ref=e432]
+                - cell [ref=e435]
+                - cell [ref=e438]
+                - cell [ref=e441]
+                - cell [ref=e444]
+                - cell [ref=e447]
+                - cell [ref=e450]
+                - cell [ref=e453]
+              - row [ref=e456]:
+                - cell [ref=e457]
+                - cell [ref=e460]
+                - cell [ref=e463]
+                - cell [ref=e466]
+                - cell [ref=e469]
+                - cell [ref=e472]
+                - cell [ref=e475]
+                - cell [ref=e478]
+                - cell [ref=e481]
+  - region "Notifications"
